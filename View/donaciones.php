@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class = "cuerpo">
+    
+                                
+    <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+        <button name='enviar' type="submit" class="btn btn-primary btn-block btn-large">Doname un pesito</button>
+    </div>
+                            
+</body>
+
+</html>
