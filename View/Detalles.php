@@ -2,6 +2,7 @@
 
 include("../Controller/C_detalles.php");
 
+
 ?>
 
 <html lang="es">

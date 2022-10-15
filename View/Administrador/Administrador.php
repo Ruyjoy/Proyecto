@@ -28,20 +28,12 @@
 
 <body>
 
-    <!-- Topbar End -->
+  <!-- Topbar End -->
 
 
   <!-- Navbar Start -->
   <?php include "../BarrasYLibrerias/BarraAdministrador.php";?>
   <!-- Navbar End -->
-
-
-    
-
-
-    <!-- Cart Start -->
-    
-    <!-- Cart End -->
 
 
     <!-- Footer Start -->

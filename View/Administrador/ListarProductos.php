@@ -30,11 +30,7 @@ $resultado = mysqli_query($con, $consulta);
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <script src="../../js/funcion.js"></script>
-
-    <!-- Libraries Stylesheet -->
-
-
+    
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../../Css/style.css" rel="stylesheet">
 </head>
@@ -57,7 +53,7 @@ $resultado = mysqli_query($con, $consulta);
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Administrador.php">Administrador</a>
                     <span class="breadcrumb-item active">Productos</span>
-                    <span class="breadcrumb-item active">Listados</span>              
+                    <span class="breadcrumb-item active">Listados</span>
                 </nav>
             </div>
         </div>
@@ -77,24 +73,24 @@ $resultado = mysqli_query($con, $consulta);
                             <th>Foto</th>
                             <th>Description</th>
                             <th>Seleccionar</th>
-                            
+
 
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        <?php foreach ($resultado as $row) { 
+                        <?php foreach ($resultado as $row) {
 
-                            $datos=$row['id_producto']."||".$row['nombre_producto']."||".$row['precio_producto']."||".$row['imagen_producto']."||".$row['des_producto'];  
-                            
-                            ?>
+                            $datos = $row['id_producto'];
+
+                        ?>
                             <tr>
                                 <td class="align-middle"><?php echo $row['id_producto'] ?></td>
                                 <td class="align-middle"><?php echo $row['nombre_producto'] ?></td>
                                 <td class="align-middle">$<?php echo $row['precio_producto'] ?></td>
                                 <td class="align-middle"><img src="<?php echo $row['imagen_producto'] ?>" alt="" style="width: 50px;"></td>
                                 <td class="align-middle"><?php echo $row['des_producto'] ?></td>
-                                <td class="align-middle"><button class="btn btn-sm btn-success" onclick="location.href='EliminarModificarProducto.php'".MostrDatos(<?php echo $datos ?>)><i class="fa fa-check"></i></button></td>
-                                
+                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarProducto.php?id=<?php echo $datos ?>"><i class="fa fa-check"></i></a></td>
+
                             </tr>
                         <?php } ?>
                     </tbody>
@@ -112,10 +108,24 @@ $resultado = mysqli_query($con, $consulta);
     <!-- Footer End -->
     <script src="../../js/main.js"></script>
 
+
     <!-- JavaScript Libraries -->
     <?php
     include "../BarrasYLibrerias/libreriasCompletas.php";
     ?>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../js/main.js"></script>
 
 </body>
 

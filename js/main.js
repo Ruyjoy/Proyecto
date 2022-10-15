@@ -33,7 +33,7 @@
     });
 
 
-    // Vendor carousel
+    /*/ Vendor carousel
     $('.vendor-carousel').owlCarousel({
         loop: true,
         margin: 29,
@@ -81,7 +81,7 @@
                 items:4
             }
         }
-    });
+    });*/
 
 
     // Product Quantity

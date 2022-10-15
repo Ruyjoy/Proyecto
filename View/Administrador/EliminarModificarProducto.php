@@ -1,5 +1,8 @@
 <?php
-include '../../Model/Conexion.php';
+
+include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
+
+
 ?>
 
 
@@ -25,18 +28,18 @@ include '../../Model/Conexion.php';
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <script src="../../js/funcion.js"></script>
+
 
     <!-- Libraries Stylesheet -->
 
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../../Css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
@@ -45,6 +48,8 @@ include '../../Model/Conexion.php';
     ?>
     <!-- Navbar End -->
 
+
+
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
@@ -52,9 +57,9 @@ include '../../Model/Conexion.php';
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Administrador.php">Administrador</a>
                     <span class="breadcrumb-item active">Productos</span>
-                    <a class="breadcrumb-item text-dark"href="listarProductos.php">Listados</a>
+                    <a class="breadcrumb-item text-dark" href="listarProductos.php">Listados</a>
                     <span class="breadcrumb-item active">Producto seleccionado</span>
-                    
+
                 </nav>
             </div>
         </div>
@@ -79,17 +84,23 @@ include '../../Model/Conexion.php';
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        
+                        <form method="post">
                             <tr>
-                            <td class="align-middle"><input type="text" name="idu" class="form-control input-sm" required="required" id="idu" ></td></td>
-                                <td class="align-middle"><input type="text" name="" class="form-control input-sm" required="required" id="nombreu" ></td>
-                                <td class="align-middle" ><input type="text" name="" id="preciou" class="form-control input-sm"></td>
-                                <td class="align-middle"><input type="text" name="" id="fotou" class="form-control input-sm"></td>
-                                <td class="align-middle" ><input type="text" name="" id="desu" class="form-control input-sm"></td>
-                                <td class="align-middle"><button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i></button></td>
-                                <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                                <td class="align-middle"><input type="text" name="id" class="form-control input-sm" required="required" value="<?php echo $id ?>" disabled></td>
+                                </td>
+                                </td>
+                                <td class="align-middle"><input type="text" name="nombre" class="form-control input-sm" required="required" value="<?php echo $nombre ?>"></td>
+                                <td class="align-middle"><input type="text" name="precio" id="preciou" class="form-control input-sm" value="<?php echo $precio ?>"></td>
+                                </td>
+                                <td class="align-middle"><img src="<?php echo $imagen ?>" alt="" style="width: 50px;"></td>
+                                </td>
+                                <td class="align-middle"><input type="text" name="des" id="desu" class="form-control input-sm" value="<?php echo $des ?>"></td>
+
+                                <td class="align-middle"><button class="btn btn-sm btn-warning" value="Editar" name="Editar"><i class="fa fa-edit"></i></button></td>
+                                <td class="align-middle"><button class="btn btn-sm btn-danger" value="Eliminar" name="Eliminar"><i class="fa fa-times"></i></button></td>
+
                             </tr>
-                       
+                        </form>
                     </tbody>
                 </table>
             </div>

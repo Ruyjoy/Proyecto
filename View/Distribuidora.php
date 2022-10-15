@@ -33,33 +33,6 @@ include '../Controller/C_distribuidora.php';
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
-    <!--Contenido-->
-    <!-- <main>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <?php foreach ($resultado as $row) { ?>
-                    <div class="col">
-                        <div class="card shadow-sm">
-
-                            <img class="img-fluid w-100" src="<?php echo substr($row['imagen_producto'], 3) ?>">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $row['nombre_producto'] ?></h5>
-                                <p class="card-text"><?php echo $row['precio_producto'] ?></p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="Detalles.php?id=<?php echo $row['id_producto']; ?>" class="btn btn-primary">Detalles</a>
-                                    </div>
-                                    <a href="#" class="btn btn-success">Agregar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <?php  } ?>
-
-            </div>
-        </div>
-    </main>-->
-
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">

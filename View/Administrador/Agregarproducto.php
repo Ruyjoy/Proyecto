@@ -21,9 +21,6 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../../Css/style.css" rel="stylesheet">
 
@@ -106,7 +103,7 @@
 
     <!-- JavaScript Libraries -->
     <?php
-    include "../BarrasYLibrerias/libreriasCompletas.php";
+        include "../BarrasYLibrerias/libreriasCompletas.php";
     ?>
 
 </body>
