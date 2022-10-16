@@ -1,6 +1,7 @@
 <?php
 include '../../Model/Conexion.php';
 
+define("KEY_TOKEN", "ABC.975-gmj");
 $db = new Conexion();
 $con = $db->conectar();
 
@@ -80,7 +81,11 @@ $resultado = mysqli_query($con, $consulta);
                     <tbody class="align-middle">
                         <?php foreach ($resultado as $row) {
 
-                            $datos = $row['id_producto'];
+                            $id = $row['id_producto'];
+                            $nombre=$row['nombre_producto'];
+                            $precio= $row['precio_producto'];
+                            $imagen= $row['imagen_producto'];
+                            $des= $row['des_producto'];
 
                         ?>
                             <tr>
@@ -89,7 +94,7 @@ $resultado = mysqli_query($con, $consulta);
                                 <td class="align-middle">$<?php echo $row['precio_producto'] ?></td>
                                 <td class="align-middle"><img src="<?php echo $row['imagen_producto'] ?>" alt="" style="width: 50px;"></td>
                                 <td class="align-middle"><?php echo $row['des_producto'] ?></td>
-                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarProducto.php?id=<?php echo $datos ?>"><i class="fa fa-check"></i></a></td>
+                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarProducto.php?id=<?php echo $id ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN )?>&nombre=<?php echo $nombre ?>&precio=<?php echo $precio ?>&imagen=<?php echo $imagen ?>&des=<?php echo $des ?>"><i class="fa fa-check"></i></a></td>
 
                             </tr>
                         <?php } ?>
