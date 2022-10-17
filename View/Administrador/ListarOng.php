@@ -42,7 +42,7 @@ $resultado = mysqli_query($con, $consulta);
     <?php
     include "../BarrasYLibrerias/BarraAdministrador.php";
     ?>
-    <!-- Navbar End -->
+   
 
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
