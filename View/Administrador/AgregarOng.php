@@ -71,12 +71,12 @@
                             <input class="form-control" type="text" placeholder="Codigo">
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Nombre</label>
-                            <input class="form-control" type="text" placeholder="Nombre">
+                            <label>Password</label>
+                            <input class="form-control" type="text" placeholder="Password">
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>E-mail</label>
-                            <input class="form-control" type="text" placeholder="example@email.com">
+                            <label>Nombre</label>
+                            <input class="form-control" type="text" placeholder="Nombre">
                         </div>
                         <div class="col-md-6 form-group">
                             <label>Mobile No</label>
@@ -87,17 +87,8 @@
                             <input class="form-control" type="text" placeholder="123 Street">
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Address Line 2</label>
-                            <input class="form-control" type="text" placeholder="123 Street">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Country</label>
-                            <select class="custom-select">
-                                <option selected>Uruguay</option>
-                                <option>Argentina</option>
-                                <option>Brasil</option>
-                                
-                            </select>
+                            <label>E-mail</label>
+                            <input class="form-control" type="text" placeholder="example@email.com">
                         </div>
                         <div class="col-md-6 form-group">
                             <label>Ciudad</label>

@@ -66,6 +66,7 @@ if (isset($_POST['Eliminar'])) {
 
 
     $consulta = "DELETE FROM productos WHERE id_producto = $id ";
+    unlink($imagen);//acá le damos la direccion exacta del archivo
     $resultado = mysqli_query($con, $consulta);
 
     //Si existe en base de datos -------

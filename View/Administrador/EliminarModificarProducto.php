@@ -98,12 +98,34 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
                                 <td class="align-middle"><input type="text" name="des" id="desu" class="form-control input-sm" value="<?php echo $des ?>"></td>
 
                                 <td class="align-middle"><button class="btn btn-sm btn-warning" value="Editar" name="Editar"><i class="fa fa-edit"></i></button></td>
-                                <td class="align-middle"><button class="btn btn-sm btn-danger" value="Eliminar" name="Eliminar"><i class="fa fa-times"></i></button></td>
 
-                            </tr>
                         </form>
+                        <td class="align-middle"><button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-times"></i></button></td>
+                        </tr>
+
                     </tbody>
                 </table>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Eliminar Producto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ... Está seguro que desea eliminar esté producto ?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"  data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
