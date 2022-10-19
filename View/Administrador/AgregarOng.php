@@ -94,10 +94,6 @@
                                 <label>E-mail</label>
                                 <input class="form-control" type="text" name="mail_ong" placeholder="example@email.com">
                             </div>
-                            <div class="col-md-6 form-group">
-                                <label>Ciudad</label>
-                                <input class="form-control" type="text" name="ciudad_ong" placeholder="Montevideo">
-                            </div>
                             <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregarOng">Agregar</button>
                         </div>
                     </form>

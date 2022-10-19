@@ -4,13 +4,13 @@
 
  class M_agregarOng
  {
-    function agregarOng($codigo,$pass, $nombre, $tel, $dir , $mail, $ciudad)
+    function agregarOng($codigo,$pass, $nombre, $tel, $dir , $mail)
     {
         try {
             $db = new Conexion();
             $con = $db->conectar();
 
-            $consulta = "INSERT INTO ong(codigo_ong, pass_ong, nombre_ong, telefono_ong, direccion_ong, mail_ong, ciudad_ong)VALUES ('$codigo','$pass','$nombre', $tel, '$dir', ' $mail','$ciudad')";
+            $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, rol)VALUES ('$codigo','$pass','$nombre', $tel, '$dir', ' $mail',3)";
             $resultado = mysqli_query($con, $consulta);
 
             //Si existe en base de datos -------
@@ -23,7 +23,7 @@
                 $alert = "error al ingresar datos";
             }
         } catch (Exception $e) {
-            echo "Esta ONG ya Existe";
+            echo $e;
         }
 
         mysqli_close($con);

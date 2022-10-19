@@ -5,7 +5,7 @@ define("KEY_TOKEN", "ABC.975-gmj");
 $db = new Conexion();
 $con = $db->conectar();
 
-$consulta = "SELECT * FROM ong";
+$consulta = "SELECT * FROM usuario WHERE rol = 3 ";
 $resultado = mysqli_query($con, $consulta);
 
 
@@ -71,7 +71,7 @@ $resultado = mysqli_query($con, $consulta);
                             <th>Telefono</th>
                             <th>Direccion</th>
                             <th>Mail</th>
-                            <th>Ciudad</th>
+                           
                             <th>Seleccionar</th>
 
 
@@ -80,23 +80,23 @@ $resultado = mysqli_query($con, $consulta);
                     <tbody class="align-middle">
                         <?php foreach ($resultado as $row) {
 
-                            $codigo = $row['codigo_ong'];
-                            $pass = $row['pass_ong'];
-                            $nombre = $row['nombre_ong'];
-                            $telefono = $row['telefono_ong'];
-                            $direccion = $row['direccion_ong'];
-                            $mail = $row['mail_ong'];
-                            $ciudad = $row['ciudad_ong'];
+                            $codigo = $row['codigo'];
+                            $pass = $row['pass'];
+                            $nombre = $row['nombre'];
+                            $telefono = $row['telefono'];
+                            $direccion = $row['direccion'];
+                            $mail = $row['mail'];
+                           
 
                         ?>
                             <tr>
-                                <td class="align-middle"><?php echo $row['codigo_ong'] ?></td>
-                                <td class="align-middle"><?php echo $row['pass_ong'] ?></td>
-                                <td class="align-middle"><?php echo $row['nombre_ong'] ?></td>
-                                <td class="align-middle"><?php echo $row['telefono_ong'] ?></td>
-                                <td class="align-middle"><?php echo $row['direccion_ong'] ?></td>
-                                <td class="align-middle"><?php echo $row['mail_ong'] ?></td>
-                                <td class="align-middle"><?php echo $row['ciudad_ong'] ?></td>
+                                <td class="align-middle"><?php echo $row['codigo'] ?></td>
+                                <td class="align-middle"><?php echo $row['pass'] ?></td>
+                                <td class="align-middle"><?php echo $row['nombre'] ?></td>
+                                <td class="align-middle"><?php echo $row['telefono'] ?></td>
+                                <td class="align-middle"><?php echo $row['direccion'] ?></td>
+                                <td class="align-middle"><?php echo $row['mail'] ?></td>
+                                
                                 <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarProducto.php?id=<?php echo $id ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN) ?>&nombre=<?php echo $nombre ?>&precio=<?php echo $precio ?>&imagen=<?php echo $imagen ?>&des=<?php echo $des ?>"><i class="fa fa-check"></i></a></td>
 
                             </tr>

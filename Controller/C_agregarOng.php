@@ -11,11 +11,11 @@ if (isset($_POST['agregarOng'])) {
     $tel = $_POST['tel_ong'];
     $dir = $_POST['dir_ong'];
     $mail = $_POST['mail_ong'];
-    $ciudad = $_POST['ciudad_ong'];
+    
 
 
     $registro = new M_agregarOng();
-    $registro->agregarOng($codigo,$pass, $nombre, $tel, $dir , $mail, $ciudad);
+    $registro->agregarOng($codigo,$pass, $nombre, $tel, $dir , $mail);
 }
 
 ?>
