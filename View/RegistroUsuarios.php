@@ -1,5 +1,5 @@
 <?php
- include ("../Controller/C_registroUsuario.php");
+ include ("/laragon/www/Proyecto/Controller/C_registroUsuario.php");
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +18,8 @@
 
 <!--Barra de navegación-->
 
-<body>
 
-    <body class="cuerpo">
+<body class="cuerpo">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -29,53 +28,60 @@
                             <div class="col-lg-7">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header">
-                                        <h3 class="text-center font-weight-light my-4">Create Cuenta</h3>
+                                        <h3 class="text-center font-weight-light my-4">Crear Cuenta</h3>
                                     </div>
                                     <div class="card-body">
-                                        <form method="POST">
+                                        <form action="" method="POST" autocomplete="off" class="FormularioAjax">
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="small mb-1" for="inputLastName">Cedula</label>
-                                                        <input class="form-control py-4" name="cedula" required="required" type="text" placeholder="Entre Cedula"/>
+                                                        <label class="small mb-1">Nombre y Apellido</label>
+				  	                                    <input class="form-control py-2" type="text" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,70}" maxlength="70" placeholder="Ingrese su nombre y apellido" required/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="small mb-1" for="inputLastName">Password</label>
-                                                        <input class="form-control py-4" name="pass" required="required" type="text" placeholder="Enter Password" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="small mb-1" for="inputLastName">Nombre</label>
-                                                        <input class="form-control py-4" name="nombre" required="required" type="text" placeholder="Enter Nombre" />
+                                                        <label class="small mb-1" for="inputLastName">Cédula de identidad</label>
+                                                        <input class="form-control py-2" name="cedula" pattern="[.- ]{7,100}" type="number" placeholder="Ingrese su número de cédula" required/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                 <div class="form-group">
                                                         <label class="small mb-1" for="inputLastName">Nombre Usuario</label>
-                                                        <input class="form-control py-4" name="nombreusuario" required="required" type="text" placeholder="Enter Nombre de Usuario" />
+                                                        <input class="form-control py-2" name="usuario" pattern="[a-zA-Z0-9]{4,20}" type="text" placeholder="Ingrese un nombre de usuario" required/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                 <div class="form-group">
                                                         <label class="small mb-1" for="inputLastName">Telefono</label>
-                                                        <input class="form-control py-4" name="tel" required="required" type="text" placeholder="Enter Telefono" />
+                                                        <input class="form-control py-2" name="tel"pattern="{4,20}" type="text" placeholder="Ingrese un número de teléfono" required/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                 <div class="form-group">
-                                                        <label class="small mb-1" for="inputLastName">Mail</label>
-                                                        <input class="form-control py-4" name="mail" required="required" type="text" placeholder="Enter Mail" />
+                                                        <label class="small mb-1" for="inputLastName">Correo Electrónico</label>
+                                                        <input class="form-control py-2" name="email" required="required" type="email" placeholder="Ingrese su correo electrónico" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="small mb-1" for="inputLastName">Contraseña</label>
+                                                        <input class="form-control py-2" name="pass" pattern="[a-zA-Z0-9$@.-]{7,100}" type="password" placeholder="Ingrese una contraseña" required/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="small mb-1" for="inputLastName">Repetir Contraseña</label>
+                                                        <input class="form-control py-2" name="pass2" pattern="[a-zA-Z0-9$@.-]{7,100}" type="password" placeholder="Ingrese nuevamente la contraseña" required/>
                                                     </div>
                                                 </div>
 
                                             </div>
-                                            <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
-                                            <div class="form-group mt-4 mb-0">
-                                                <button class="btn btn-primary btn-block" name="crear">Create Account</button>
-                                            </div>
+                                            <br>
+                                            <p>
+                                                <button class="btn btn-primary btn-block" name="crear">Crear Cuenta</button>
+                                            </p>
+                                            
                                         </form>
                                     </div>
 
@@ -86,51 +92,9 @@
                 </main>
             </div>
         </div>
-    </body>
+    
 
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<main>
-        <div class="container">
-            <div class="row">
-                <div calss="col-md-6 order-md-1">
-                    <img src="https://i.ibb.co/XCNWQHD/principal.jpg">
-                </div>
-                <div calss="col-md-6 order-md-2">
-                    <h2><?php echo $nombre; ?></h2>
-                    <h2>$ <?php echo $precio; ?></h2>
-                    <p class="lead">
-                        <?php echo $des; ?>
-                    </p>
-
-                    <div class ="d-grid gap-3 col-10 mx-auto">
-                        <button class="btn btn-primary" type="button">Comprar Hora.....</button>
-                        <button class="btn btn-outline-primary" type="button">Agregar al carrito</button>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </main>

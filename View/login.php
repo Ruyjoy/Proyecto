@@ -1,5 +1,5 @@
 <?php
- include ("../Controller/C_login");
+ include ("C:\laragon\www\Proyecto\Controller\C_login.php");
 ?>
 
 
