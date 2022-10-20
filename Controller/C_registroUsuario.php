@@ -35,19 +35,19 @@
  include ("../Model/M_registroUsuario.php");
  
  if(isset($_POST['crear'])){
-    if(empty($_POST['cedula']) or empty($_POST['nombre']) or empty($_POST['nombre']) or empty($_POST['nombre']) or empty($_POST['nombre'])){
+    if(empty($_POST['codigo']) or empty($_POST['nombre']) or empty($_POST['pass']) or empty($_POST['tel']) or empty($_POST['dir']) or empty($_POST['mail'])){
         echo "Uno de los campos está vacio";
     }else{
     
-        $cedula = $_POST['cedula'];
-        $nombreusuario = $_POST['nombreusuario'];
+        $codigo = $_POST['codigo'];
         $nombre = $_POST['nombre'];
         $pass = $_POST['pass'];
         $telefono = $_POST['tel'];
+        $direcion = $_POST['dir'];
         $mail = $_POST['mail'];
 
         $registro = new M_registroUsuario();
-        $registro->registra($cedula, $nombreusuario, $pass,  $nombre,  $telefono, $mail);
+        $registro->registra($codigo, $pass,  $nombre, $telefono, $direcion, $mail);
     }
  }
 

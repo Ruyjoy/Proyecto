@@ -3,13 +3,13 @@ include("../Model/Conexion.php");
 
 class M_registroUsuario
 {
-    function registra($cedula, $nombreusuario, $pass,  $nombre, $telefono, $mail)
+    function registra($codigo, $pass,  $nombre, $telefono, $direcion, $mail)
     {
         try {
             $db = new Conexion();
             $con = $db->conectar();
 
-            $consulta = "INSERT INTO usuario(ci, nombre_usuario, pass, nombre, telefono, mail, rol)VALUES ($cedula, '$nombreusuario', '$pass', '$nombre', $telefono, $mail, 2)";
+            $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, rol)VALUES ('$codigo', '$pass', '$nombre', $telefono, '$direcion', '$mail', 2)";
             $resultado = mysqli_query($con, $consulta);
 
             //Si existe en base de datos -------
@@ -22,7 +22,7 @@ class M_registroUsuario
                 echo "error";
             }
         } catch (Exception $e) {
-            echo "El usuario de esta cedula ya Existe";
+            echo $e;
         }
 
         mysqli_close($con);

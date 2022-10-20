@@ -36,8 +36,8 @@
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="small mb-1" for="inputLastName">Cedula</label>
-                                                        <input class="form-control py-4" name="cedula" required="required" type="text" placeholder="Entre Cedula"/>
+                                                        <label class="small mb-1" for="inputLastName">NombreUsuario / Codigo</label>
+                                                        <input class="form-control py-4" name="codigo" required="required" type="text" placeholder="NombreUsuario / Codigo"/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -54,14 +54,14 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                 <div class="form-group">
-                                                        <label class="small mb-1" for="inputLastName">Nombre Usuario</label>
-                                                        <input class="form-control py-4" name="nombreusuario" required="required" type="text" placeholder="Enter Nombre de Usuario" />
+                                                        <label class="small mb-1" for="inputLastName">Telefono</label>
+                                                        <input class="form-control py-4" name="tel" required="required" type="text" placeholder="Enter Telefono" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                 <div class="form-group">
-                                                        <label class="small mb-1" for="inputLastName">Telefono</label>
-                                                        <input class="form-control py-4" name="tel" required="required" type="text" placeholder="Enter Telefono" />
+                                                        <label class="small mb-1" for="inputLastName">Direccion</label>
+                                                        <input class="form-control py-4" name="dir" required="required" type="text" placeholder="Enter Direccion" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -109,7 +109,7 @@
 
 
 
-
+<!--
 
 <main>
         <div class="container">
@@ -133,4 +133,4 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main>!-->
