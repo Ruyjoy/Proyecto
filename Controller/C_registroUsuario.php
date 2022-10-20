@@ -1,26 +1,27 @@
 <?php
 
-//require_once ("/laragon/www/Proyecto/Model/Conexion.php");
+require_once ("/laragon/www/Proyecto/Model/Conexion.php");
+include ("/laragon/www/Proyecto/Controller/C_verificacionDatos");
 
 
-include("../Model/Conexion.php");
+//include("../Model/Conexion.php");
 
 
 $db = new Conexion();
 $con = $db->conectar();
 
-// Almacena los datos
+// Almacena los datos //
 if (isset($_POST['crear'])) {
-    $codigo = $db->limpiar_cadena($_POST['codigo']);
-    $nombre = $db->limpiar_cadena($_POST['nombre']);
-    $telefono = $db->limpiar_cadena($_POST['tel']);
-    $direccion = $db->limpiar_cadena($_POST['dir']);
-    $mail = $db->limpiar_cadena($_POST['email']);
+    $codigo = limpiar_cadena($_POST['codigo']);
+    $nombre = limpiar_cadena($_POST['nombre']);
+    $telefono = limpiar_cadena($_POST['tel']);
+    $direccion = limpiar_cadena($_POST['dir']);
+    $mail = limpiar_cadena($_POST['email']);
 
     $rol = 2; //Variable que guarda el rol del usuario que se registra
 
-    $clave_1 = $db->limpiar_cadena($_POST['pass']);
-    $clave_2 = $db->limpiar_cadena($_POST['pass2']);
+    $clave_1 = limpiar_cadena($_POST['pass']);
+    $clave_2 = limpiar_cadena($_POST['pass2']);
 
     // Vereficamos los campos que debe ingresar el nuevo usuario
     if ($nombre == "" || $codigo == "" || $direccion == "" || $telefono == "" || $clave_1 == "" || $clave_2 == "") {
@@ -31,7 +32,7 @@ if (isset($_POST['crear'])) {
 
     // Verificamos integridad de los datos
 
-    if ($db->verificar_datos("[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,70}", $nombre)) {
+    if (verificar_datos("[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,70}", $nombre)) {
 
         echo "Ocurrió un error inesperado" . "<br>" . "El nombre no coincide con el formato";
         exit();
