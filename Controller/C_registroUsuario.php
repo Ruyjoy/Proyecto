@@ -1,7 +1,7 @@
 <?php
 
 require_once ("/laragon/www/Proyecto/Model/Conexion.php");
-include ("/laragon/www/Proyecto/Controller/C_verificacionDatos");
+include ("../Controller/C_verificacionDatos");
 
 
 //include("../Model/Conexion.php");
@@ -26,7 +26,9 @@ if (isset($_POST['crear'])) {
     // Vereficamos los campos que debe ingresar el nuevo usuario
     if ($nombre == "" || $codigo == "" || $direccion == "" || $telefono == "" || $clave_1 == "" || $clave_2 == "") {
 
-        echo "Ocurrió un error inesperado" . "<br>" . "Debes completar todos los campos requeridos";
+        echo '<div class="alert alert-warning" role="alert">
+                <h5>Ocurrió un error inesperado</h5><br>Debes completar todos los campos.
+              </div>';
         exit();
     }
 
@@ -34,7 +36,9 @@ if (isset($_POST['crear'])) {
 
     if (verificar_datos("[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,70}", $nombre)) {
 
-        echo "Ocurrió un error inesperado" . "<br>" . "El nombre no coincide con el formato";
+        echo '<div class="alert alert-warning" role="alert">
+                <h5>Ocurrió un error inesperado</h5><br>El nombre no coincide con el formato.
+              </div>';
         exit();
     }
 
@@ -42,14 +46,14 @@ if (isset($_POST['crear'])) {
 
     //Tenes que arreglar estos filtros y poner cual es el formato que necesitas 
 
-   /*if ($db->verificar_datos("{4,20}", $telefono)) {
+   /*if ( verificar_datos(".{4,20}", $telefono) ) {
 
         echo "Ocurrió un error inesperado" . "<br>" . "El número de teléfono no coincide con el formato";
         exit();
     }
 
-    if ($db->verificar_datos("[a-zA-Z0-9$@.-]{7,100}", $clave_1 ||
-        $db->verificar_datos("[a-zA-Z0-9$@.-]{7,100}", $clave_2))) {
+    if ( verificar_datos("[a-zA-Z0-9$@.-]{7,100}", $clave_1 ||
+        verificar_datos("[a-zA-Z0-9$@.-]{7,100}", $clave_2)) ) {
 
         echo "Ocurrió un error inesperado" . "<br>" . "La contraseña no coincide con el formato";
         exit();

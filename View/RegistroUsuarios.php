@@ -31,12 +31,14 @@ include ("/laragon/www/Proyecto/Controller/C_registroUsuario.php");
                                 <div class="card-header">
                                     <h3 class="text-center font-weight-light my-4">Crear Cuenta</h3>
                                 </div>
+
+                                <div class="card-body">
                                     
-                                    <form action="" method="POST" autocomplete="off" class="row g-3">
+                                    <form action="" method="POST" autocomplete="off" class="row g-3" class="FormularioAjax">
 
                                         <div class="col-md-6">
                                             <label for="inputLastName">Usuario o Documento</label>
-                                            <input class="form-control" name="codigo" type="text" placeholder="abc123" required />
+                                            <input class="form-control" name="codigo" pattern="[a-zA-Z0-9.- ]{5,100}" type="text" placeholder="abc123" required />
                                         </div>
                                         <div class="col-md-6">
                                             <label for="inputLastName">Nombre Completo</label>
@@ -44,7 +46,7 @@ include ("/laragon/www/Proyecto/Controller/C_registroUsuario.php");
                                         </div>
                                         <div class="col-md-6">
                                             <label for="inputLastName">Telefono</label>
-                                            <input class="form-control" name="tel" pattern="{4,20}" type="text" placeholder="090010101" required />
+                                            <input class="form-control" name="tel" pattern=".{6,20}" type="text" placeholder="090010101" required />
                                         </div>
                                         <div class="col-md-6">
                                             <label for="inputLastName">Direccion</label>
@@ -68,6 +70,8 @@ include ("/laragon/www/Proyecto/Controller/C_registroUsuario.php");
                                         </div>
 
                                     </form>
+
+                                </div>
 
                             </div>
                         </div>

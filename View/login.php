@@ -1,5 +1,5 @@
 <?php
- include ("C:\laragon\www\Proyecto\Controller\C_login.php");
+ include ("/laragon/www/Proyecto/Controller/C_login.php");
 ?>
 
 
@@ -26,21 +26,37 @@
                         </div>
                         <div class="card-body">
                             <form method="post">
-                                <div class="form-group">
-                                    <label class="small mb-1" for="inputEmailAddress">Cedula</label>
-                                    <input class="form-control py-4" required="required" type="number" name="c" placeholder="Cedula" pattern="[0-9]+" />
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="inputEmailAddress">Documento</label>
+                                    <input class="form-control" pattern="[a-zA-Z0-9.- ]{5,100}" required="required" type="text" name="c" placeholder="abc123" />
                                 </div>
-                                <div class="form-group">
-                                    <label class="small mb-1" for="inputPassword">Password</label>
-                                    <input class="form-control py-4" required="required" type="password" placeholder="Password" name="p" />
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="inputPassword">Contraseña</label>
+                                    <input class="form-control" required="required" type="password" placeholder="*******" name="p" />
                                 </div>
-                                <div class="form-group">
-                                <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
+                                <div class="row mb-4">
+                                    <div class="col d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                            <label class="form-check-label" for="form2Example31">Recuérdame</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <!-- Simple link -->
+                                        <a href="#!">¿Olvidaste tu contraseña?</a>
+                                    </div>
                                 </div>
 
+                                <button name='enviar' type="submit" class="btn btn-primary btn-block mb-4">Iniciar Sesión.</button>
                                 
-                                <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                    <button name='enviar' type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+                                <div class="form-group">
+                                    <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
+                                </div>
+
+                                <div class="text-center">
+                                    <p>¿Aún no eres miembro?<a href="#!"> Regístrate </a></p>
                                 </div>
                             </form>
                         </div>

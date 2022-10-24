@@ -27,11 +27,17 @@
 
 <body>
     <!--Barra de navegación-->
-    <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
+    <?php 
+    
+      include "BarrasYLibrerias/BarraNavegacion.php";
+      include "../Controller/C_login.php";
+    
+    ?>
+
 
     <!--Contenido-->
     <main>
-       HOLAAAAAAAAAAAAAAAAAAAAAAAAA
+     <h2 class="subtitle">¡Bienvenido <?php echo $_SESSION['nombre']; ?>!</h2>
     </main>
 
     <!-- Footer Start -->
