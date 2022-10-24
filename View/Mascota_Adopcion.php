@@ -1,6 +1,3 @@
-<?php
-include '../Controller/C_distribuidora.php';
-?>
 
 <html lang="es">
 
@@ -39,7 +36,7 @@ include '../Controller/C_distribuidora.php';
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
-                    <a class="breadcrumb-item text-dark" href="MascotasPerdidas.php">Mascotas Perdidas</a>
+                    <a class="breadcrumb-item text-dark" href="MascotasPerdidas.php">Mascotas en Adopción</a>
 
                 </nav>
             </div>
@@ -50,36 +47,6 @@ include '../Controller/C_distribuidora.php';
 
     <!-- Shop Product Start -->
     
-    <!--<div class="col-lg-9 col-md-8">
-        <div class="row px-xl-5">
-            <?php foreach ($resultado as $row) { ?>
-                <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
-                    <div class="text-center py-1">
-                        <h1 class="h3 text-decoration-none text-truncate" style="background:#ffefd5; border-radius:10px;"><?php echo $row['nombre_producto'] ?></h1>
-                    </div>
-                    <div class="product-item  mb-4" style="border-radius:10px; background:#EDECEC">
-                        <div class="team-wrap" style=" content: Hola; position: absolute; font-family: flaticon; font-size: 50px; left: 0px; transform: rotate(20deg); opacity: 0.3; z-index: 10; margin-top: -10px;">
-                        <img class="img-fluid rounded-circle w-100" src="../img/patas.png" style="width:70px; height:70px " alt="">
-                        </div>
-                        <div class="text-center py-1">
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <FONT FACE="impact">Perdido el día 23/10/22</FONT>
-                            </div>
-
-                        </div>
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="<?php echo substr($row['imagen_producto'], 3) ?>" alt="">
-                            <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="Detalles.php?id=<?php echo $row['id_producto']; ?>"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            <?php } ?>
-        </div>
-    </div>
-     Shop Product End -->
      <div class="">
         <div class="row px-xl-5">
             <?php for($i =0; $i<32 ;$i++) { ?>
@@ -98,7 +65,7 @@ include '../Controller/C_distribuidora.php';
 
                         </div>
                         <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="../img/Perro2.jpg" alt="">
+                            <img class="img-fluid rounded-circle w-100" src="../img/Perro1.jpg" alt="">
                             <div class="product-action">
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
                             </div>
