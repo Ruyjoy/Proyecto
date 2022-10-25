@@ -45,6 +45,17 @@
     <!-- Breadcrumb End -->
 
 
+   
+    <div class="container-fluid">
+        <div class="row px-xl-5" >
+            <div class="col-12" style="background-color: #F78181; border-radius: 20px; margin-bottom: 30px;">
+               <h3 style="padding: 10px; margin-bottom: 30px; text-align: center; border-radius: 20px; color: #fff; border-bottom: 2px solid;">Mascotas en Adpocion</h3>
+            </div>
+        </div>
+    </div>
+    
+
+
     <!-- Shop Product Start -->
     
      <div class="">
