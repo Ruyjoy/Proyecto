@@ -1,7 +1,7 @@
 <?php
 
 require_once ("/laragon/www/Proyecto/Model/Conexion.php");
-include ("../Controller/C_verificacionDatos");
+include ("../Controller/C_verificacionDatos.php");
 
 
 //include("../Model/Conexion.php");
@@ -101,7 +101,9 @@ if (isset($_POST['crear'])) {
         //echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='lisadocliente.php'</script>";
 
     } else {
+
         echo "error";
+
     }
 
     mysqli_close($con);

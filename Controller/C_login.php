@@ -1,13 +1,15 @@
 <?php
 
 include("../Model/Conexion.php");
-include("../Controller/C_verificacionDatos");
+include("../Controller/C_verificacionDatos.php");
 
 $db = new Conexion();
 $con = $db->conectar();
-session_start();
 
-if (isset($_POST['enviar'])) {
+
+
+
+if ( isset($_POST['enviar']) ) {
 
     $nombre = limpiar_cadena($_POST['c']);
     $pass = limpiar_cadena($_POST['p']);
@@ -21,14 +23,15 @@ if (isset($_POST['enviar'])) {
         if ( $fila['codigo'] == $nombre &&
             password_verify( $pass, $fila['pass'] ) ) {
         
-            $_SESSION['rol']       = $fila['rol'];
-            $_SESSION['codigo']       = $fila['codigo'];
+            $_SESSION['rol'] = $fila['rol'];
+            $_SESSION['codigo'] = $fila['codigo'];
             $_SESSION['nombre'] = $fila['nombre'];
 
             // Envía al usuario logueado al index
+            
             if ( headers_sent() ) {
 
-                echo "<script> window.location.href='index.php'</script>";
+                echo "<script> window.location.href='administrador.php'</script>";
 
             } else {
 
@@ -44,6 +47,7 @@ if (isset($_POST['enviar'])) {
     }
 
     mysqli_close($con);
+
 }
 
 ?>

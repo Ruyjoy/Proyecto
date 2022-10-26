@@ -1,5 +1,5 @@
 
-<div class="container-fluid bg-dark mb-30">
+<div class="container-fluid bg-dark mb-30 d-flex">
         <div class="row px-xl-5">
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
@@ -16,8 +16,10 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Veterinaria'S</a>
                                
                             </div>
-                            <a href="../View/Distribuidora.php" class="nav-item nav-link">Distribuidora</a>
-                            <a href="" class="nav-item nav-link">Algo</a>
+                            <a href="../Distribuidora.php" class="nav-item nav-link">Distribuidora</a>
+                            <a href="#" class="nav-item nav-link">Algo</a>
+
+                            <a href="login.php"><button type="submit" class="btn btn-primary">Iniciar Sesión</button></a>
                         </div>
                     </div>
                 </nav>
