@@ -1,3 +1,8 @@
+<?php require_once "../../Inc/session_start.php"; 
+      include "../Controller/C_login.php";
+      include "../../Inc/script.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

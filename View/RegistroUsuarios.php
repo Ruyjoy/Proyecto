@@ -1,6 +1,5 @@
 <?php
 include ("/laragon/www/Proyecto/Controller/C_registroUsuario.php");
-//include ("../Controller/C_registroUsuario.php");
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +48,7 @@ include ("/laragon/www/Proyecto/Controller/C_registroUsuario.php");
                                             <input class="form-control" name="tel" pattern=".{6,20}" type="text" placeholder="090010101" required />
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="inputLastName">Direccion</label>
+                                            <label for="inputLastName">Dirección</label>
                                             <input class="form-control" name="dir" required="required" type="text" placeholder="Av. Sol 123 apto 1" />
                                         </div>
                                         <div class="col-md-6">
@@ -66,7 +65,7 @@ include ("/laragon/www/Proyecto/Controller/C_registroUsuario.php");
                                         </div>
                                         <br>
                                         <div class="col-12">
-                                            <button class="btn btn-primary btn-block" name="crear">Crear Cuenta</button>
+                                            <button class="btn btn-primary btn-block" type="submit" name="crear">Crear Cuenta</button>
                                         </div>
 
                                     </form>

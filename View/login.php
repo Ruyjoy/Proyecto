@@ -58,6 +58,14 @@
                                 <div class="text-center">
                                     <p>¿Aún no eres miembro?<a href="#!"> Regístrate </a></p>
                                 </div>
+
+                                <?php
+                                    if ( isset($_POST['c']) && isset($_POST['p']) ) {
+                                        require_once "../Model/Conexion.php";
+                                        require_once "../Controller/C_verificacionDatos.php";
+                                        require_once "../Controller/C_login.php";
+                                    }
+                                ?>
                             </form>
                         </div>
                     </div>

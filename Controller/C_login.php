@@ -19,9 +19,9 @@ if ( isset($_POST['enviar']) ) {
 
     //Si existe en base de datos -------
     if ( $fila = mysqli_fetch_assoc($resultado) ) {
-
+        // ebo corregir esto
         if ( $fila['codigo'] == $nombre &&
-            password_verify( $pass, $fila['pass'] ) ) {
+            password_verify( $pass, $fila['pass'] && $fila['rol'] == 1 ) ) {
         
             $_SESSION['rol'] = $fila['rol'];
             $_SESSION['codigo'] = $fila['codigo'];
@@ -29,21 +29,43 @@ if ( isset($_POST['enviar']) ) {
 
             // Envía al usuario logueado al index
             
-            if ( headers_sent() ) {
+            if( headers_sent() ) {
 
-                echo "<script> window.location.href='administrador.php'</script>";
+                echo "<script> window.location.href='administrador.php'; </script>";
 
             } else {
 
-                header("Location: index.php");
-                
+                header("Location: administrador.php");
+
             }
+
+        } elseif ( $fila['codigo'] == $nombre &&
+                   password_verify( $pass, $fila['pass'] ) ) {
+
+                    $_SESSION['rol'] = $fila['rol'];
+                    $_SESSION['codigo'] = $fila['codigo'];
+                    $_SESSION['nombre'] = $fila['nombre'];
+
+
+                    if( headers_sent() ) {
+
+                        echo "<script> window.location.href='registrousuarios.php'; </script>";
+
+                    } else {
+
+                        header("Location: index.php");
+
+                    }
 
         }
 
     } else {
 
-        echo "Documento o  Contraseña son incorrectos";
+        echo '<div class="alert alert-warning" role="alert">
+                <h4 class="alert-heading">¡Ocurrió un error inesperado!</h4>
+                    <hr>
+                    <p class="mb-0">Usuario o Contraseña incorrectos.</p>
+              </div>';
     }
 
     mysqli_close($con);

@@ -74,7 +74,11 @@ if (isset($_POST['crear'])) {
 
         if ($fila = mysqli_fetch_assoc($check_user)) {
 
-            echo "Ocurrió un error inesperado" . "<br>" . "El usuario ya existe.";
+            echo '<div class="alert alert-warning" role="alert">
+                    <h4 class="alert-heading">¡Ocurrió un error inesperado!</h4>
+                        <hr>
+                        <p class="mb-0">El USUARIO ya existe.</p>
+                  </div>';
             exit();
         }
     }
@@ -82,7 +86,11 @@ if (isset($_POST['crear'])) {
     // verifica las contraseñas
     if ($clave_1 != $clave_2) {
 
-        echo "Ocurrió un error inesperado" . "<br>" . "Las contraseñas no coinciden.";
+        echo '<div class="alert alert-warning" role="alert">
+                <h4 class="alert-heading">¡Ocurrió un error inesperado!</h4>
+                    <hr>
+                    <p class="mb-0">Las contraseñas no coinciden entre sí.</p>
+              </div>';
         exit();
 
     } else {
@@ -97,8 +105,12 @@ if (isset($_POST['crear'])) {
     $resultado = mysqli_query($con, $consulta);
 
     if ($resultado == true) {
-        echo "Correcto";
-        //echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='lisadocliente.php'</script>";
+
+        echo '<div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">¡Usuario registrado con éxito!</h4>
+                    <hr>
+                    <p class="mb-0">Ya puedes iniciar sesión en nuestra plataforma.</p>
+              </div>';
 
     } else {
 
