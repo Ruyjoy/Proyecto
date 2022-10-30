@@ -14,10 +14,10 @@
                     <div class="navbar-nav mr-auto py-0">
                         <a href="Index.php" class="nav-item nav-link">PetPoint</a>
                         <div class="nav-item dropdown">
-                            <a href="../View/MascotasPerdidas.php" class="nav-item nav-link">Mascotas Perdiadas</a>
+                            <a href="../View/MascotasPerdidas.php" class="nav-item nav-link">Mascotas Perdidas</a>
                         </div>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ONG'S <i class="fa fa-angle-down mt-1"></i></a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ONGs <i class="fa fa-angle-down mt-1"></i></a>
                             <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
                                 <a href="../View/Ong.php" class="dropdown-item ">ONG'S</a>
                                 <a href="../View/Mascota_Adopcion.php" class="dropdown-item">Mascotas en adpoción</a>
@@ -27,24 +27,22 @@
                             <a href="../View/Distribuidora.php" class="nav-link dropdown-toggle" data-toggle="dropdown">Veterinaria</a>
 
                         </div>
-                        <a href="../View/Distribuidora.php" class="nav-item nav-link">Veterinaria</a>
+                        <a href="../View/Distribuidora.php" class="nav-item nav-link">TIENDA</a>
                     </div>
                     <header id="page-topbar">
                     <div class="navbar-header">
                         <div class="d-flex">
                             <div class="dropdown d-inline-block user-dropdown">
                                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="rounded-circle header-profile-user" src="../img/imagen-1.png" alt="Header Avatar" width="50" height="50">
-                                    <span class="d-none d-xl-inline-block ms-1">Monchito</span>
+                                    <img class="rounded-circle header-profile-user" src="../img/imgprofile.png" alt="Header Avatar" width="50" height="50">
+                                    <span class="d-none d-xl-inline-block ms-1">Usuario</span>
                                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <!-- item-->
-                                    <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
-                                    <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> My Wallet</a>
-                                    <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle me-1"></i> Lock screen</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Mi cuenta</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                                    <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Salir</a>
                                 </div>
                             </div>
 

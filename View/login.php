@@ -22,7 +22,7 @@
                 <div class="col-lg-5">
                     <div class="card shadow-lg border-0 rounded-lg mt-5">
                         <div class="titu">
-                            <h3 style= "color:#F5F5F5" class="text-center font-weight-light my-4 ">Login</h3>
+                            <h3 class="text-center font-weight-light my-4 ">Iniciar Sesión</h3>
                         </div>
                         <div class="card-body">
                             <form method="post">
@@ -49,7 +49,7 @@
                                     </div>
                                 </div>
 
-                                <button name='enviar' type="submit" class="btn btn-primary btn-block mb-4">Iniciar Sesión.</button>
+                                <button name='enviar' type="submit" class="btn btn-primary btn-block mb-4 ">Iniciar Sesión.</button>
                                 
                                 <div class="form-group">
                                     <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>

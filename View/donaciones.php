@@ -32,13 +32,23 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-5">
-                <div class="card  border-0 rounded-lg mt-5">
+            <div class="col-lg-8">
+                <div class="card-body border-0 rounded-lg mt-5">
                     <form>
 
                         <div class="form-row">
+                        <div class="form-group col-sm-6">
+                                <h5><label for="ong">ONGs</label></h5>
+                               
+                                <select id="pago" class="form-select">
+                                    <option selected><Obj>ONG 1</Obj></option>
+                                    <option>ONG 2</option>
+                                    <option>ONG 3</option>
+                                    <option>ONG 4</option>
+                                </select>
+                        </div>
                             <div class="form-group col-sm-6">
-                                <h5><label for="apellido">Monto</label></h5>
+                                <h5><label for="monto" >Monto</label></h5>
                                 
                                 <input type="double" class="form-control" id="monto" placeholder="Ingrese un monto">
                             </div>
