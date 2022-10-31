@@ -36,6 +36,7 @@
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
+                    <span class="breadcrumb-item active">Ong's</span>
                     <a class="breadcrumb-item text-dark" href="MascotasPerdidas.php">Mascotas en Adopción</a>
 
                 </nav>

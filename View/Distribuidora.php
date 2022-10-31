@@ -39,7 +39,8 @@ include '../Controller/C_distribuidora.php';
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
-                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distribuidora</a>
+                    <span class="breadcrumb-item active">Veterinaria</span>
+                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distibuidora</a>
                     
                 </nav>
             </div>
@@ -83,6 +84,8 @@ include '../Controller/C_distribuidora.php';
         </div>
     </div>
     <!-- Shop Product End -->
+
+    
 
     <!-- Footer Start -->
     <?php
