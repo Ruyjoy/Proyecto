@@ -12,7 +12,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Document</title>
+    <title>INGRESAR</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../Css/style.css" rel="stylesheet">
 </head>
 
 <body class = "cuerpo">
@@ -20,7 +34,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5">
-                    <div class="card shadow-lg border-0 rounded-lg mt-5">
+                    <div class="card-body  ">
                         <div class="titu">
                             <h3 class="text-center font-weight-light my-4 ">Iniciar Sesión</h3>
                         </div>
@@ -45,7 +59,7 @@
 
                                     <div class="col">
                                         <!-- Simple link -->
-                                        <a href="#!">¿Olvidaste tu contraseña?</a>
+                                        <a href="#!" style="color: #707B7C ;" >¿Olvidaste tu contraseña?</a>
                                     </div>
                                 </div>
 
