@@ -69,3 +69,36 @@
       </div>
   </div>
   <!-- Footer End -->
+
+  <div class="container">
+	      <div class="col-md-3 text-center">
+	         <!-- Footer logo -->
+	         <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logof.png" alt="" class="center-block img-responsive">
+	      </div>
+	      <!-- /.col-md-4 -->
+	      <div class="col-md-3 text-center res-margin">
+	         <ul class="list-unstyled">
+	            <li><i class="fa fa-phone colorh"></i>(045) 2222 07 3129</li>
+	            <li><i class="fa fa-envelope colorh"></i><a href="mailto:hola@huellitasperdidas.org">hola@huellitasperdidas.org</a></li>
+	            <li><i class="fa fa-map-marker colorh"></i>Puebla, Puebla México</li>
+	         </ul>
+	      </div>
+	      <!-- /.col-md-4 -->
+	      <div class="col-md-3 text-center res-margin">
+	         <h5 class="colorh">Síguenos en Redes Sociales</h5>
+	         <!--Social icons -->
+	         <div class="social-media smaller">
+	            <a href="https://www.facebook.com/HuellitasPerdidasORG/" target="_blank"><i class="fa fa-facebook" style="color: #fff;"></i></a>
+	            <a href="https://www.instagram.com/huellitasperdidasorg/" target="_blank"><i class="fa fa-instagram" style="color: #fff;"></i></a>
+	            <a href="https://twitter.com/HuelliPerdiORG" target="_blank"><i class="fa fa-twitter" style="color: #fff;"></i></a>
+	            <a href="http://huellitasperdidas.business.site/" target="_blank"><i class="fa fa-google-plus" style="color: #fff;"></i></a>
+	         </div>
+	      </div>
+	      <!-- /.col-md-4 -->
+	      <div class="col-md-3 text-center res-margin">
+	         <!--Social icons -->
+	         <div class="social-media smaller">
+	            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=B7A93D7BMBQJC" class="btn">Donaciones</a>
+	         </div>
+	      </div>
+	   </div>
