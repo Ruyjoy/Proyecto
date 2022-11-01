@@ -80,54 +80,127 @@
         <!-- Carousel End -->
     </main>
 
-    <main>
-        <!-- Quiénes somos -->
-        <div class="card">
-            <blockquote class="blockquote mb-0 text-center">
-                <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">Sobre nosotros</h2>
-                <h4>Pet Point</h4>
-            </blockquote>
-            <div class="card-body">
-                <div class="col-md-12 col-md-offset-1 text-center">
-                    <p title="Título fuente" style="font-size: 17px; line-height: 34px;">Somos la plataforma donde encontrarás todos los
-                        servicios que te ofrece PetPoint. Trabajamos junto a distintas ONGs
-                        que se dedican al cuidado animal. Puedes conocer su labor en nuestra
-                        plataforma y realizar donaciones. Nos encanta lo que hacemos. Nos
-                        motivan nuestros clientes, la atención a las mascotas y la
-                        cooperación. Queremos que seas parte del cambio. Te ofrecemos un espacio donde
-                        podrás publicar mascotas perdidas y ver mascotas que están en adopción.</p>
-                </div>
+
+    <!-- Sobre nosotros -->
+    <div class="card">
+        <blockquote class="blockquote mb-0 text-center">
+            <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">¿Quienes Somos?</h2>
+            <h4>Pet Point</h4>
+        </blockquote>
+        <div class="card-body">
+            <div class="col-md-12 col-md-offset-1 text-center">
+                <p title="Título fuente" style="font-size: 17px; line-height: 34px;">Somos la plataforma donde encontrarás todos los
+                    servicios que te ofrece PetPoint. Trabajamos junto a distintas ONGs
+                    que se dedican al cuidado animal. Puedes conocer su labor en nuestra
+                    plataforma y realizar donaciones. Nos encanta lo que hacemos. Nos
+                    motivan nuestros clientes, la atención a las mascotas y la
+                    cooperación. Queremos que seas parte del cambio. Te ofrecemos un espacio donde
+                    podrás publicar mascotas perdidas y ver mascotas que están en adopción.</p>
             </div>
+        </div>
 
-
+        <div class="container-fluid pt-5 pb-3">
             <div class="row px-xl-5">
-                <div class="col-lg-4">
-                    <div class="product-offer mb-30" style="height: 200px;">
-                        <img class="img-fluid" src="../img/imgcar-1.png" alt="">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+
+
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service1.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h5>$123.00</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="product-offer mb-30" style="height: 200px;">
-                        <img class="img-fluid" src="../img/imgcar-2.png" alt="">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service2.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h5>$123.00</h5>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="product-offer mb-30" style="height: 200px;">
-                        <img class="img-fluid" src="../img/imgcar-3.png" alt="">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service3.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h5>$123.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="product-item bg-light mb-4">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service3.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h5>$123.00</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
         </div>
-    </main>
+
+        <!-- Quiénes somos -->
+        <blockquote class="blockquote mb-0 text-center">
+            <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">Sobre nosotros</h2>
+            <h4>Pet Point</h4>
+        </blockquote>
+        <div class="card-body">
+            <div class="col-md-12 col-md-offset-1 text-center">
+                <p title="Título fuente" style="font-size: 17px; line-height: 34px;">Somos la plataforma donde encontrarás todos los
+                    servicios que te ofrece PetPoint. Trabajamos junto a distintas ONGs
+                    que se dedican al cuidado animal. Puedes conocer su labor en nuestra
+                    plataforma y realizar donaciones. Nos encanta lo que hacemos. Nos
+                    motivan nuestros clientes, la atención a las mascotas y la
+                    cooperación. Queremos que seas parte del cambio. Te ofrecemos un espacio donde
+                    podrás publicar mascotas perdidas y ver mascotas que están en adopción.</p>
+            </div>
+        </div>
+
+
+        <div class="row px-xl-5">
+            <div class="col-lg-4">
+                <div class="product-offer mb-30" style="height: 200px;">
+                    <img class="img-fluid" src="../img/imgcar-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="product-offer mb-30" style="height: 200px;">
+                    <img class="img-fluid" src="../img/imgcar-3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="product-offer mb-30" style="height: 200px;">
+                    <img class="img-fluid" src="../img/imgcar-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
 
     <!-- Footer Start -->
     <?php

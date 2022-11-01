@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-md-4 mb-5">
                     <h5 class="text-secondary text-uppercase mb-4">COMUNICATE</h5>
-                    <h6 class="text-secondary text-uppercase mt-4 mb-3">Síguenos en nuestras redes</h6>
+                    <p >Síguenos en nuestras redes</p>
                     <div class="d-flex">
                         <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -23,7 +23,7 @@
 
                 <div class="col-md-8 mb-5 ml-auto">
                     <h5 class="text-secondary text-uppercase mb-4">¿Te interesa colaborar?</h5>
-                    <p>Sólo debes dar click en el botón DONAR y podrás elegir una ONG con la que colaborar.</p>
+                    <p>Sólo debes dar click en el botón Donaciones.</p>
 
                     <div class="input-group">
                         <div>
