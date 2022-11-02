@@ -1,5 +1,19 @@
 <?php
- include ("/laragon/www/Proyecto/Controller/C_login.php");
+    include ("/laragon/www/Proyecto/Controller/C_login.php");
+    require_once "../Inc/session_start.php";
+
+    if ( isset($_SESSION['rol']) ) {
+            switch($_SESSION['rol']) {
+                case 1:
+                    header('location: ./administrador/administrador.php');
+                break;
+                case 2:
+                    header('location: index.php');
+                break;
+
+                default:
+            }
+    }
 ?>
 
 
@@ -65,13 +79,15 @@
 
                                 <button name='enviar' type="submit" class="btn btn-primary btn-block mb-4 ">Iniciar Sesión.</button>
                                 
-                                <div class="form-group">
-                                    <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
-                                </div>
+                            
+                               <?php echo isset($alert) ? $alert : ''; ?>
+                               
 
                                 <div class="text-center">
                                     <p>¿Aún no eres miembro?<a href="#!"> Regístrate </a></p>
                                 </div>
+
+
 
                                 <?php
                                     if ( isset($_POST['c']) && isset($_POST['p']) ) {

@@ -40,7 +40,7 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <!-- item-->
-                                    <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Mi cuenta</a>
+                                    <a class="dropdown-item" href="../View/login.php"><i class="ri-user-line align-middle me-1"></i> Mi cuenta</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Salir</a>
                                 </div>
@@ -54,7 +54,13 @@
 
                         </div>
                     </div>
-                </header>
+                    </header>
+                    <div class="navbar-nav  ">
+                        <a href="#" class="nav-item ">
+                        <img width="50" height="50" src="../img/carro.png"></img>
+                        </a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>

@@ -11,65 +11,52 @@ $con = $db->conectar();
 
 if ( isset($_POST['enviar']) ) {
 
-    $nombre = limpiar_cadena($_POST['c']);
+    $documento = limpiar_cadena($_POST['c']);
     $pass = limpiar_cadena($_POST['p']);
 
-    $consulta = "SELECT * FROM usuario Where codigo = '$nombre'";
+    $consulta = "SELECT * FROM usuario Where codigo = '$documento'";
     $resultado = mysqli_query($con, $consulta);
 
     //Si existe en base de datos -------
     if ( $fila = mysqli_fetch_assoc($resultado) ) {
+
         // ebo corregir esto
-        if ( $fila['codigo'] == $nombre &&
-            password_verify( $pass, $fila['pass'] && $fila['rol'] == 1 ) ) {
-        
-            $_SESSION['rol'] = $fila['rol'];
+        if ( $fila['codigo'] == $documento &&
+            password_verify( $pass, $fila['pass']) ) {
+
+            $rol = $fila['rol'];
+
+            $_SESSION['rol'] = $rol;
             $_SESSION['codigo'] = $fila['codigo'];
             $_SESSION['nombre'] = $fila['nombre'];
 
-            // Envía al usuario logueado al index
+           switch( $_SESSION['rol'] ) {
+                case 1:
+                    header('location: ./administrador/administrador.php');
+                break;
+
+                case 2:
+                    header('location: index.php');
+                break;
+
+                default:
+           }
             
-            if( headers_sent() ) {
 
-                echo "<script> window.location.href='administrador.php'; </script>";
+        } else {
 
-            } else {
-
-                header("Location: administrador.php");
-
-            }
-
-        } elseif ( $fila['codigo'] == $nombre &&
-                   password_verify( $pass, $fila['pass'] ) ) {
-
-                    $_SESSION['rol'] = $fila['rol'];
-                    $_SESSION['codigo'] = $fila['codigo'];
-                    $_SESSION['nombre'] = $fila['nombre'];
-
-
-                    if( headers_sent() ) {
-
-                        echo "<script> window.location.href='registrousuarios.php'; </script>";
-
-                    } else {
-
-                        header("Location: index.php");
-
-                    }
-
+            $alert = '<div class="card-body >  
+                    <div class="alert alert-warning" role="alert">
+                        <h4 class="alert-heading">¡Ocurrió un error inesperado!</h4>
+                            <p class="mb-0">Usuario o Contraseña incorrectos.</p>
+                    </div>
+                  </div>';
         }
 
-    } else {
-
-        echo '<div class="alert alert-warning" role="alert">
-                <h4 class="alert-heading">¡Ocurrió un error inesperado!</h4>
-                    <hr>
-                    <p class="mb-0">Usuario o Contraseña incorrectos.</p>
-              </div>';
     }
 
-    mysqli_close($con);
-
 }
+
+mysqli_close($con);
 
 ?>

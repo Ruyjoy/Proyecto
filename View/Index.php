@@ -1,6 +1,5 @@
-<?php require_once "../Inc/session_start.php"; 
-      include "../Controller/C_login.php";
-      include "../Inc/script.php";
+<?php require "../Inc/session_start.php"; 
+      
 ?>
 
 
@@ -41,7 +40,7 @@
         <div class="container-fluid mb-3">
             <div class="row px-xl-5">
                 <div class="col-lg-8">
-                    <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
+                    <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel" data-duration="1500"> 
                         <ol class="carousel-indicators">
                             <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#header-carousel" data-slide-to="1"></li>
