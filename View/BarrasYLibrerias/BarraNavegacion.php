@@ -57,7 +57,7 @@
                     </header>
                     <div class="navbar-nav  ">
                         <a href="#" class="nav-item ">
-                        <img width="50" height="50" src="../img/carro.png"></img>
+                        <button class="btn btn-primary px-3">Ver carrito <i class="fa fa-shopping-cart mr-1"></i></button>
                         </a>
                         </div>
                     </div>

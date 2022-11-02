@@ -39,7 +39,7 @@
         <!-- Carousel Start -->
         <div class="container-fluid mb-3">
             <div class="row px-xl-5">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
@@ -51,9 +51,9 @@
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide0.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
-                                        <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Pet Point</h1>
+                                        <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">PetPoint</h1>
                                         <div class="hidden-mobile">
-                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscala en nuestro listado.</p>
+                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscalas en nuestro listado.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -62,9 +62,9 @@
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide2.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
-                                        <h1 class="slide__text-heading">¿Perdiste a tu mascota?</h1>
+                                        <h1 class="slide__text-heading text-white">¿Perdiste a tu mascota?</h1>
                                         <div class="hidden-mobile">
-                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscala en nuestro listado.</p>
+                                            <p class="lead">Registrate y podrás realizar publicaciones. Es fácil, rápido y gratis.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +73,10 @@
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide1.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
-
+                                    <h1 class="slide__text-heading text-white">¿Te interesa colaborar?</h1>
+                                        <div class="hidden-mobile">
+                                            <p class="lead">Colaboramos con ONGs de bienestar animal. Puedes conocer su trabajo y realizar donaciones desde nuestra plataforma virtual.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -87,20 +90,17 @@
 
 
     <!-- Sobre nosotros -->
-    <div class="card">
+    <div class="card" style="margin-top: 50px;">
         <blockquote class="blockquote mb-0 text-center">
-            <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">¿Quienes Somos?</h2>
-            <h4>Pet Point</h4>
+            <h2 style="font-size: 40px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 10px; margin-top: 10px; color: #108896; letter-spacing: -.025em; ">¿Quiénes somos?</h2>
         </blockquote>
         <div class="card-body">
             <div class="col-md-12 col-md-offset-1 text-center">
-                <p title="Título fuente" style="font-size: 17px; line-height: 34px;">Somos la plataforma donde encontrarás todos los
-                    servicios que te ofrece PetPoint. Trabajamos junto a distintas ONGs
-                    que se dedican al cuidado animal. Puedes conocer su labor en nuestra
-                    plataforma y realizar donaciones. Nos encanta lo que hacemos. Nos
-                    motivan nuestros clientes, la atención a las mascotas y la
-                    cooperación. Queremos que seas parte del cambio. Te ofrecemos un espacio donde
-                    podrás publicar mascotas perdidas y ver mascotas que están en adopción.</p>
+                <em title="Título fuente" style="font-size: 17px; line-height: 34px;">Somos la plataforma virtual de PetPoint. Encontrarás aquí todos los
+                    servicios que ofrecemos. Si ya eres cliente podrás realizar consultas online, reservar fecha y hora para atención presencial, y
+                    comprar productos con descuento a través de nuestro e-commerce. Pero no solamente eso. En nuestra plataforma brindamos un espacio
+                    en el que podrás hacer publicaciones de mascotas perdidas, y ver cuáles se encuentran en adopción a través de ONGs. 
+                    Te invitamos a que te registres y conozcas nuestra labor y el de las organizaciones con las que colaboramos.</em>
             </div>
         </div>
 
@@ -114,7 +114,7 @@
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/Mascota_Adopcion.php">Mascotas en adopción</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h9>Puedes encontar todas las mascotas en adopción por las Ong's.</h9>
+                                <h9>Puedes encontar todas las mascotas en adopción por las ONGs.</h9>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/MascotaPerdidas.php">Mascotas perdidas</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h9>Aqui puede ver todas las mascotas perdidas.</h9>
+                                <h9>Aquí puede ver todas las mascotas perdidas.</h9>
                             </div>
 
                         </div>
@@ -141,7 +141,7 @@
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="">Consultas</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h9>Podes encontrar todos los productos en nuestra veterinaria</h9>
+                            <h9>Podés hacer consultas sobre servicios de veterinaria</h9>
                             </div>
                         </div>
                     </div>
@@ -149,12 +149,12 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="../img/imgside2.png" width="500" height="400" class="img-fluid w-100" alt="" >
+                            <img src="../img/carrito.png" width="500" height="400" class="img-fluid w-100" alt="" >
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="">Nuestros Productos</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h9>Podes encontrar todos los productos en nuestra veterinaria</h9>
+                                <h9>Podés encontrar todos los productos que ofrecemos en nuestra tienda</h9>
                             </div>
                         </div>
                     </div>
@@ -164,36 +164,38 @@
 
         <!-- Quiénes somos -->
         <blockquote class="blockquote mb-0 text-center">
-            <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">Sobre nosotros</h2>
-            <h4>Pet Point</h4>
+            <h2 style="font-size: 40px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 10px; margin-top: 1px; color: #108896; letter-spacing: -.025em;">Nosotros</h2>
+            <h4>PetPoint</h4>
         </blockquote>
-        <div class="card-body">
-            <div class="col-md-12 col-md-offset-1 text-center">
-                <p title="Título fuente" style="font-size: 17px; line-height: 34px;">Somos la plataforma donde encontrarás todos los
-                    servicios que te ofrece PetPoint. Trabajamos junto a distintas ONGs
-                    que se dedican al cuidado animal. Puedes conocer su labor en nuestra
-                    plataforma y realizar donaciones. Nos encanta lo que hacemos. Nos
-                    motivan nuestros clientes, la atención a las mascotas y la
-                    cooperación. Queremos que seas parte del cambio. Te ofrecemos un espacio donde
-                    podrás publicar mascotas perdidas y ver mascotas que están en adopción.</p>
-            </div>
-        </div>
-
-
-        <div class="row px-xl-5">
-            <div class="col-lg-4">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="../img/imgcar-1.png" alt="">
+        <div class="container-fluid pt-5 pb-3"  style="align-items: center; margin-left: 50px;">
+            <div class="row px-xl-5" style="align-items: center; margin: auto;" >
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
+                        <div style="width: 18rem;">
+                        <img class="img-fluid" style="height: 200px;" src="../img/imgcar-1.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center;">MISIÓN</h5>
+                                <p class="card-text">Ser líderes en salud, bienestar y cuidado animal, trabajando con responsabilidad y compromiso.</p>
+                            </div>
+                        </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="../img/imgcar-3.png" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
+                    <div style="width: 18rem;">
+                        <img class="img-fluid" style="height: 200px;" src="../img/imgcar-3.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center;">VISIÓN</h5>
+                                <p class="card-text">Ser reconocidos como la plataforma virtual de referencia de bienestar y cuidado animal.</p>
+                            </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="../img/imgcar-2.png" alt="">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
+                    <div style="width: 18rem;">
+                        <img class="img-fluid" style="height: 200px;" src="../img/imgcar-2.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center;">VALORES</h5>
+                                <p class="card-text">Nos importa el bienestar animal así como la tenencia responsable. Promovemos la adopción para eliminar el comercio y la explotación animal.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
