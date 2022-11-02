@@ -109,9 +109,9 @@
                             <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service1.jpg" class="img-responsive" alt="">
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <a class="h6 text-decoration-none text-truncate" href="../View/Mascota_Adopcion.php">Mascotas en adopción</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>$123.00</h5>
+                                <h9>Puedes encontar todas las mascotas en adopción por las Ong's.</h9>
                             </div>
                         </div>
                     </div>
@@ -123,9 +123,9 @@
                             <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service2.jpg" class="img-responsive" alt="">
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <a class="h6 text-decoration-none text-truncate" href="../View/MascotaPerdidas.php">Mascotas perdidas</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>$123.00</h5>
+                                <h9>Aqui puede ver todas las mascotas perdidas.</h9>
                             </div>
 
                         </div>
