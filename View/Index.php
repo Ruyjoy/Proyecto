@@ -104,9 +104,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-
-
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service1.jpg" class="img-responsive" alt="">
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service1.jpg"  width="300" height="280" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/Mascota_Adopcion.php">Mascotas en adopción</a>
@@ -119,8 +117,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service2.jpg" class="img-responsive" alt="">
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service2.jpg"  width="300" height="280" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/MascotaPerdidas.php">Mascotas perdidas</a>
@@ -134,12 +131,12 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service3.jpg" class="img-responsive" alt="">
+                        <img src="../img/imgside2.png"  alt=""  width="300" height="280">
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <a class="h6 text-decoration-none text-truncate" href="">Consultas</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>$123.00</h5>
+                            <h9>Podes encontrar todos los productos en nuestra veterinaria</h9>
                             </div>
                         </div>
                     </div>
@@ -147,12 +144,12 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service3.jpg" class="img-responsive" alt="">
+                            <img src="../img/imgside2.png" width="500" height="400" class="img-fluid w-100" alt="" >
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                            <a class="h6 text-decoration-none text-truncate" href="">Nuestros Productos</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>$123.00</h5>
+                                <h9>Podes encontrar todos los productos en nuestra veterinaria</h9>
                             </div>
                         </div>
                     </div>
