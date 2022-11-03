@@ -57,9 +57,9 @@
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide2.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
-                                        <h1 class="slide__text-heading">¿Perdiste a tu mascota?</h1>
+                                        <h1 class="slide__text-heading text-white">¿Perdiste a tu mascota?</h1>
                                         <div class="hidden-mobile">
-                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscala en nuestro listado.</p>
+                                            <p class="lead">Registrate y podrás realizar publicaciones. Es fácil, rápido y gratis.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,10 @@
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide1.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
-
+                                    <h1 class="slide__text-heading text-white">¿Te interesa colaborar?</h1>
+                                        <div class="hidden-mobile">
+                                            <p class="lead">Colaboramos con ONGs de bienestar animal. Puedes conocer su trabajo y realizar donaciones desde nuestra plataforma virtual.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +84,7 @@
     </main>
 
 
-    <!-- Sobre nosotros -->
+    <!--Quiénes somos -->
     <div class="card">
         <blockquote class="blockquote mb-0 text-center">
             <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">¿Quienes Somos?</h2>
@@ -144,7 +147,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="../img/imgside2.png" width="500" height="400" class="img-fluid w-100" alt="">
+                            <img src="../img/carrito.png" width="500" height="400" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="">Nuestros Productos</a>
@@ -157,12 +160,13 @@
             </div>
         </div>
 
-        <!-- Quiénes somos -->
+        <!-- Sobre nosotros -->
         <blockquote class="blockquote mb-0 text-center">
-            <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">Sobre nosotros</h2>
+            <h2 style="font-size: 40px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">Sobre nosotros</h2>
             <h4>Pet Point</h4>
+            
         </blockquote>
-        
+
         <div class="row px-xl-5">
             <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
                 <div class="product-item bg-light mb-4">
@@ -170,7 +174,7 @@
                         <img src="../img/imgcar-1.png" alt="" width="100%" height="280">
                     </div>
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="">MISIÓN</a>
+                        <h6>MISIÓN</h6>
                         <div class="d-flex align-items-center justify-content-center mt-2">
                             <h9>Ser líderes en salud, bienestar y cuidado animal, trabajando con responsabilidad y compromiso.</h9>
                         </div>
@@ -184,7 +188,7 @@
                         <img src="../img/imgcar-3.png" alt="" width="100%" height="280">
                     </div>
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="">VISIÓN</a>
+                        <h6>VISIÓN</h6>
                         <div class="d-flex align-items-center justify-content-center mt-2">
                             <h9>Ser reconocidos como la plataforma virtual de referencia de bienestar y cuidado animal.</h9>
                         </div>
@@ -198,7 +202,7 @@
                         <img src="../img/imgcar-2.png" alt="" width="100%" height="280">
                     </div>
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="">Valores</a>
+                        <h6>VALORES</h6>
                         <div class="d-flex align-items-center justify-content-center mt-2">
                             <h9>Nos importa el bienestar animal así como la tenencia responsable. Promovemos la adopción para eliminar el comercio y la explotación animal.</h9>
                         </div>
