@@ -14,7 +14,6 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-
                         <a href="Index.php" class="nav-item nav-link"></a>
                         <div class="nav-item dropdown">
                             <a href="../View/MascotasPerdidas.php" class="nav-item nav-link">Mascotas Perdiadas</a>
@@ -29,9 +28,12 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Veterinaria <i class="fa fa-angle-down mt-1"></i></a>
                             <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                <a href="../View/Distribuidora.php" class="dropdown-item ">Distibuidora</a>
                                 <a href="#" class="dropdown-item">Constultas Online</a>
                             </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="../View/Distribuidora.php" class="nav-item nav-link">Tienda</a>
                         </div>
 
                     </div>
