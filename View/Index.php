@@ -104,7 +104,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service1.jpg"  width="300" height="280" alt="">
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service1.jpg" width="300" height="280" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/Mascota_Adopcion.php">Mascotas en adopción</a>
@@ -117,7 +117,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service2.jpg"  width="300" height="280" alt="">
+                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service2.jpg" width="300" height="280" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/MascotaPerdidas.php">Mascotas perdidas</a>
@@ -131,12 +131,12 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                        <img src="../img/imgside2.png"  alt=""  width="300" height="280">
+                            <img src="../img/imgside2.png" alt="" width="300" height="280">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="">Consultas</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h9>Podes encontrar todos los productos en nuestra veterinaria</h9>
+                                <h9>Podes encontrar todos los productos en nuestra veterinaria</h9>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="../img/imgside2.png" width="500" height="400" class="img-fluid w-100" alt="" >
+                            <img src="../img/imgside2.png" width="500" height="400" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="">Nuestros Productos</a>
@@ -162,39 +162,55 @@
             <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">Sobre nosotros</h2>
             <h4>Pet Point</h4>
         </blockquote>
-        <div class="card-body">
-            <div class="col-md-12 col-md-offset-1 text-center">
-                <p title="Título fuente" style="font-size: 17px; line-height: 34px;">Somos la plataforma donde encontrarás todos los
-                    servicios que te ofrece PetPoint. Trabajamos junto a distintas ONGs
-                    que se dedican al cuidado animal. Puedes conocer su labor en nuestra
-                    plataforma y realizar donaciones. Nos encanta lo que hacemos. Nos
-                    motivan nuestros clientes, la atención a las mascotas y la
-                    cooperación. Queremos que seas parte del cambio. Te ofrecemos un espacio donde
-                    podrás publicar mascotas perdidas y ver mascotas que están en adopción.</p>
-            </div>
-        </div>
-
-
+        
         <div class="row px-xl-5">
-            <div class="col-lg-4">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="../img/imgcar-1.png" alt="">
+            <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img src="../img/imgcar-1.png" alt="" width="100%" height="280">
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="">MISIÓN</a>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h9>Ser líderes en salud, bienestar y cuidado animal, trabajando con responsabilidad y compromiso.</h9>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="col-lg-4">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="../img/imgcar-3.png" alt="">
+            <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img src="../img/imgcar-3.png" alt="" width="100%" height="280">
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="">VISIÓN</a>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h9>Ser reconocidos como la plataforma virtual de referencia de bienestar y cuidado animal.</h9>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="col-lg-4">
-                <div class="product-offer mb-30" style="height: 200px;">
-                    <img class="img-fluid" src="../img/imgcar-2.png" alt="">
+            <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img src="../img/imgcar-2.png" alt="" width="100%" height="280">
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="">Valores</a>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h9>Nos importa el bienestar animal así como la tenencia responsable. Promovemos la adopción para eliminar el comercio y la explotación animal.</h9>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    </div>
+
+
 
 
 
