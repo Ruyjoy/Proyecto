@@ -41,7 +41,7 @@ include '../Controller/C_distribuidora.php';
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
                     <span class="breadcrumb-item active">Veterinaria</span>
                     <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distibuidora</a>
-                    
+
                 </nav>
             </div>
         </div>
@@ -49,33 +49,18 @@ include '../Controller/C_distribuidora.php';
     <!-- Breadcrumb End -->
 
 
-    <!-- Shop Product Start -->
-    <div class="col-lg-9 col-md-8">
-        <div class="row pb-3">
+    <!-- Product Start -->
+    <div class="">
+        <div class="row px-xl-5">
             <?php foreach ($resultado as $row) { ?>
                 <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                    <div class="product-item bg-light mb-4">
+                    <div class="product-item bg-light mb-4"style="border-radius:10px; background:#EDECEC">
                         <div class="product-img position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="<?php echo substr($row['imagen_producto'], 3) ?>" alt="">
                             <div class="product-action">
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href="Detalles.php?id=<?php echo $row['id_producto']; ?>"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href=""><?php echo $row['nombre_producto'] ?></a>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5><?php echo $row['precio_producto'] ?></h5>
-                                <h6 class="text-muted ml-2"><del><?php echo $row['precio_producto'] ?></del></h6>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-1">
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star-half-alt text-primary mr-1"></small>
-                                <small>(99)</small>
                             </div>
                         </div>
                     </div>
@@ -85,7 +70,26 @@ include '../Controller/C_distribuidora.php';
     </div>
     <!-- Shop Product End -->
 
-    
+    <div class="">
+        <div class="row px-xl-5">
+            <?php foreach ($resultado as $row) { ?>
+                <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
+                    <div class="product-item  mb-4" style="border-radius:10px; background:#EDECEC">
+                        <div class="product-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100"  src="<?php echo substr($row['imagen_producto'], 3) ?>" alt="">
+                            <div class="product-action">
+                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
+                                <a class="btn btn-outline-dark btn-square" href="Detalles.php?id=<?php echo $row['id_producto']; ?>"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+
 
     <!-- Footer Start -->
     <?php
@@ -93,7 +97,7 @@ include '../Controller/C_distribuidora.php';
     ?>
     <!-- Footer End -->
 
-   
+
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
