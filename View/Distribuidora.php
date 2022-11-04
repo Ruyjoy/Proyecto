@@ -67,7 +67,7 @@ include '../Controller/C_distribuidora.php';
                 </div>
             <?php  } ?>
         </div>
-    </div>
+    </div>-->
     <!-- Shop Product End -->
 
     <div class="">

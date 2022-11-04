@@ -4,9 +4,9 @@
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
 
 
-                <a href="../View/Index.php" class="text-decoration d-block d-lg">
-                    <!-- logo  -->
-                    <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logo.png" class="img-responsive" alt="">
+                <a href="../View/Index.php" class="text-decoration d-block d-lg"> Pet Point
+                    <!-- logo 
+                    <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logo.png" class="img-responsive" alt=""> -->
                 </a>
 
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">

@@ -87,7 +87,7 @@
     <!--Quiénes somos -->
     <div class="card">
         <blockquote class="blockquote mb-0 text-center">
-            <h2 style="font-size: 60px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">¿Quienes Somos?</h2>
+            <h2 style="font-size: 40px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">¿Quienes Somos?</h2>
             <h4>Pet Point</h4>
         </blockquote>
         <div class="card-body">
