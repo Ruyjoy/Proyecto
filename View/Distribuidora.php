@@ -49,7 +49,7 @@ include '../Controller/C_distribuidora.php';
     <!-- Breadcrumb End -->
 
 
-    <!-- Product Start -->
+    <!-- Product Start
     <div class="">
         <div class="row px-xl-5">
             <?php foreach ($resultado as $row) { ?>
@@ -82,6 +82,13 @@ include '../Controller/C_distribuidora.php';
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href="Detalles.php?id=<?php echo $row['id_producto']; ?>"><i class="fa fa-search"></i></a>
                             </div>
+                            <div class="text-center py-4">
+                            <a class="h6 text-decoration-none text-truncate" href=""><?php echo $row['nombre_producto'] ?></a>
+                            <div class="d-flex align-items-center justify-content-center mt-2">
+                                <h5><?php echo $row['precio_producto'] ?></h5>
+                                
+                            </div>
+                        </div>
                         </div>
 
                     </div>
