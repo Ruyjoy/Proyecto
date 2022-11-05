@@ -94,6 +94,7 @@ $resultado = mysqli_query($con, $consulta);
                                 <td class="align-middle">$<?php echo $row['precio_producto'] ?></td>
                                 <td class="align-middle"><img src="<?php echo $row['imagen_producto'] ?>" alt="" style="width: 50px;"></td>
                                 <td class="align-middle"><?php echo $row['des_producto'] ?></td>
+                                
                                 <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarProducto.php?id=<?php echo $id ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN )?>&nombre=<?php echo $nombre ?>&precio=<?php echo $precio ?>&imagen=<?php echo $imagen ?>&des=<?php echo $des ?>"><i class="fa fa-check"></i></a></td>
 
                             </tr>

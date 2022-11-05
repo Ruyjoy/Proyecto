@@ -1,7 +1,6 @@
 <?php
 include '../../Model/Conexion.php';
 
-define("KEY_TOKEN", "ABC.975-gmj");
 $db = new Conexion();
 $con = $db->conectar();
 
@@ -71,9 +70,7 @@ $resultado = mysqli_query($con, $consulta);
                             <th>Telefono</th>
                             <th>Direccion</th>
                             <th>Mail</th>
-                           
                             <th>Seleccionar</th>
-
 
                         </tr>
                     </thead>
@@ -97,8 +94,7 @@ $resultado = mysqli_query($con, $consulta);
                                 <td class="align-middle"><?php echo $row['direccion'] ?></td>
                                 <td class="align-middle"><?php echo $row['mail'] ?></td>
                                 
-                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarProducto.php?id=<?php echo $id ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN) ?>&nombre=<?php echo $nombre ?>&precio=<?php echo $precio ?>&imagen=<?php echo $imagen ?>&des=<?php echo $des ?>"><i class="fa fa-check"></i></a></td>
-
+                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarmodificarOng.php?codigo=<?php echo $codigo ?>&pass=<?php echo $pass ?>&nombre=<?php echo $nombre ?>&telefono=<?php echo $telefono ?>&dir=<?php echo $direccion ?>&mail=<?php echo $mail ?>"><i class="fa fa-check"></i></a></td>
                             </tr>
                         <?php } ?>
                     </tbody>
