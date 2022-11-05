@@ -23,7 +23,7 @@ if ($codigo == '') {
 } 
     if (isset($_POST['Editar'])) {
 
-        $codigo= $_POST['codigo'];
+        //$codigo= $_POST['codigo'];
         $pass = $_POST['pass'];
         $nombre = $_POST['nombre'];
         $tel = $_POST['tel'];
@@ -31,7 +31,7 @@ if ($codigo == '') {
         $mail = $_POST['mail'];
 
 
-        $consulta = "UPDATE usuario SET codigo = '$codigo', pass = '$pass' , nombre = '$nombre', telefono = '$tel', direccion = $direccion ,  mail = $mail  Where codigo = '$codigo' AND rol = 3 ";
+        $consulta = "UPDATE usuario SET  pass = '$pass' , nombre = '$nombre', telefono = '$tel', direccion = '$direccion' ,  mail = '$mail' , rol = 3  Where codigo = '$codigo' AND rol = 3 ";
         $resultado = mysqli_query($con, $consulta);
 
         //Si existe en base de datos -------
