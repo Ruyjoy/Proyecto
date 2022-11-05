@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MultiShop - Online Shop Website Template</title>
+    <title>Agregar Usuario Veterinaria</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -61,45 +61,37 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8">
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar ONG</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar Usuario de Veterinaria</span></h5>
                 <div class="bg-light p-30 mb-5">
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <label>Codigo</label>
-                            <input class="form-control" type="text" placeholder="Codigo">
+                            <label for="inputLastName">Usuario o Documento</label>
+                            <input class="form-control" name="codigo" pattern="[a-zA-Z0-9.- ]{5,100}" type="text" placeholder="abc123" required />
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Nombre</label>
-                            <input class="form-control" type="text" placeholder="Nombre">
+                            <label for="inputLastName">Nombre Completo</label>
+                            <input class="form-control" type="text" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,70}" maxlength="70" placeholder="Juan Pérez" required />
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>E-mail</label>
-                            <input class="form-control" type="text" placeholder="example@email.com">
+                            <label for="inputLastName">Telefono</label>
+                            <input class="form-control" name="tel" pattern=".{6,20}" type="text" placeholder="090010101" required />
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Mobile No</label>
-                            <input class="form-control" type="text" placeholder="+123 456 789">
+                            <label for="inputLastName">Dirección</label>
+                            <input class="form-control" name="dir" required="required" type="text" placeholder="Av. Sol 123 apto 1" />
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label>Direccion</label>
-                            <input class="form-control" type="text" placeholder="123 Street">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Address Line 2</label>
-                            <input class="form-control" type="text" placeholder="123 Street">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Country</label>
-                            <select class="custom-select">
-                                <option selected>Uruguay</option>
-                                <option>Argentina</option>
-                                <option>Brasil</option>
 
-                            </select>
+                        <div class="col-md-12 form-group">
+                            <label for="inputLastName">Correo Electrónico</label>
+                            <input class="form-control" name="email" required="required" type="email" placeholder="abc@email.com" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Ciudad</label>
-                            <input class="form-control" type="text" placeholder="Montevideo">
+                            <label for="inputLastName">Contraseña</label>
+                            <input class="form-control" name="pass" type="password" placeholder="Ingrese una contraseña" required />
+                        </div>
+                        <div class="col-md-6 form-group">
+                        <label for="inputLastName">Repetir Contraseña</label>
+                                        <input class="form-control" name="pass2" type="password" placeholder="Ingrese nuevamente la contraseña" required />
                         </div>
                         <button class="btn btn-block btn-primary font-weight-bold py-3">Agregar</button>
                     </div>
@@ -107,8 +99,10 @@
 
             </div>
             <div class="col-lg-4">
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Order Total</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Poner algo</span></h5>
             </div>
+
+            
         </div>
     </div>
     <!-- Checkout End -->

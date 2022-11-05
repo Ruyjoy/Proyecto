@@ -95,7 +95,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
                                 </td>
                                 <td class="align-middle"><img src="<?php echo $imagen ?>" alt="" style="width: 50px;"></td>
                                 </td>
-                                <td class="align-middle"><input type="text" name="des" id="desu" class="form-control input-sm" value="<?php echo $des ?>"></td>
+                                <td class="align-middle"><textarea type="text" name="des" id="desu" class="form-control input-sm" value=""><?php echo $des ?></textarea></td>
 
                                 <td class="align-middle"><button class="btn btn-sm btn-warning" value="Editar" name="Editar"><i class="fa fa-edit"></i></button></td>
 
@@ -118,11 +118,13 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
                             <div class="modal-body">
                                 ... Está seguro que desea eliminar esté producto ?
                             </div>
+                            <form method="post">
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary"  data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
+                                <button type="submit" class="btn btn-primary"  name="Eliminar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
 
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
