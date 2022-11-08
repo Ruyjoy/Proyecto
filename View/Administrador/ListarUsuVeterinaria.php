@@ -1,3 +1,16 @@
+<?php
+include '../../Model/Conexion.php';
+
+$db = new Conexion();
+$con = $db->conectar();
+
+$consulta = "SELECT * FROM usuario WHERE rol = 5";
+$resultado = mysqli_query($con, $consulta);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
