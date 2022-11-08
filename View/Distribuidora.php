@@ -40,7 +40,7 @@ include '../Controller/C_distribuidora.php';
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
                     <span class="breadcrumb-item active">Veterinaria</span>
-                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distibuidora</a>
+                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Tienda</a>
 
                 </nav>
             </div>

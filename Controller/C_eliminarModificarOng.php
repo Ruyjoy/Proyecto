@@ -23,7 +23,7 @@ if ($codigo == '') {
 } 
     if (isset($_POST['Editar'])) {
 
-        //$codigo= $_POST['codigo'];
+        $codigo= $_POST['codigo'];
         $pass = $_POST['pass'];
         $nombre = $_POST['nombre'];
         $tel = $_POST['tel'];
@@ -53,13 +53,13 @@ if ($codigo == '') {
 if (isset($_POST['Eliminar'])) {
 
 
-    $consulta = "DELETE FROM productos WHERE id_producto = $id ";
-    unlink($imagen); //acá le damos la direccion exacta del archivo
+    $consulta = "DELETE FROM usuario WHERE  codigo = '$codigo' AND rol = 3 ";
+    //unlink($imagen); //acá le damos la direccion exacta del archivo
     $resultado = mysqli_query($con, $consulta);
 
     //Si existe en base de datos -------
     if ($resultado == true) {
-        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarProductos.php'</script>";
+        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarOng.php'</script>";
     } else {
 
         $alert = "error";

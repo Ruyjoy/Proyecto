@@ -43,7 +43,7 @@ include("../Controller/C_detalles.php");
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
-                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distribuidora</a>
+                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Tienda</a>
                     <span class="breadcrumb-item active">Detalles</span>
                 </nav>
             </div>

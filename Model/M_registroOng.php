@@ -17,7 +17,7 @@
 
             //Si existe en base de datos -------
             if ($resultado == true) {
-                echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='Administrador.php'</script>";
+                echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='Listarong.php'</script>";
             } else {
 
                 $alert = "error al ingresar datos";
