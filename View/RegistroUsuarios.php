@@ -58,7 +58,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="inputLastName">Telefono</label>
-                                        <input class="form-control" name="tel" pattern=".{6,20}" type="text" placeholder="090010101" required />
+                                        <input class="form-control" name="tel" pattern=".{6,20}" type="number" placeholder="090010101" required />
                                     </div>
                                     <div class="col-md-6">
                                         <label for="inputLastName">Dirección</label>
