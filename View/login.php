@@ -77,7 +77,7 @@
 
                                 <?php
                                     if ( isset($_POST['c']) && isset($_POST['p']) ) {
-                                        require_once "../Model/Conexion.php";
+                                        //require_once "../Model/Conexion.php";
                                         require_once "../Controller/C_verificacionDatos.php";
                                         require_once "../Controller/C_login.php";
                                     }
