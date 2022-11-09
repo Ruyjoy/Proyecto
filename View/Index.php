@@ -42,7 +42,7 @@
                             <li data-target="#header-carousel" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item position-relative active" style="height: 430px;">
+                            <div class="carousel-item position-relative active" style="height: 630px;">
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide0.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
@@ -53,7 +53,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item position-relative" style="height: 430px;">
+                            <div class="carousel-item position-relative" style="height: 630px;">
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide2.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
@@ -64,11 +64,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item position-relative" style="height: 430px;">
+                            <div class="carousel-item position-relative" style="height: 630px;">
                                 <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide1.jpg" style="object-fit: cover;">
                                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="slide__text-heading text-white">¿Te interesa colaborar?</h1>
+                                        <h1 class="slide__text-heading text-white">¿Te interesa colaborar?</h1>
                                         <div class="hidden-mobile">
                                             <p class="lead">Colaboramos con ONGs de bienestar animal. Puedes conocer su trabajo y realizar donaciones desde nuestra plataforma virtual.</p>
                                         </div>
@@ -106,8 +106,8 @@
             <div class="row px-xl-5">
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service1.jpg" width="300" height="280" alt="">
+                    <div class="product-img position-relative overflow-hidden">
+                            <img src="../img/service1.png" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/Mascota_Adopcion.php">Mascotas en adopción</a>
@@ -120,7 +120,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/service2.jpg" width="300" height="280" alt="">
+                            <img src="../img/service2.png" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="../View/MascotaPerdidas.php">Mascotas perdidas</a>
@@ -134,7 +134,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="../img/imgside2.png" alt="" width="300" height="280">
+                            <img src="../img/imgside2.png" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="">Consultas</a>
@@ -147,7 +147,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4">
                         <div class="product-img position-relative overflow-hidden">
-                            <img src="../img/carrito.png" width="500" height="400" class="img-fluid w-100" alt="">
+                            <img src="../img/carrito.png" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href="">Nuestros Productos</a>
@@ -164,7 +164,7 @@
         <blockquote class="blockquote mb-0 text-center">
             <h2 style="font-size: 40px; font-family: 'Baloo Thambi', sans-serif; margin-bottom: 20px; margin-top: 0px; color: #108896; letter-spacing: -.025em; text-transform: uppercase;">Sobre nosotros</h2>
             <h4>Pet Point</h4>
-            
+
         </blockquote>
 
         <div class="row px-xl-5">
