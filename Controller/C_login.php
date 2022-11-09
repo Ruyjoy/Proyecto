@@ -23,12 +23,15 @@ if ( isset($_POST['enviar']) ) {
         // ebo corregir esto
         if ( $fila['codigo'] == $documento &&
             password_verify( $pass, $fila['pass']) ) {
+            
+            //session_start();
 
             $rol = $fila['rol'];
 
             $_SESSION['rol'] = $rol;
             $_SESSION['codigo'] = $fila['codigo'];
             $_SESSION['nombre'] = $fila['nombre'];
+            
 
            switch( $_SESSION['rol'] ) {
                 case 1:

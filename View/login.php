@@ -78,24 +78,11 @@
                                 </div>
 
                                 <button name='enviar' type="submit" class="btn btn-primary btn-block mb-4 ">Iniciar Sesión.</button>
-                                
-                            
-                               <?php echo isset($alert) ? $alert : ''; ?>
-                               
 
                                 <div class="text-center">
-                                    <p>¿Aún no eres miembro?<a href="#!"> Regístrate </a></p>
+                                    <p>¿Aún no eres miembro?<a href="./RegistroUsuarios.php"> Regístrate </a></p>
                                 </div>
 
-
-
-                                <?php
-                                    if ( isset($_POST['c']) && isset($_POST['p']) ) {
-                                        require_once "../Model/Conexion.php";
-                                        require_once "../Controller/C_verificacionDatos.php";
-                                        require_once "../Controller/C_login.php";
-                                    }
-                                ?>
                             </form>
                         </div>
                     </div>

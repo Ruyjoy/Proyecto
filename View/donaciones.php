@@ -31,27 +31,40 @@
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
+        <div class="form-row justify-content-center">
+            <div class="form-group col-sm-8" >
                 <div class="card-body border-0 rounded-lg mt-5">
                     <form>
 
                         <div class="form-row">
-                        <div class="form-group col-sm-6">
-                                <h5><label for="ong">ONGs</label></h5>
-                               
-                                <select id="pago" class="form-select">
-                                    <option selected><Obj>ONG 1</Obj></option>
-                                    <option>ONG 2</option>
-                                    <option>ONG 3</option>
-                                    <option>ONG 4</option>
-                                </select>
+                            <div class="form-group col-sm-6">
+                                    <h5><label for="ong">ONGs</label></h5>
+                                
+                                    <select id="pago" class="form-select">
+                                        <option selected><Obj>ONG 1</Obj></option>
+                                        <option>ONG 2</option>
+                                        <option>ONG 3</option>
+                                        <option>ONG 4</option>
+                                    </select>
+                            </div>
                         </div>
+                        <div class="form-row">
                             <div class="form-group col-sm-6">
                                 <h5><label for="monto" >Monto</label></h5>
-                                
-                                <input type="double" class="form-control" id="monto" placeholder="Ingrese un monto">
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">$ Pesos</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">U$$ Dólares</label>
+                                </div>
+                               
+                                <input type="number"  min="1" class="form-control" id="monto" pattern="{1,100}"placeholder="Ingrese un número">
                             </div>
+                        </div>
+                        <div class="form-row">
                             <div class="form-group col-sm-6">
                                 <h5><label for="pago">Medio de Pago</label></h5>
                                
@@ -63,7 +76,7 @@
                             </div>
                         </div>
 
-                        <br><br>
+                        <br> 
                         <div class="form-group">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="" id="gridCheck">
@@ -73,7 +86,7 @@
                             </div>
                         </div>
                         
-                        <br><br>
+                        <br> 
 
                         <button type="submit" class="btn btn-primary">DONAR</button>
 
