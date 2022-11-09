@@ -1,3 +1,17 @@
+<?php
+include '../Model/Conexion.php';
+
+
+$db = new Conexion();
+$con = $db->conectar();
+
+$consulta = "SELECT * FROM usuario WHERE rol ='3'";
+$resultado = mysqli_query($con, $consulta);
+
+
+?>
+
+
 <html lang="es">
 
 <head>
@@ -30,69 +44,34 @@
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
     <!--Contenido-->
-    <main>
-        <!-- Carousel Start -->
-        <div class="container-fluid mb-3">
-            <div class="row px-xl-1">
-                <div class="col-lg-12">
-                    <div id="header-carousel" class="carousel slide carousel-fade mb-20 mb-lg-0" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#header-carousel" data-slide-to="1"></li>
-                            <li data-target="#header-carousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item position-relative active" style="height: 630px">
-                                <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide0.jpg" style="object-fit: cover;">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <div class="p-3" style="max-width: 700px;">
-                                        <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Pet Point</h1>
-                                        <div class="hidden-mobile">
-                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscala en nuestro listado.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item position-relative" style="height: 630px;">
-                                <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide2.jpg" style="object-fit: cover;">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <div class="p-3" style="max-width: 700px;">
-                                        <h1 class="slide__text-heading">¿Perdiste a tu mascota?</h1>
-                                        <div class="hidden-mobile">
-                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscala en nuestro listado.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item position-relative" style="height: 630px;">
-                                <img class="position-absolute w-100 h-100" src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide1.jpg" style="object-fit: cover;">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <div class="p-3" style="max-width: 700px;">
 
-                                    </div>
-                                </div>
+    <!-- Categories Start -->
+    <div class="container-fluid pt-5">
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">ONG'S</span></h2>
+        <div class="row px-xl-5 pb-3">
+            <?php foreach ($resultado as $row) { ?>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <a class="text-decoration-none" href="">
+                        <div class="cat-item d-flex align-items-center mb-4">
+                            <div class="overflow-hidden" style="width: 100px; height: 100px;">
+                                <img class="img-fluid" src="<?php echo substr($row['img'], 3) ?>" alt="">
+                            </div>
+                            <div class="flex-fill pl-3">
+                                <h6><?php echo $row['nombre']; ?></h6>
+                                <small class="text-body"><?php echo $row['telefono']; ?></small>
+                                <small class="text-body"><?php echo $row['direccion']; ?></small>
+                                <small class="text-body"><?php echo $row['mail']; ?></small>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
-        </div>
-        <!-- Carousel End -->
-    </main>
-
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide0.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/slide1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
+            <?php } ?>
         </div>
     </div>
+    <!-- Categories End -->
+
+
+
     <!-- Footer Start -->
     <?php
     include "BarrasYLibrerias/Footer.php";

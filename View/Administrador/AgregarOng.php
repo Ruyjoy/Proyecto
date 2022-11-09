@@ -59,7 +59,7 @@ include "../../Controller/C_agregarOng.php";
             <div class="col-lg-8">
                 <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar ONG</span></h5>
                 <div class="bg-light p-30 mb-5">
-                    <form method="post">
+                    <form method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <label>Codigo</label>
@@ -84,6 +84,10 @@ include "../../Controller/C_agregarOng.php";
                             <div class="col-md-6 form-group">
                                 <label>E-mail</label>
                                 <input class="form-control" type="text" name="mail_ong" placeholder="example@email.com" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label>Seleccione su imagen que desea subir</label>
+                                <input class="form-control" name="foto" type="file"  required="required">
                             </div>
                             <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregarOng">Agregar</button>
                         </div>
