@@ -37,7 +37,6 @@ if (isset($_POST['agregarOng'])) {
         //$ruta = $carpeta . '/' . $imagen;
         //move_uploaded_file($imagen_original, $carpeta . '/' . $imagen);
     }
-    $foto = $_POST['foto_ong'];
     
 
 
