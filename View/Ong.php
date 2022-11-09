@@ -50,17 +50,17 @@ $resultado = mysqli_query($con, $consulta);
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">ONG'S</span></h2>
         <div class="row px-xl-5 pb-3">
             <?php foreach ($resultado as $row) { ?>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
                     <a class="text-decoration-none" href="">
                         <div class="cat-item d-flex align-items-center mb-4">
                             <div class="overflow-hidden" style="width: 100px; height: 100px;">
                                 <img class="img-fluid" src="<?php echo substr($row['img'], 3) ?>" alt="">
                             </div>
                             <div class="flex-fill pl-3">
-                                <h6><?php echo $row['nombre']; ?></h6>
-                                <small class="text-body"><?php echo $row['telefono']; ?></small>
-                                <small class="text-body"><?php echo $row['direccion']; ?></small>
-                                <small class="text-body"><?php echo $row['mail']; ?></small>
+                                <h4><?php echo $row['nombre']; ?></h4>
+                                <div class="text-body">Dirección: <small> <?php echo $row['direccion']; ?></small></div>
+                                <div class="text-body">Telefono:  <small> <?php echo $row['telefono']; ?></small></div>
+                                <div class="text-body">Mail:  <small> <?php echo $row['mail']; ?></small></div>
                             </div>
                         </div>
                     </a>
@@ -69,6 +69,7 @@ $resultado = mysqli_query($con, $consulta);
         </div>
     </div>
     <!-- Categories End -->
+
 
 
 

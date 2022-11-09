@@ -23,7 +23,7 @@ if ($codigo == '') {
 } 
     if (isset($_POST['Editar'])) {
 
-        $codigo= $_POST['codigo'];
+        
         $pass = $_POST['pass'];
         $nombre = $_POST['nombre'];
         $tel = $_POST['tel'];
