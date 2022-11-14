@@ -6,7 +6,7 @@ include("../Controller/C_verificacionDatos.php");
 
 $db = new Conexion();
 $con = $db->conectar();
-
+session_start();
 
 
 
