@@ -14,11 +14,39 @@ if (isset($_POST['cerrar'])) {
 if (!isset($_SESSION['rol'])) {
 
     $nombre = 'Iniciar Sessión';
-    $boton = '<a href="../View/login.php" class="dropdown-item">Iniciar</a>';
+    $boton = '<a href="../View/login.php" class="dropdown-item">Iniciar Sesión</a>';
+    $agrmas = '';
 } else {
 
-    $nombre = $_SESSION['nombre'];
-    $boton = '<button type="submit" class="btn text-danger" name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>';
+
+    switch ($_SESSION['rol']) {
+        case 1:
+            $nombre = $_SESSION['nombre'];
+            $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
+            $agrmas = '';
+            break;
+
+        case 2:
+            $nombre = $_SESSION['nombre'];
+            $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
+            $agrmas = '<div class="nav-item dropdown"> <a href="../View/Distribuidora.php" class="nav-item nav-link">Agregar Mascota Perdida</a> </div>';
+
+            break;
+
+        case 3:
+            $nombre = $_SESSION['nombre'];
+            $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
+            $agrmas = '<div class="nav-item dropdown"> <a href="../View/Distribuidora.php" class="nav-item nav-link">Agregar Mascota</a> </div>';
+            break;
+
+        case 5:
+            $nombre = $_SESSION['nombre'];
+            $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
+            $agrmas = '';
+            break;
+
+        default:
+    }
 }
 
 ?>
@@ -62,6 +90,8 @@ if (!isset($_SESSION['rol'])) {
                             <a href="../View/Distribuidora.php" class="nav-item nav-link">Tienda</a>
                         </div>
 
+                        <?php echo $agrmas ?>
+
                     </div>
 
                     <div class="navbar-header">
@@ -69,14 +99,21 @@ if (!isset($_SESSION['rol'])) {
                             <div class="dropdown d-inline-block user-dropdown">
 
                                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="rounded-circle header-profile-user" src="../img/imgperfil-a.png" alt="Header Avatar" width="50" height="50">
+
                                     <span class="d-none d-xl-inline-block ms-1"><?php echo $nombre ?></span>
+                                    <img class="rounded-circle header-profile-user" src="../img/imgperfil-a.png" alt="Header Avatar" width="50" height="50">
+                                    
                                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <!-- item-->
                                     <form method="post">
-                                        <?php echo $boton ?>
+
+
+
+                                        <?php echo $boton; ?>
+
+
                                     </form>
                                 </div>
 

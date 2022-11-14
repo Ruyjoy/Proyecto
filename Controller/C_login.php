@@ -63,6 +63,14 @@ if ( isset($_POST['enviar']) ) {
                     header('location: index.php');
                 break;
 
+                case 3:
+                    header('location: index.php');
+                break;
+
+                case 5:
+                    header('location: index.php');
+                break;
+
                 default:
            }
             

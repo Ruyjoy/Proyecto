@@ -6,7 +6,6 @@ session_start();
 if (!isset($_SESSION['rol'])) {
 
     header('location: ../login.php');
-
 } else if ($_SESSION['rol'] != 1) {
 
     header('location: ../login.php');
@@ -42,7 +41,7 @@ $nombre = $_SESSION['nombre'];
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
                         <div class="nav-item dropdown">
@@ -76,14 +75,17 @@ $nombre = $_SESSION['nombre'];
                             <div class="dropdown d-inline-block user-dropdown">
                                 <form method="post">
                                     <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img class="rounded-circle header-profile-user" src="../../img/imgperfil-a.png" alt="Header Avatar" width="50" height="50">
                                         <span class="d-none d-xl-inline-block ms-1"><?php echo $nombre ?></span>
+                                    
+                                        <img class="rounded-circle header-profile-user" src="../../img/imgperfil-a.png" alt="Header Avatar" width="50" height="50">
+                                        
                                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                                     </button>
+
                                     <div class="dropdown-menu dropdown-menu-end">
                                         <!-- item-->
                                         <a href="../index.php" class="dropdown-item">Index</a>
-                                        <button type="submit" class="btn text-danger"  name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>
+                                        <button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>
                                     </div>
                                 </form>
                             </div>
