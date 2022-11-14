@@ -1,3 +1,33 @@
+<?php
+
+
+session_start();
+
+if (!isset($_SESSION['rol'])) {
+
+    header('location: login.php');
+
+} else if ($_SESSION['rol'] != 1) {
+
+    header('location: login.php');
+}
+
+if (isset($_GET['cerrar_sesion'])) {
+
+    session_unset();
+    session_destroy();
+}
+
+if (isset($_POST['cerrar'])) {
+
+    session_unset();
+    session_destroy();
+    header('location: index.php');
+}
+
+$nombre = $_SESSION['nombre'];
+?>
+
 <div class="container-fluid bg-dark mb-30">
     <div class="row px-xl-5">
         <div class="col-lg-12">
@@ -6,7 +36,7 @@
 
                 <a href="../View/Index.php" class="text-decoration d-block d-lg">
                     <!-- logo -->
-                    <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logo.png" class="img-responsive" alt=""> 
+                    <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logo.png" class="img-responsive" alt="">
                 </a>
 
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -69,8 +99,9 @@
                         </a>
                     </div>
                 </div>
+            </nav>
         </div>
-        </nav>
+
     </div>
 </div>
 </div>

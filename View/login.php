@@ -1,5 +1,5 @@
 <?php
- //include ("../Controller/C_login");
+  include ("/xampp/htdocs/Proyecto/Controller/C_login.php");
 ?>
 
 
