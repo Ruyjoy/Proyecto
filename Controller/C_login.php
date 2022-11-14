@@ -34,7 +34,6 @@ if ( isset($_POST['enviar']) ) {
 
     $documento = limpiar_cadena($_POST['c']);
     $pass = limpiar_cadena($_POST['p']);
-    echo $pass;
 
     $consulta = "SELECT * FROM usuario Where codigo = '$documento'";
     $resultado = mysqli_query($con, $consulta);
