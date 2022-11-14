@@ -65,7 +65,7 @@ include '../Controller/C_agregarMascotaPerdida.php';
             <div class="col-lg-8">
                 <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar Mascota Perdida</span></h5>
                 <div class="bg-light p-30 mb-5">
-                    <form method="post">
+                    <form method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <label for="inputLastName">Nombre Mascota</label>
