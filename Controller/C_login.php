@@ -2,6 +2,7 @@
 
 include("../Model/Conexion.php");
 include("../Controller/C_verificacionDatos.php");
+//require "../Inc/session_start.php";
 
 $db = new Conexion();
 $con = $db->conectar();
@@ -20,11 +21,11 @@ if ( isset($_POST['enviar']) ) {
     //Si existe en base de datos -------
     if ( $fila = mysqli_fetch_assoc($resultado) ) {
 
-        // ebo corregir esto
+        
         if ( $fila['codigo'] == $documento &&
             password_verify( $pass, $fila['pass']) ) {
-            
-            //session_start();
+
+             
 
             $rol = $fila['rol'];
 

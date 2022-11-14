@@ -1,5 +1,5 @@
-<?php require "../Inc/session_start.php"; 
-      
+<?php 
+    require "../Inc/session_start.php";
 ?>
 
 

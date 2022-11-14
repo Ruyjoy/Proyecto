@@ -1,19 +1,5 @@
 <?php
     include ("/laragon/www/Proyecto/Controller/C_login.php");
-    require_once "../Inc/session_start.php";
-
-    if ( isset($_SESSION['rol']) ) {
-            switch($_SESSION['rol']) {
-                case 1:
-                    header('location: ./administrador/administrador.php');
-                break;
-                case 2:
-                    header('location: index.php');
-                break;
-
-                default:
-            }
-    }
 ?>
 
 
@@ -78,6 +64,8 @@
                                 </div>
 
                                 <button name='enviar' type="submit" class="btn btn-primary btn-block mb-4 ">Iniciar Sesión.</button>
+
+                                <?php echo isset($alert) ? $alert : ''; ?>
 
                                 <div class="text-center">
                                     <p>¿Aún no eres miembro?<a href="./RegistroUsuarios.php"> Regístrate </a></p>

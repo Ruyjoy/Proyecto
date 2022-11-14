@@ -1,13 +1,6 @@
 <?php
 
-    session_destroy();
+session_destroy();
 
-    if ( headers_sent() ) {
+header("Location: login.php");
 
-        echo "<script> window.location.href='login.php'</script>";
-
-    } else {
-
-        header("Location: index.php");
-        
-    }
