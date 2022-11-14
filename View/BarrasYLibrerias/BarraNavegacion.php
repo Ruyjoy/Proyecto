@@ -11,13 +11,12 @@ if (isset($_POST['cerrar'])) {
     header('location: index.php');
 }
 
-if (!isset($_SESSION['rol'])){
+if (!isset($_SESSION['rol'])) {
 
     $nombre = 'Iniciar Sessión';
+} else {
 
-}else{
-
-  $nombre = $_SESSION['nombre']; 
+    $nombre = $_SESSION['nombre'];
 }
 
 ?>
@@ -36,7 +35,7 @@ if (!isset($_SESSION['rol'])){
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
                         <a href="Index.php" class="nav-item nav-link"></a>
@@ -66,7 +65,7 @@ if (!isset($_SESSION['rol'])){
                     <div class="navbar-header">
                         <div class="d-flex">
                             <div class="dropdown d-inline-block user-dropdown">
-                            
+
                                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img class="rounded-circle header-profile-user" src="../img/imgperfil-a.png" alt="Header Avatar" width="50" height="50">
                                     <span class="d-none d-xl-inline-block ms-1"><?php echo $nombre ?></span>
@@ -75,12 +74,12 @@ if (!isset($_SESSION['rol'])){
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <!-- item-->
                                     <form method="post">
-                                    <button type="submit" class="btn text-danger"  name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>
+                                        <button type="submit" class="btn text-danger" name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>
                                     </form>
                                 </div>
-                                
+
                             </div>
-                            
+
 
                             <div class="dropdown d-inline-block">
                                 <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
@@ -104,7 +103,6 @@ if (!isset($_SESSION['rol'])){
 </div>
 </div>
 
-    <!-- JavaScript Libraries -->
-   <!-- Option 1: Bootstrap Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+<!-- JavaScript Libraries -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
