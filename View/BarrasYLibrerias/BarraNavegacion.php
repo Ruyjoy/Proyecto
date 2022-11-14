@@ -29,7 +29,7 @@ if (!isset($_SESSION['rol'])) {
         case 2:
             $nombre = $_SESSION['nombre'];
             $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
-            $agrmas = '<div class="nav-item dropdown"> <a href="../View/Distribuidora.php" class="nav-item nav-link">Agregar Mascota Perdida</a> </div>';
+            $agrmas = '<div class="nav-item dropdown"> <a href="../View/AgregarMascotaPerdida.php" class="nav-item nav-link">Agregar Mascota Perdida</a> </div>';
 
             break;
 
