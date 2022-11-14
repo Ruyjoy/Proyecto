@@ -14,9 +14,11 @@ if (isset($_POST['cerrar'])) {
 if (!isset($_SESSION['rol'])) {
 
     $nombre = 'Iniciar Sessión';
+    $boton = '<a href="../View/login.php" class="dropdown-item">Iniciar</a>';
 } else {
 
     $nombre = $_SESSION['nombre'];
+    $boton = '<button type="submit" class="btn text-danger" name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>';
 }
 
 ?>
@@ -74,7 +76,7 @@ if (!isset($_SESSION['rol'])) {
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <!-- item-->
                                     <form method="post">
-                                        <button type="submit" class="btn text-danger" name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>
+                                        <?php echo $boton ?>
                                     </form>
                                 </div>
 

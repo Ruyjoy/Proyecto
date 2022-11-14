@@ -82,6 +82,7 @@ $nombre = $_SESSION['nombre'];
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-end">
                                         <!-- item-->
+                                        <a href="../index.php" class="dropdown-item">Index</a>
                                         <button type="submit" class="btn text-danger"  name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>
                                     </div>
                                 </form>
