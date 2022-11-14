@@ -3,20 +3,6 @@
 
 session_start();
 
-if (!isset($_SESSION['rol'])) {
-
-    header('location: login.php');
-
-} else if ($_SESSION['rol'] != 1) {
-
-    header('location: login.php');
-}
-
-if (isset($_GET['cerrar_sesion'])) {
-
-    session_unset();
-    session_destroy();
-}
 
 if (isset($_POST['cerrar'])) {
 
@@ -25,7 +11,15 @@ if (isset($_POST['cerrar'])) {
     header('location: index.php');
 }
 
-$nombre = $_SESSION['nombre'];
+if (!isset($_SESSION['rol'])){
+
+    $nombre = 'Iniciar Sessión';
+
+}else{
+
+  $nombre = $_SESSION['nombre']; 
+}
+
 ?>
 
 <div class="container-fluid bg-dark mb-30">
@@ -72,18 +66,21 @@ $nombre = $_SESSION['nombre'];
                     <div class="navbar-header">
                         <div class="d-flex">
                             <div class="dropdown d-inline-block user-dropdown">
+                            
                                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img class="rounded-circle header-profile-user" src="../img/imgperfil-a.png" alt="Header Avatar" width="50" height="50">
-                                    <span class="d-none d-xl-inline-block ms-1">Usuario</span>
+                                    <span class="d-none d-xl-inline-block ms-1"><?php echo $nombre ?></span>
                                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <!-- item-->
-                                    <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Mi cuenta</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Salir</a>
+                                    <form method="post">
+                                    <button type="submit" class="btn text-danger"  name="cerrar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Salir</button>
+                                    </form>
                                 </div>
+                                
                             </div>
+                            
 
                             <div class="dropdown d-inline-block">
                                 <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
@@ -106,3 +103,8 @@ $nombre = $_SESSION['nombre'];
     </div>
 </div>
 </div>
+
+    <!-- JavaScript Libraries -->
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
