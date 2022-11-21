@@ -113,14 +113,6 @@ include "../../Controller/C_agregarOng.php";
     </div>
     <!-- Checkout End -->
 
-
-    <!-- Footer Start -->
-    <?php
-    include "../BarrasYLibrerias/Footer.php";
-    ?>
-    <!-- Footer End -->
-
-
     <!-- JavaScript Libraries -->
     <?php
     include "../BarrasYLibrerias/libreriasCompletas.php";

@@ -108,11 +108,7 @@
     <!-- Checkout End -->
 
 
-    <!-- Footer Start -->
-    <?php
-    include "../BarrasYLibrerias/Footer.php";
-    ?>
-    <!-- Footer End -->
+   
 
     <!-- JavaScript Libraries -->
     <?php

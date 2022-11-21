@@ -129,12 +129,6 @@ $resultado = mysqli_query($con, $consulta);
     </div>
     <!-- Cart End -->
 
-    <!-- Footer Start -->
-    <?php
-     include "../BarrasYLibrerias/Footer.php";
-    ?>
-    <!-- Footer End -->
-
     <?php
      include "../BarrasYLibrerias/libreriasCompletas.php";
     ?>

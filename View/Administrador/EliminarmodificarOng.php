@@ -139,11 +139,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
     </div>
     <!-- Cart End -->
 
-    <!-- Footer Start -->
-    <?php
-    include "../BarrasYLibrerias/Footer.php";
-    ?>
-    <!-- Footer End -->
+   
 
 
     <!-- JavaScript Libraries -->

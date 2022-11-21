@@ -65,6 +65,14 @@ $nombre = $_SESSION['nombre'];
                                 <a href="Agregarproducto.php" class="dropdown-item">Agregar</a>
                             </div>
                         </div>
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Consulta Online<i class="fa fa-angle-down mt-1"></i></a>
+                            <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                <a href="" class="dropdown-item ">Listados</a>
+                                <a href="AgregarConsultas.php" class="dropdown-item">Agregar</a>
+                            </div>
+                        </div>
 
 
 
