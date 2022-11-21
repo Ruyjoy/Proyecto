@@ -6,8 +6,8 @@ $con = $db->conectar();
 
 if (isset($_POST['agregarMas'])) {
 
-    
 
+        $usu = $_SESSION['codigo'];
         $nombre = $_POST['nombre'];
         $tipo = $_POST['tipo'];
         $lugar = $_POST['lugar'];
