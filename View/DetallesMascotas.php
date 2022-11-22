@@ -1,5 +1,8 @@
 <?php
-include '../Controller/C_mascotasPerdidas.php';
+
+include("../Controller/C_detallesMascotas.php");
+
+
 ?>
 
 <html lang="es">
@@ -33,6 +36,7 @@ include '../Controller/C_mascotasPerdidas.php';
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
+
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
@@ -40,57 +44,60 @@ include '../Controller/C_mascotasPerdidas.php';
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
                     <a class="breadcrumb-item text-dark" href="MascotasPerdidas.php">Mascotas Perdidas</a>
-
+                    <span class="breadcrumb-item active">Detalle Mascota</span>
                 </nav>
             </div>
         </div>
     </div>
     <!-- Breadcrumb End -->
 
-    <div class="container-fluid">
-        <div class="row px-xl-5" >
-            <div class="col-12" style="background-color: #F78181; border-radius: 20px; margin-bottom: 30px;">
-               <h3 style="padding: 10px; margin-bottom: 30px; text-align: center; border-radius: 20px; color: #fff; border-bottom: 2px solid;">Mascotas en Perdidas</h3>
-            </div>
-        </div>
-    </div>
-
-     <div class="">
+    <!-- Shop Detail Start -->
+    <div class="container-fluid pb-5">
         <div class="row px-xl-5">
-            <?php  foreach ($resultado as $row) { ?>
-                <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
-                    <div class="text-center py-1">
-                        <h1 class="h3 text-decoration-none text-truncate" style="background:#ffefd5; border-radius:10px;"><?php echo $row['nombre'] ?></h1>
-                    </div>
-                    <div class="product-item  mb-4" style="border-radius:10px; background:#EDECEC">
-                        <div class="team-wrap" style=" content: Hola; position: absolute; font-family: flaticon; font-size: 50px; left: 0px; transform: rotate(20deg); opacity: 0.3; z-index: 10; margin-top: -10px;">
-                        <img class="img-fluid rounded-circle w-100" src="../img/patas.png" style="width:70px; height:70px " alt="">
-                        </div>
-                        <div class="text-center py-1">
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <FONT FACE="impact"><?php echo $row['fecha'];   ?></FONT>
-                            </div>
+            <?php foreach ($resultado as $row) { ?>
+                <div class="col-lg-5 mb-30">
+                    <img class="img-fluid w-100" src="<?php echo $foto ?>" alt="">
+                </div>
 
-                        </div>
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="<?php echo substr($row['foto'], 3) ?>" alt="">
-                            <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href="DetallesMascotas.php?id=<?php echo $row['id']; ?>"><i class="fa fa-search"></i></a>
+                <div class="col-lg-7 h-auto mb-30">
+                    <div class="h-100 bg-light p-30">
+                        <h3>Nombre : <?php echo $nombremas; ?></h3>
+                        <h3 class="font-weight-semi-bold mb-4"><?php echo $tipo; ?></h3>
+                        <p class="mb-4">Perdido en : <?php echo $lugar; ?></p>
+                        <p class="mb-4">Detalles: <?php echo $des; ?></p>
+                        
+                        <div class="d-flex pt-2">
+                            <strong class="text-dark mr-2">Seguinos en:</strong>
+                            <div class="d-inline-flex">
+                                <a class="text-dark px-2" href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="text-dark px-2" href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="text-dark px-2" href="">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a class="text-dark px-2" href="">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            <?php } ?>
+            <?php  } ?>
         </div>
     </div>
+    <!-- Shop Detail End -->
+
+
+
+
     <!-- Footer Start -->
     <?php
     include "BarrasYLibrerias/Footer.php";
     ?>
     <!-- Footer End -->
-
-
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -100,6 +107,8 @@ include '../Controller/C_mascotasPerdidas.php';
     <?php
     include "BarrasYLibrerias/libreriasCompletas.php";
     ?>
+    <!-- Template Javascript -->
+    <script src="/js/main.js"></script>
 
 
 </body>
