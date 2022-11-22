@@ -7,7 +7,7 @@ include '/xampp/htdocs/Proyecto/model/Conexion.php';
             $db = new Conexion();
             $con = $db->conectar();
 
-            $consulta = "SELECT id_producto, nombre_producto, precio_producto, imagen_producto FROM productos WHERE activo ='1'";
+            $consulta = "SELECT id, nombre, tipo, lugar, descripcion, fecha, foto FROM mascotas WHERE rolmascota = 1 ";
             $resultado = mysqli_query($con, $consulta);
            
             return $resultado;
