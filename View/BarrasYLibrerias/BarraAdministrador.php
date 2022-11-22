@@ -36,7 +36,7 @@ $nombre = $_SESSION['nombre'];
 
                 <a href="Administrador.php" class="text-decoration d-block d-lg">
 
-                    <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logo.png" class="img-responsive" alt="">
+                    <img src="../../img/pet_point-2-2.png" class="img-responsive" alt="">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
