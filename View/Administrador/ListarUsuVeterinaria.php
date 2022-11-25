@@ -4,7 +4,7 @@ include '../../Model/Conexion.php';
 $db = new Conexion();
 $con = $db->conectar();
 
-$consulta = "SELECT * FROM usuario WHERE rol = 4";
+$consulta = "SELECT * FROM usuario WHERE rol = 4 ";
 $resultado = mysqli_query($con, $consulta);
 
 
@@ -14,10 +14,9 @@ $resultado = mysqli_query($con, $consulta);
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8">
-    <title>MultiShop - Online Shop Website Template</title>
+    <title>Lista de Productos</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -27,13 +26,10 @@ $resultado = mysqli_query($con, $consulta);
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-   
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../../Css/style.css" rel="stylesheet">
@@ -41,14 +37,11 @@ $resultado = mysqli_query($con, $consulta);
 
 <body>
 
-    <!-- Topbar End -->
-
-
     <!-- Navbar Start -->
     <?php
-     include "../BarrasYLibrerias/BarraAdministrador.php";
+    include "../BarrasYLibrerias/BarraAdministrador.php";
     ?>
-    <!-- Navbar End -->
+   
 
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
@@ -71,30 +64,25 @@ $resultado = mysqli_query($con, $consulta);
                 <table class="table table-light table-borderless table-hover text-center mb-0">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Usuario</th>
+                            <th>Codigo</th>
                             <th>Password</th>
                             <th>Nombre</th>
                             <th>Telefono</th>
                             <th>Direccion</th>
                             <th>Mail</th>
-                           
-                           
                             <th>Seleccionar</th>
-
 
                         </tr>
                     </thead>
                     <tbody class="align-middle">
                         <?php foreach ($resultado as $row) {
 
-                            $usuario = $row['codigo'];
+                            $codigo = $row['codigo'];
                             $pass = $row['pass'];
                             $nombre = $row['nombre'];
                             $telefono = $row['telefono'];
                             $direccion = $row['direccion'];
                             $mail = $row['mail'];
-                            
-
                            
 
                         ?>
@@ -106,8 +94,7 @@ $resultado = mysqli_query($con, $consulta);
                                 <td class="align-middle"><?php echo $row['direccion'] ?></td>
                                 <td class="align-middle"><?php echo $row['mail'] ?></td>
                                 
-                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarProducto.php?id=<?php echo $id ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN) ?>&nombre=<?php echo $nombre ?>&precio=<?php echo $precio ?>&imagen=<?php echo $imagen ?>&des=<?php echo $des ?>"><i class="fa fa-check"></i></a></td>
-
+                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarmodificarOng.php?codigo=<?php echo $codigo ?>&pass=<?php echo $pass ?>&nombre=<?php echo $nombre ?>&telefono=<?php echo $telefono ?>&dir=<?php echo $direccion ?>&mail=<?php echo $mail ?>"><i class="fa fa-check"></i></a></td>
                             </tr>
                         <?php } ?>
                     </tbody>
@@ -128,10 +115,29 @@ $resultado = mysqli_query($con, $consulta);
         </div>
     </div>
     <!-- Cart End -->
+
+   
+    <script src="../../js/main.js"></script>
+
+
     <!-- JavaScript Libraries -->
     <?php
     include "../BarrasYLibrerias/libreriasCompletas.php";
     ?>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../js/main.js"></script>
+
 </body>
 
 </html>
