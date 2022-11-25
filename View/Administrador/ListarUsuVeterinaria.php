@@ -4,7 +4,7 @@ include '../../Model/Conexion.php';
 $db = new Conexion();
 $con = $db->conectar();
 
-$consulta = "SELECT * FROM usuario WHERE rol = 5";
+$consulta = "SELECT * FROM usuario WHERE rol = 4";
 $resultado = mysqli_query($con, $consulta);
 
 
@@ -128,11 +128,10 @@ $resultado = mysqli_query($con, $consulta);
         </div>
     </div>
     <!-- Cart End -->
-
+    <!-- JavaScript Libraries -->
     <?php
-     include "../BarrasYLibrerias/libreriasCompletas.php";
+    include "../BarrasYLibrerias/libreriasCompletas.php";
     ?>
-    
 </body>
 
 </html>
