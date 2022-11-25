@@ -2,6 +2,7 @@
 
 include '/laragon/www/Proyecto/Model/Conexion.php';
 
+
      try {
 
             $db = new Conexion();

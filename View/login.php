@@ -70,6 +70,9 @@
                                 <div class="text-center">
                                     <p>¿Aún no eres miembro?<a href="./RegistroUsuarios.php"> Regístrate </a></p>
                                 </div>
+                                <div class="text-center">
+                                    <p><a href="./index.php">Ir a index</a></p>
+                                </div>
 
                             </form>
                         </div>

@@ -16,7 +16,7 @@ class M_registroUsuario
 
             if ($resultado == true) {
                 echo "Correcto";
-                //echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='lisadocliente.php'</script>";
+                //echo "<script>alert('Se ha Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='lisadocliente.php'</script>";
 
             } else {
                 echo "error";

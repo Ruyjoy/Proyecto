@@ -1,7 +1,3 @@
-<?php 
-    require "../Inc/session_start.php";
-?>
-
 
 <html lang="es">
 

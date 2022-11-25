@@ -1,6 +1,6 @@
 <?php
 
-include '/xampp/htdocs/Proyecto/model/M_agregarProducto.php';
+include '/laragon/www/Proyecto/Model/Conexion.php';
 
 if (isset($_POST['agregar'])) {
 

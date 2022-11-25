@@ -3,6 +3,7 @@
 $monto = $_POST['monto'];
 $ong = $_POST['ong'];
 $medio = $_POST['pago'];
+$moneda = $_POST['moneda'];
 
 
 ?>
@@ -55,9 +56,11 @@ $medio = $_POST['pago'];
                         <h5 class="card-title">Haz realizado una donación a <?php for ($i = 0; $i < count($ong); $i++) {
                             echo $ong[$i];
                         } ?></h5>
-                        <p class="card-text">Monto: <?php echo "$".$monto; ?></p>
-                        <p class="card-text">Utilizando <?php for ($j = 0; $j < count($medio); $j++) {
-                            echo $medio[$j]." como medio de pago";
+                        <p class="card-text">Monto: <?php echo "$".$monto; for ($i = 0; $i < count($moneda); $i++) {
+                            echo " ".$moneda[$i];
+                        } ?></p>
+                        <p class="card-text">A través de <?php for ($j = 0; $j < count($medio); $j++) {
+                            echo $medio[$j];
                         } ?></p>
                         <a href="../View/Ong.php" class="btn btn-primary">Conoce más sobre ONGs</a>
                     </div>

@@ -1,6 +1,6 @@
 <?php
  
- include "/xampp/htdocs/Proyecto/model/Conexion.php";
+ include '/laragon/www/Proyecto/Model/Conexion.php';
 
  class M_agregarProducto
  {

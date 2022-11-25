@@ -66,17 +66,17 @@
                         <div class="form-row">
                             <div class="form-group col-sm-10">
                                 <h5><label for="monto" >Monto</label></h5>
-                                
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">$ Pesos</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">U$$ Dólares</label>
-                                </div>
-                               
                                 <input type="number" name="monto" min="1" class="form-control" id="monto" pattern="{1,100}"placeholder="Ingrese un número" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-10">
+                                <h5><label for="moneda">Moneda</label></h5>
+                               
+                                <select name="moneda[]" id="moneda" class="form-select">
+                                    <option selected>Pesos</option>
+                                    <option>Dólares</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-row">

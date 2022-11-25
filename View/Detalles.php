@@ -51,7 +51,7 @@ include("../Controller/C_detalles.php");
     <!-- Breadcrumb End -->
 
     <!-- Shop Detail Start -->
-    <div class="container-fluid pb-5">
+    
         <div class="row px-xl-5">
             <?php foreach ($resultado as $row) { ?>
                 <div class="col-lg-5 mb-30">
@@ -60,7 +60,7 @@ include("../Controller/C_detalles.php");
 
                 <div class="col-lg-7 h-auto mb-30">
                     <div class="h-100 bg-light p-30">
-                        <h3><?php echo $nombre; ?></h3>
+                        <h3><?php echo $row['nombre_producto']; ?></h3>
                         <div class="d-flex mb-3">
                             <div class="text-primary mr-2">
                                 <small class="fas fa-star"></small>
@@ -72,7 +72,7 @@ include("../Controller/C_detalles.php");
                             <small class="pt-1">(99 Reviews)</small>
                         </div>
                         <h3 class="font-weight-semi-bold mb-4"><?php echo '$' . $precio; ?></h3>
-                        <p class="mb-4"><?php echo $des; ?></p>
+                        <p class="mb-4"><?php echo "Cliente PetPoint ".$des."% off"; ?></p>
                         <div class="d-flex align-items-center mb-4 pt-2">
                             <div class="input-group quantity mr-3" style="width: 130px;">
                                 <div class="input-group-btn">
@@ -87,7 +87,15 @@ include("../Controller/C_detalles.php");
                                     </button>
                                 </div>
                             </div>
-                            <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                        
+                            <form action="Carrito.php" method="POST">
+                                
+                                <input type="hidden" name="descripcion_producto" id="descripcion_producto" value="<?php echo $row['des_producto']; ?>">
+                                <input type="hidden" name="nombre_producto" id="nombre_producto" value="<?php echo $row['nombre_producto']; ?>">
+                                <input type="hidden" name="precio_producto" id="precio_producto" value="<?php if(isset($_SESSION['rol']) == 2) {echo $row['precio_producto'];} ?>">
+                                <input type="hidden" name="cantidad_producto" id="cantidad" value="<?php  1; ?>">
+                                <button class="btn btn-primary px-3" name="btnAccion" type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                            </form>
                         </div>
                         <div class="d-flex pt-2">
                             <strong class="text-dark mr-2">Seguinos en:</strong>
