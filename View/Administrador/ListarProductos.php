@@ -107,11 +107,6 @@ $resultado = mysqli_query($con, $consulta);
     </div>
     <!-- Cart End -->
 
-    <!-- Footer Start -->
-    <?php
-    include "../BarrasYLibrerias/Footer.php";
-    ?>
-    <!-- Footer End -->
     <script src="../../js/main.js"></script>
 
 

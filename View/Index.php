@@ -123,7 +123,7 @@
                             <img src="../img/service2.png" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="../View/MascotaPerdidas.php">Mascotas perdidas</a>
+                            <a class="h6 text-decoration-none text-truncate" href="../View/MascotasPerdidas.php">Mascotas perdidas</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
                                 <h9>Aqui puede ver todas las mascotas perdidas.</h9>
                             </div>
@@ -150,7 +150,7 @@
                             <img src="../img/carrito.png" class="img-fluid w-100" alt="">
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">Nuestros Productos</a>
+                            <a class="h6 text-decoration-none text-truncate" href="../View/Distribuidora.php">Nuestros Productos</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
                                 <h9>Podes encontrar todos los productos en nuestra veterinaria</h9>
                             </div>

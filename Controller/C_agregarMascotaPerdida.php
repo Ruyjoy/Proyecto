@@ -6,13 +6,14 @@ $con = $db->conectar();
 
 if (isset($_POST['agregarMas'])) {
 
-    
 
+        $usu = $_SESSION['codigo'];
         $nombre = $_POST['nombre'];
         $tipo = $_POST['tipo'];
         $lugar = $_POST['lugar'];
         $des = $_POST['des'];
         $fecha = $_POST['fecha'];
+        $rol = 1 ;
         
         //$usu = $_SESSION['codigo'];
 
@@ -36,7 +37,7 @@ if (isset($_POST['agregarMas'])) {
 
         }
 
-        $consulta = "INSERT INTO mascotas (nombre, tipo, lugar, descripcion, fecha, foto, codigo_usu, rolmascota)VALUES ('$nombre','$tipo','$lugar','$des', $fecha ,'$ruta' , $usu  , 1)";
+        $consulta = "INSERT INTO mascotas (nombre, tipo, lugar, descripcion, fecha, foto, codigo_usu, rolmascota)VALUES ('$nombre','$tipo','$lugar','$des', '$fecha' ,'$ruta' , $usu  , $rol)";
         $resultado = mysqli_query($con, $consulta);
 
         //Si existe en base de datos -------

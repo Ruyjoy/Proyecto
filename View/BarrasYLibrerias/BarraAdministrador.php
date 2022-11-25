@@ -36,7 +36,7 @@ $nombre = $_SESSION['nombre'];
 
                 <a href="Administrador.php" class="text-decoration d-block d-lg">
 
-                    <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logo.png" class="img-responsive" alt="">
+                    <img src="../../img/pet_point-2-2.png" class="img-responsive" alt="">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -63,6 +63,14 @@ $nombre = $_SESSION['nombre'];
                             <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
                                 <a href="ListarProductos.php" class="dropdown-item ">Listados</a>
                                 <a href="Agregarproducto.php" class="dropdown-item">Agregar</a>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Consulta Online<i class="fa fa-angle-down mt-1"></i></a>
+                            <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                <a href="" class="dropdown-item ">Listados</a>
+                                <a href="AgregarConsultas.php" class="dropdown-item">Agregar</a>
                             </div>
                         </div>
 

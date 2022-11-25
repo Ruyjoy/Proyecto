@@ -1,8 +1,3 @@
-<?php
-include '../Controller/C_agregarMascotaPerdida.php';
-?>
-
-
 <html lang="es">
 
 <head>
@@ -34,6 +29,10 @@ include '../Controller/C_agregarMascotaPerdida.php';
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
+    <?php
+        include '../Controller/C_agregarMascotaPerdida.php';
+    ?>
+
     <!--Contenido-->
 
     <!-- Topbar Start -->
@@ -43,18 +42,6 @@ include '../Controller/C_agregarMascotaPerdida.php';
                 <span class="h1 text-uppercase text-primary bg-dark px-2">Pet</span>
                 <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Point</span>
             </a>
-        </div>
-        <div class="col-lg-4 col-6 text-left">
-            <form action="">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for products">
-                    <div class="input-group-append">
-                        <span class="input-group-text bg-transparent text-primary">
-                            <i class="fa fa-search"></i>
-                        </span>
-                    </div>
-                </div>
-            </form>
         </div>
     </div>
 
@@ -93,7 +80,7 @@ include '../Controller/C_agregarMascotaPerdida.php';
                                 <input class="form-control" name="foto" type="file" required="required">
                             </div>
 
-                                <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregarMas">Agregar</button>
+                            <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregarMas">Agregar</button>
 
                         </div>
                     </form>
@@ -107,14 +94,14 @@ include '../Controller/C_agregarMascotaPerdida.php';
 
         </div>
     </div>
-  
+
     <!-- Footer Start -->
     <?php
     include "BarrasYLibrerias/Footer.php";
     ?>
     <!-- Footer End -->
 
-   
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 

@@ -99,7 +99,15 @@
 
             </div>
             <div class="col-lg-4">
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Poner algo</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Nuestro logo</span></h5>
+                <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+                    <div class="col-lg-4">
+                        <a href="" class="text-decoration-none">
+                            <span class="h1 text-uppercase text-primary bg-dark px-2">Pet</span><span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Point</span>
+                            
+                        </a>
+                    </div>
+                </div>
             </div>
 
             
@@ -108,11 +116,7 @@
     <!-- Checkout End -->
 
 
-    <!-- Footer Start -->
-    <?php
-    include "../BarrasYLibrerias/Footer.php";
-    ?>
-    <!-- Footer End -->
+   
 
     <!-- JavaScript Libraries -->
     <?php
