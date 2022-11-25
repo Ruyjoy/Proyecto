@@ -36,7 +36,7 @@ if (!isset($_SESSION['rol'])) {
         case 3:
             $nombre = $_SESSION['nombre'];
             $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
-            $agrmas = '<div class="nav-item dropdown"> <a href="../View/Distribuidora.php" class="nav-item nav-link">Agregar Mascota</a> </div>';
+            $agrmas = '<div class="nav-item dropdown"> <a href="../View/AgregarMascotaAdoptada.php" class="nav-item nav-link">Agregar Mascota</a> </div>';
             break;
 
         case 5:

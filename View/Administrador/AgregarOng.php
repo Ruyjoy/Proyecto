@@ -75,7 +75,7 @@ include "../../Controller/C_agregarOng.php";
                             </div>
                             <div class="col-md-6 form-group">
                                 <label>Mobile No</label>
-                                <input class="form-control" type="text" name="tel_ong" placeholder="+123 456 789" required>
+                                <input class="form-control" type="number" name="tel_ong" placeholder="+123 456 789" required>
                             </div>
                             <div class="col-md-6 form-group">
                                 <label>Direccion</label>
