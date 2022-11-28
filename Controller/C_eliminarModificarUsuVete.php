@@ -1,3 +1,16 @@
+<?php
+
+include("/xampp/htdocs/Proyecto/Model/Conexion.php");
+
+$db = new Conexion();
+$con = $db->conectar();
+
+
+
+
+$codigo = isset($_GET['codigo']) ? $_GET['codigo'] : '';
+$pass = isset($_GET['pass']) ? $_GET['pass'] : '';
+$nombre = isset($_GET['nombre']) ? $_GET['nombre'] : '';
 $telefono = isset($_GET['telefono']) ? $_GET['telefono'] : '';
 $direccion = isset($_GET['dir']) ? $_GET['dir'] : '';
 $mail = isset($_GET['mail']) ? $_GET['mail'] : '';
@@ -18,12 +31,12 @@ if ($codigo == '') {
         $mail = $_POST['mail'];
 
 
-        $consulta = "UPDATE usuario SET  pass = '$pass' , nombre = '$nombre', telefono = '$tel', direccion = '$direccion' ,  mail = '$mail' , rol = 3  Where codigo = '$codigo' AND rol = 4 ";
+        $consulta = "UPDATE usuario SET  pass = '$pass' , nombre = '$nombre', telefono = '$tel', direccion = '$direccion' ,  mail = '$mail' , rol = 4  Where codigo = '$codigo' AND rol = 4 ";
         $resultado = mysqli_query($con, $consulta);
 
         //Si existe en base de datos -------
         if ($resultado == true) {
-            echo "<script>alert('Se a actualizado los cambios correcatamente, acutalice la p\u00E1gina para ver los cambios'); window.location='ListarOng.php'</script>";
+            echo "<script>alert('Se a actualizado los cambios correcatamente, acutalice la p\u00E1gina para ver los cambios'); window.location='ListarUsuVeterinaria.php'</script>";
         } else {
 
             echo "Error";
@@ -40,13 +53,13 @@ if ($codigo == '') {
 if (isset($_POST['Eliminar'])) {
 
 
-    $consulta = "DELETE FROM usuario WHERE  codigo = '$codigo' AND rol = 3 ";
+    $consulta = "DELETE FROM usuario WHERE  codigo = '$codigo' AND rol = 4 ";
     //unlink($imagen); //acá le damos la direccion exacta del archivo
     $resultado = mysqli_query($con, $consulta);
 
     //Si existe en base de datos -------
     if ($resultado == true) {
-        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarOng.php'</script>";
+        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarUsuVeterinaria.php'</script>";
     } else {
 
         $alert = "error";
