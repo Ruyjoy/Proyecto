@@ -94,7 +94,7 @@ $resultado = mysqli_query($con, $consulta);
                                 <td class="align-middle"><?php echo $row['direccion'] ?></td>
                                 <td class="align-middle"><?php echo $row['mail'] ?></td>
                                 
-                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarmodificarOng.php?codigo=<?php echo $codigo ?>&pass=<?php echo $pass ?>&nombre=<?php echo $nombre ?>&telefono=<?php echo $telefono ?>&dir=<?php echo $direccion ?>&mail=<?php echo $mail ?>"><i class="fa fa-check"></i></a></td>
+                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarUsuVete.php?codigo=<?php echo $codigo ?>&pass=<?php echo $pass ?>&nombre=<?php echo $nombre ?>&telefono=<?php echo $telefono ?>&dir=<?php echo $direccion ?>&mail=<?php echo $mail ?>"><i class="fa fa-check"></i></a></td>
                             </tr>
                         <?php } ?>
                     </tbody>
