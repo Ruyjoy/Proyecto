@@ -21,7 +21,7 @@ if ($id == '') {
     $des = $fila['descripcion'];
     $tipo = $fila['tipo'];
     $lugar= $fila['lugar'];
-    $foto = substr($fila['foto'], 3);
+    $foto = substr($fila['foto'], 0);
 }
 
 ?>

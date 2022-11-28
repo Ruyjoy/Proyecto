@@ -30,7 +30,7 @@
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
     <?php
-        include '../Controller/C_agregarMascotaPerdida.php';
+    include '../Controller/C_agregarMascotaPerdida.php';
     ?>
 
     <!--Contenido-->
@@ -60,7 +60,10 @@
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="inputLastName">Tipo</label>
-                                <input class="form-control" type="text" name="tipo" maxlength="70" placeholder="Gato / Perro" required />
+                                <select name="tipo" class="form-control">
+                                    <option value="Perro">Perro</option>
+                                    <option value="Gato" selected>Gato</option>
+                                </select>
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="inputLastName">Barrio / Zona</label>

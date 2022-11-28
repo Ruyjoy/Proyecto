@@ -32,7 +32,7 @@ if (isset($_POST['agregarMas'])) {
 
             $temporal = imagecreatetruecolor($nAncho, $nAlto);
             imagecopyresized($temporal, $img_original, 0, 0, 0, 0, $nAncho, $nAlto, $ancho_original, $alto_original);
-            $ruta = '../../img' . '/' . $imagen;
+            $ruta = '../img' . '/' . $imagen;
             imagejpeg($temporal, $ruta, 100);
 
         }

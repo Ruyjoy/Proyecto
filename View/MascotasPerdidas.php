@@ -73,7 +73,7 @@ include '../Controller/C_mascotasPerdidas.php';
 
                         </div>
                         <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid rounded-circle w-100" src="<?php echo substr($row['foto'], 3) ?>" alt="">
+                            <img class="img-fluid rounded-circle w-100" src="<?php echo $row['foto'] ?>" alt="">
                             <div class="product-action">
                                 <a class="btn btn-outline-dark btn-square" href="DetallesMascotas.php?id=<?php echo $row['id']; ?>"><i class="fa fa-search"></i></a>
                             </div>
