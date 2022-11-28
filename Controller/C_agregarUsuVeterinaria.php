@@ -65,7 +65,7 @@ if (isset($_POST['crear'])) {
 
     if ($codigo != "") {
 
-        $consulta = ("SELECT * FROM usuario WHERE codigo = '$codigo' And rol = 4 ");
+        $consulta = ("SELECT * FROM usuario WHERE codigo = '$codigo'");
         $check_user = mysqli_query($con, $consulta);
 
 
