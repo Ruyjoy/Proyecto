@@ -29,7 +29,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_login.php");
     <link href="../Css/style.css" rel="stylesheet">
 </head>
 
-<body class="cuerpo">
+<body class = "cuerpo">
     <main>
         <div class="container">
             <div class="row justify-content-center">
@@ -50,7 +50,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_login.php");
                                 </div>
                                 <div class="row mb-4">
                                     <div class="col d-flex justify-content-center">
-                                        <!-- Checkbox -->
+                                    <!-- Checkbox -->
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
                                             <label class="form-check-label" for="form2Example31">Recuérdame</label>
@@ -59,29 +59,22 @@ include("/xampp/htdocs/Proyecto/Controller/C_login.php");
 
                                     <div class="col">
                                         <!-- Simple link -->
-                                        <a href="#!" style="color: #707B7C ;">¿Olvidaste tu contraseña?</a>
+                                        <a href="#!" style="color: #707B7C ;" >¿Olvidaste tu contraseña?</a>
                                     </div>
                                 </div>
 
                                 <button name='enviar' type="submit" class="btn btn-primary btn-block mb-4 ">Iniciar Sesión.</button>
 
-
                                 <?php echo isset($alert) ? $alert : ''; ?>
 
-
                                 <div class="text-center">
-                                    <p>¿Aún no eres miembro?<a href="#!"> Regístrate </a></p>
+                                    <p>¿Aún no eres miembro?<a href="./RegistroUsuarios.php"> Regístrate </a></p>
                                 </div>
+                                <div class="text-center">
+                                    <p><a href="./index.php">Ir a index</a></p>
+                                </div>
+                                
 
-
-
-                                <?php
-                                if (isset($_POST['c']) && isset($_POST['p'])) {
-                                    //require_once "../Model/Conexion.php";
-                                    require_once "../Controller/C_verificacionDatos.php";
-                                    require_once "../Controller/C_login.php";
-                                }
-                                ?>
                             </form>
                         </div>
                     </div>
