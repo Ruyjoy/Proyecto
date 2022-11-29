@@ -1,3 +1,16 @@
+<?php
+include '../Model/Conexion.php';
+
+
+$db = new Conexion();
+$con = $db->conectar();
+
+$consulta = "SELECT * FROM usuario WHERE rol ='3'";
+$resultado = mysqli_query($con, $consulta);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,54 +38,55 @@
 
 </head>
 
-<body class = "cuerpo">
+<body class="cuerpo">
 
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
     <style>
-            .contenedor{
-                height: 50vh;
-                margin: 10%;
-                 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                
-                
-            }
-        </style>
-    
+        .contenedor {
+            height: 50vh;
+            margin: 10%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    </style>
+
     <div class="contenedor">
-        
+
         <div class="form-row justify-content-center">
-            <div class="form-group" >
+            <div class="form-group">
                 <div class="card-body border-0" style="width: 100%;">
 
                     <form action="detalleDonacion.php" method="POST">
 
                         <div class="form-row">
                             <div class="form-group col-sm-10">
-                                    <h5><label for="ong">ONGs</label></h5>
-                                    <select name="ong[]" id="ong" class="form-select" required>
-                                        <option selected><Obj>ONG 1</Obj></option>
-                                        <option>ONG 2</option>
-                                        <option>ONG 3</option>
-                                        <option>ONG 4</option>
-                                    </select>
+                                <h5><label for="ong">ONGs</label></h5>
+                                <select name="ong[]" id="ong" class="form-select" required>
+                                    <?php foreach ($resultado as $row) { ?>
+                                        
+                                        <option><?php echo $row['nombre']; ?></option>
+                                        
+                                    <?php } ?>
+                                </select>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-sm-10">
-                                <h5><label for="monto" >Monto</label></h5>
-                                <input type="number" name="monto" min="1" class="form-control" id="monto" pattern="{1,100}"placeholder="Ingrese un número" required>
+                                <h5><label for="monto">Monto</label></h5>
+                                <input type="number" name="monto" min="1" class="form-control" id="monto" pattern="{1,100}" placeholder="Ingrese un número" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-sm-10">
                                 <h5><label for="moneda">Moneda</label></h5>
-                               
+
                                 <select name="moneda[]" id="moneda" class="form-select">
                                     <option selected>Pesos</option>
                                     <option>Dólares</option>
@@ -82,7 +96,7 @@
                         <div class="form-row">
                             <div class="form-group col-sm-10">
                                 <h5><label for="pago">Medio de Pago</label></h5>
-                               
+
                                 <select name="pago[]" id="pago" class="form-select">
                                     <option selected>Mercado Pago</option>
                                     <option>PayPal</option>
@@ -91,7 +105,7 @@
                             </div>
                         </div>
 
-                        <br> 
+                        <br>
                         <div class="form-group">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="" id="gridCheck">
@@ -100,8 +114,8 @@
                                 </label>
                             </div>
                         </div>
-                        
-                        <br> 
+
+                        <br>
 
                         <button type="submit" class="btn btn-primary">DONAR</button>
 
