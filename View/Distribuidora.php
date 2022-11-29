@@ -85,7 +85,7 @@ include '../Controller/C_distribuidora.php';
                             <div class="text-center py-4">
                             <a class="h6 text-decoration-none text-truncate" href=""><?php echo $row['nombre_producto'] ?></a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5><?php echo $row['precio_producto'] ?></h5>
+                                <h5><?php echo '$'.$row['precio_producto'] ?></h5>
                                 
                             </div>
                         </div>
