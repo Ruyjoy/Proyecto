@@ -62,7 +62,7 @@ include("../Controller/C_detallesMascotas.php");
                 <div class="col-lg-7 h-auto mb-30">
                     <div class="h-100 bg-light p-30">
                         <h3>Nombre : <?php echo $nombremas; ?></h3>
-                        <h3 class="font-weight-semi-bold mb-4"><?php echo $tipo; ?></h3>
+                        <h3 class="font-weight-semi-bold mb-4">Tipo : <?php echo $tipo; ?></h3>
                         <p class="mb-4">Perdido en : <?php echo $lugar; ?></p>
                         <p class="mb-4">Detalles: <?php echo $des; ?></p>
                         
