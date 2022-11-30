@@ -63,23 +63,7 @@
                         'cantidad_producto' => $cantidad
                     );
                     $_SESSION['carrito'][$num_productos] = $producto;
-                }
-                $mensaje = print_r($_SESSION['carrito'], true);
-            /*break;
-            case "Eliminar":
-
-                $nombre_producto = $_POST['nombre_producto'];
-
-                foreach($_SESSION['carrito'] as $indice => $producto) {
-                    if($producto['nombre_producto'] == $nombre_producto) {
-                        unset($_SESSION['carrito'][$indice]);
-                        echo "<script>alert('Producto eliminado de carrito');</script>";
-                    }
-                }
-            
-                
-            break;*/
-        
+                } 
         
     }
 
@@ -121,7 +105,7 @@
                 <td width="40%" class="text-center"><?php echo $producto['descripcion_producto'] ?></td>
                 <td width="10%" class="text-center"><?php echo $producto['cantidad_producto'] ?></td>
                 <td width="10%" class="text-center"><?php echo $producto['precio_producto'] ?></td>
-                <td width="10%" class="text-center"><?php //echo number_format($producto['precio_producto']*$producto['cantidad_producto'], 2) ?></td>
+                <td width="10%" class="text-center"><?php echo number_format($producto['precio_producto']*$producto['cantidad_producto'], 2) ?></td>
                 <td width="10%" class="text-center">
                  
                  <form action="eliminarProdCarrito.php" method="POST">
@@ -130,7 +114,12 @@
                 </form>
                 </td>
             </tr>
-            <?php $total= $total //+ ($producto['precio_producto']*$producto['cantidad_producto']); ?>
+            <?php if($_SESSION['rol'] == 2){
+
+                $descuento = $producto['precio_producto'] - ($producto['precio_producto'] * 0.15);
+                $total = $total + ($producto['cantidad_producto'] * $descuento);
+
+            }else{$total= $total + ($producto['precio_producto']*$producto['cantidad_producto']);} ?>
             <?php } ?>
             <tr>
                 <td colspan="3" align="right"><h3>Total</h3></td>
