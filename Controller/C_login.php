@@ -2,7 +2,7 @@
 
 include("../Model/Conexion.php");
 include("../Controller/C_verificacionDatos.php");
-//require "../Inc/session_start.php";
+
 
 $db = new Conexion();
 $con = $db->conectar();

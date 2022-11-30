@@ -1,0 +1,147 @@
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPoint</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../Css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
+    <?php
+   
+    $mensaje = "";
+    
+    if (isset($_POST['btnAgregar'])) {
+        
+        
+            
+                
+                $nombre_producto = $_POST['nombre_producto'];
+                $descripcion_producto = $_POST['descripcion_producto'];
+                $precio_producto = $_POST['precio_producto'];
+                $cantidad = $_POST['cantidad_producto'];
+
+                if (!isset($_SESSION['carrito'])) {
+
+
+                    $producto = array(
+                        'nombre_producto' => $nombre_producto,
+                        'descripcion_producto' => $descripcion_producto,
+                        'precio_producto' => $precio_producto,
+                        'cantidad_producto' => $cantidad
+                    );
+                    $_SESSION['carrito'][0] = $producto;
+                } else { //si existe el producto contamos cuántos hay en el carrito
+
+                    $num_productos = count($_SESSION['carrito']);
+                    $producto = array(
+                        'nombre_producto' => $nombre_producto,
+                        'descripcion_producto' => $descripcion_producto,
+                        'precio_producto' => $precio_producto,
+                        'cantidad_producto' => $cantidad
+                    );
+                    $_SESSION['carrito'][$num_productos] = $producto;
+                }
+                $mensaje = print_r($_SESSION['carrito'], true);
+            /*break;
+            case "Eliminar":
+
+                $nombre_producto = $_POST['nombre_producto'];
+
+                foreach($_SESSION['carrito'] as $indice => $producto) {
+                    if($producto['nombre_producto'] == $nombre_producto) {
+                        unset($_SESSION['carrito'][$indice]);
+                        echo "<script>alert('Producto eliminado de carrito');</script>";
+                    }
+                }
+            
+                
+            break;*/
+        
+        
+    }
+
+    ?>
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
+                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distribuidora</a>
+                    <span class="breadcrumb-item active">Carrito</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Breadcrumb End -->
+    <div class="container" style="flex-wrap: center;">
+        
+        <?php if (!empty($_SESSION['carrito'])) { ?>
+        <table class="table table-light table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    
+                    <th width="20%" class="text-center">Nombre</th>
+                    <th width="40%" class="text-center">Descripción</th>
+                    <th width="10%" class="text-center">Cantidad</th>
+                    <th width="10%" class="text-center">Precio</th>
+                    <th width="10%" class="text-center">Total</th>
+                    <th width="10%" class="text-center">Modificar</th>
+                </tr>
+            </thead>
+            <?php $total = 0; ?>
+            <?php foreach($_SESSION['carrito'] as $indice => $producto) {?>
+            <tr>
+                <td width="20%" class="text-center"><?php echo $producto['nombre_producto'] ?></td>
+                <td width="40%" class="text-center"><?php echo $producto['descripcion_producto'] ?></td>
+                <td width="10%" class="text-center"><?php echo $producto['cantidad_producto'] ?></td>
+                <td width="10%" class="text-center"><?php echo $producto['precio_producto'] ?></td>
+                <td width="10%" class="text-center"><?php //echo number_format($producto['precio_producto']*$producto['cantidad_producto'], 2) ?></td>
+                <td width="10%" class="text-center">
+                 
+                 <form action="eliminarProdCarrito.php" method="POST">
+                    <input type="hidden" name="nombre_producto" value="<?php echo $producto['nombre_producto']; ?>" >
+                    <button class="btn btn-danger" type="submit" name="btnEliminar">Eliminar</button>
+                </form>
+                </td>
+            </tr>
+            <?php $total= $total //+ ($producto['precio_producto']*$producto['cantidad_producto']); ?>
+            <?php } ?>
+            <tr>
+                <td colspan="3" align="right"><h3>Total</h3></td>
+                <td align="right"><h3>$<?php echo number_format($total, 2); ?></h3></td>
+            </tr>
+            
+        </table>
+        <?php } else { ?>
+        <div class="alert alert-success">No hay productos en el carrito</div>
+        <?php } ?>
+        
+    </div>
+
+</body>

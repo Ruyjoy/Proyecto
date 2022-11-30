@@ -88,15 +88,16 @@ include("../Controller/C_detalles.php");
                                 </div>
                             </div>
                         
-                            <form action="Carrito.php" method="POST">
-                                
+                            <form action="mostrarCarrito.php" method="POST">
+                                <input type="hidden" name="id_prod" id="id_prod" value="<?php //echo $row['id_producto']; ?>">
                                 <input type="hidden" name="descripcion_producto" id="descripcion_producto" value="<?php echo $row['des_producto']; ?>">
                                 <input type="hidden" name="nombre_producto" id="nombre_producto" value="<?php echo $row['nombre_producto']; ?>">
-                                <input type="hidden" name="precio_producto" id="precio_producto" value="<?php if(isset($_SESSION['rol']) == 2) {echo $row['precio_producto'];} ?>">
-                                <input type="hidden" name="cantidad_producto" id="cantidad" value="<?php  1; ?>">
-                                <button class="btn btn-primary px-3" name="btnAccion" type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                                <input type="hidden" name="precio_producto" id="precio_producto" value="<?php  echo $row['precio_producto'];  ?>">
+                                <input type="hidden" name="cantidad_producto" id="cantidad_producto" value="<?php  1; ?>">
+                                <button class="btn btn-primary px-3" name="btnAgregar"   type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
                             </form>
                         </div>
+
                         <div class="d-flex pt-2">
                             <strong class="text-dark mr-2">Seguinos en:</strong>
                             <div class="d-inline-flex">
