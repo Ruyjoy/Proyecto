@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-11-2022 a las 22:29:11
+-- Tiempo de generación: 30-11-2022 a las 17:14:39
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -20,19 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `proyecto`
 --
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `donaciones`
---
-
-CREATE TABLE `donaciones` (
-  `id_dona` int(11) NOT NULL,
-  `monto` double NOT NULL,
-  `usuairo_id` int(11) NOT NULL,
-  `ong_id` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -57,7 +44,8 @@ CREATE TABLE `mascotas` (
 --
 
 INSERT INTO `mascotas` (`id`, `nombre`, `tipo`, `lugar`, `descripcion`, `fecha`, `foto`, `codigo_usu`, `rolmascota`) VALUES
-(1, 'Persha', 'Gato', 'Canelones', 'adsad', '2022-11-23', '../../img/1_A_Toda_Vela_2021_ong-info_contact-data_A toda vela web baja_1617006500344.jpg', '321', 1);
+(7, 'papa', 'Gato', 'Canelones', 'dsadas', '2022-11-29', '../../img/Perro b.jpeg', '321', 1),
+(8, 'Stella', 'Perro', 'Canelones', 'sadsad', '2022-11-29', '../img/Perro a.jpg', '321', 1);
 
 -- --------------------------------------------------------
 
@@ -80,8 +68,14 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id_producto`, `nombre_producto`, `des_producto`, `precio_producto`, `id_catergoria`, `activo`, `imagen_producto`) VALUES
-(20, 'Twits', 'Algo para ver', '1680', 1, 1, '../../img/Twits.jpg'),
-(21, 'Toky', 'Producto balanceado para todos', '2200', 1, 1, '../../img/alimento.jpg');
+(1, 'ProPla', 'ProPlan no es una de las mejores comidas para perros y gatos por pura suerte, se trata de una marca con larga tradición y experiencia, y eso se nota en el resultado final.', '3700', 1, 1, '../../img/ProPlan.jpg'),
+(2, 'Connie', 'Connie está hecho con ingredientes naturales de 1ª Calidad que aseguran el 100% de satisfacción a las necesidades nutritivas de tu mascota. Las proteínas de alto valor biológico y el agregado de ácido Omega 3 y 6 hacen que tu perro fortalezca sus músculos y desarrolle un pelaje sano y brillante.', '2131', 1, 1, '../../img/connie.jpg'),
+(3, 'Origens', 'Es una línea especial de comida Premium que nutre lo mejor: el amor. Promover la salud y el placer con cada comida es ante todo un acto de afecto, que cierra lazos y prolonga los días de alegría, amistad y amor incondicional entre los tutores y sus perros y gatos.', '1755', 1, 1, '../../img/iOrigens.jpg'),
+(4, 'Connie-cachorro-8-kg', 'Connie está hecho con ingredientes naturales de 1ª Calidad que aseguran el 100% de satisfacción a las necesidades nutritivas de tu mascota. Las proteínas de alto valor biológico y el agregado de ácido Omega 3 y 6 hacen que tu perro fortalezca sus músculos y desarrolle un pelaje sano y brillante. Nueva fórmula sin colorantes.', '975', 1, 1, '../../img/connie-cachorro-8-kg.jpg'),
+(5, 'Frost Adulto', 'Alimentos para Perros adultos y cachorros, Raciones Frost Comida para Perros. El mejor precio online. Promociones Imperdibles.', '2890', 1, 1, '../../img/Frost Adulto.jpg'),
+(6, 'Lager 10kg', 'Lager esta hecho de nutritivos y seleccionados ingredientes. Estos son mezclados y sometidos a un científico y cuidadoso proceso de cocción. Durante el proceso son adicionadas 25 Vitaminas y Minerales, dejando a Lager más nutritivo y balanceado.', '945', 1, 1, '../../img/lager-10-kg.jpg'),
+(7, 'Toky', '- Con Omega 3 y\r\n- Antioxidante\r\n- Vitaminas y Minerales\r\n\r\nEnriquecido con Omega 3 y 6: Colabora en la salud y el pelaje de su perro. Antioxidantes: Niveles garantizados de zinc, vitamina E y selenio. Vitaminas y minerales: Alta digestibilidad, defensa inmunitaria, control de peso y cuidado de los dientes.', '1134', 1, 1, '../../img/alimento.jpg'),
+(8, 'Equilibrio', 'Tu mascota siempre saludable\r\nUna alimentación balanceada es esencial para que tu fiel compañero se mantenga sano y fuerte. La dieta de tu gato se refleja en su pelaje, por eso es de vital importancia que contenga todos los nutrientes necesarios para su crecimiento. Asegura la energía y vitalidad de tu amigo para que pueda correr, saltar y jugar todo el día.', '3271', 1, 1, '../../img/Equilibrio.jpg');
 
 -- --------------------------------------------------------
 
@@ -102,7 +96,7 @@ INSERT INTO `rol` (`id`, `rol`) VALUES
 (1, 'Administrador'),
 (2, 'Usuario dueño'),
 (3, 'Ong'),
-(5, 'Usuario Veterinaria');
+(4, 'UsuarioVeterinaria');
 
 -- --------------------------------------------------------
 
@@ -146,21 +140,18 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`codigo`, `pass`, `nombre`, `telefono`, `direccion`, `mail`, `img`, `rol`) VALUES
 ('1', '1', 'Jose luis', 91777644, 'asdasd', 'sdasd', NULL, 1),
-('123', '123', 'Pepe', 91777644, 'Calle 6 manzana 7 solar 20 Esquina algo en ella', 'mma@hotmail.com', '../../img/1_A_Toda_Vela_2021_ong-info_contact-data_A toda vela web baja_1617006500344.jpg', 3),
+('2', '2 ', 'asjdsadjsa', 2147483647, '399 Pereida St', 'sadas@dsadsa', NULL, 4),
 ('321', '321', '321', 321, '312', '321', '321', 2),
-('sda', 'sada', 'sada', 123, 'dsad', ' dsad', '../../img/WhatsApp Image 2022-10-12 at 20.23.51.jpeg', 3);
+('Animales_Hogar', '1234', 'Animales sin Hogar', 91111111, 'Montevideo, Uruguay', ' info@animalessinhogar.org', '../../img/Animales sin Hogar.jpg', 3),
+('BuscaTobi', '1234', 'Tobi', 98591412, 'Montevideo, Uruguay', ' info@buscandoatobi.com', '../../img/buscandoatobi.jpg', 3),
+('Costa_Rescata', '1234', 'La Costa Rescata', 97047369, 'Canelones, Uruguay', ' instagram@lacostarescata.go', '../../img/LacostaRescata.jpg', 3),
+('Cuatro_Patas', '12345', 'Cuatro Patas', 98513327, 'Canelones, Uruguay', ' nancysouto5@gmail.com', '../../img/cuatro-patas-con-amor.jpg', 3),
+('Pou', '123', 'POU', 99111111, 'Paysandu, Uruguay', ' PouOng@gmail.com', '../../img/POU Ong.jpg', 3),
+('Rescate', '1234', 'LAC', 96469999, 'Canelones, Uruguay', ' info@buscandoatobi.com', '../../img/Rescate.jpg', 3);
 
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `donaciones`
---
-ALTER TABLE `donaciones`
-  ADD PRIMARY KEY (`id_dona`),
-  ADD KEY `usuairo_id` (`usuairo_id`),
-  ADD KEY `ong_id` (`ong_id`);
 
 --
 -- Indices de la tabla `mascotas`
@@ -200,28 +191,22 @@ ALTER TABLE `usuario`
 --
 
 --
--- AUTO_INCREMENT de la tabla `donaciones`
---
-ALTER TABLE `donaciones`
-  MODIFY `id_dona` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
 --
 ALTER TABLE `rol`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `rolmascota`
