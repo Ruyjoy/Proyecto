@@ -54,15 +54,21 @@
                     );
                     $_SESSION['carrito'][0] = $producto;
                 } else { //si existe el producto contamos cuántos hay en el carrito
+                    // estoy haciendo las validaciones con nombre porque no me toma el id del producto 
+                    $nom_prod = array_column($_SESSION['carrito'], 'nombre_producto');
+                    if(in_array($nombre_producto, $nom_prod)) {
+                        echo "<script>alert('El producto ya está en el carrito');</script>";
+                    } else {
 
-                    $num_productos = count($_SESSION['carrito']);
-                    $producto = array(
-                        'nombre_producto' => $nombre_producto,
-                        'descripcion_producto' => $descripcion_producto,
-                        'precio_producto' => $precio_producto,
-                        'cantidad_producto' => $cantidad
-                    );
-                    $_SESSION['carrito'][$num_productos] = $producto;
+                            $num_productos = count($_SESSION['carrito']);
+                            $producto = array(
+                                'nombre_producto' => $nombre_producto,
+                                'descripcion_producto' => $descripcion_producto,
+                                'precio_producto' => $precio_producto,
+                                'cantidad_producto' => $cantidad
+                            );
+                            $_SESSION['carrito'][$num_productos] = $producto;
+                        }
                 } 
         
     }
