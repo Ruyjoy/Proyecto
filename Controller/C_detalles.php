@@ -17,7 +17,7 @@ if ($id == '') {
 
 
     $fila = mysqli_fetch_array($resultado);
-    $nombre = $fila['nombre_producto'];
+    $nombreproducto = $fila['nombre_producto'];
     $des = $fila['des_producto'];
     $precio = $fila['precio_producto'];
     $imagen = substr($fila['imagen_producto'], 3);

@@ -13,7 +13,7 @@ if (isset($_POST['agregarMas'])) {
         $lugar = $_POST['lugar'];
         $des = $_POST['des'];
         $fecha = $_POST['fecha'];
-        $rol = 1 ;
+        $rol = 2 ;
         
         //$usu = $_SESSION['codigo'];
 
@@ -32,7 +32,7 @@ if (isset($_POST['agregarMas'])) {
 
             $temporal = imagecreatetruecolor($nAncho, $nAlto);
             imagecopyresized($temporal, $img_original, 0, 0, 0, 0, $nAncho, $nAlto, $ancho_original, $alto_original);
-            $ruta = '../img' . '/' . $imagen;
+            $ruta = '../../img' . '/' . $imagen;
             imagejpeg($temporal, $ruta, 100);
 
         }

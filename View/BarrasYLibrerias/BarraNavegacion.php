@@ -36,10 +36,10 @@ if (!isset($_SESSION['rol'])) {
         case 3:
             $nombre = $_SESSION['nombre'];
             $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
-            $agrmas = '<div class="nav-item dropdown"> <a href="../View/Distribuidora.php" class="nav-item nav-link">Agregar Mascota</a> </div>';
+            $agrmas = '<div class="nav-item dropdown"> <a href="../View/AgregarMascotaAdoptada.php" class="nav-item nav-link">Agregar Mascota</a> </div>';
             break;
 
-        case 5:
+        case 4:
             $nombre = $_SESSION['nombre'];
             $boton = '<button type="submit" class="dropdown-item  text-danger" name="cerrar"> Cerrar Sesión</button>';
             $agrmas = '';
@@ -82,7 +82,7 @@ if (!isset($_SESSION['rol'])) {
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Veterinaria <i class="fa fa-angle-down mt-1"></i></a>
                             <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                <a href="#" class="dropdown-item">Constultas Online</a>
+                                <a href="ConsultaOnline.php" class="dropdown-item">Constultas Online</a>
                             </div>
                         </div>
 

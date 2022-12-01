@@ -44,7 +44,6 @@ if ( isset($_POST['enviar']) ) {
 
     //Si existe en base de datos -------
     if ( $fila = mysqli_fetch_assoc($resultado) ) {
-
         
         if ( $fila['codigo'] == $documento &&
              $fila['pass'] == $pass)  {
@@ -80,16 +79,17 @@ if ( isset($_POST['enviar']) ) {
             
 
         } else {
+            
 
-            $alert = '<div class="card-body >  
-                    <div class="alert alert-warning" role="alert">
-                        <h4 class="alert-heading">¡Ocurrió un error inesperado!</h4>
-                            <p class="mb-0">Usuario o Contraseña incorrectos.</p>
-                    </div>
-                  </div>';
+            echo "<script>alert('Usuario o Contraseña incorrectos. , favor de  actualizar'); window.location='login.php'</script>";
         }
 
+    } else {
+            
+
+        echo "<script>alert('Usuario o Contraseña incorrectos. , favor de  actualizar'); window.location='login.php'</script>";
     }
+
     mysqli_close($con);
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
+include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarUsuVete.php");
 
 
 
@@ -57,9 +57,9 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Administrador.php">Administrador</a>
-                    <span class="breadcrumb-item active">Productos</span>
+                    <span class="breadcrumb-item active">Ong's</span>
                     <a class="breadcrumb-item text-dark" href="listarProductos.php">Listados</a>
-                    <span class="breadcrumb-item active">Producto seleccionado</span>
+                    <span class="breadcrumb-item active">Ong seleccionada</span>
 
                 </nav>
             </div>
@@ -74,33 +74,38 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
                 <table class="table table-light table-borderless table-hover text-center mb-0">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Id</th>
-                            <th>Products</th>
-                            <th>Price</th>
-                            <th>Foto</th>
-                            <th>Description</th>
-                            <th>Modificar</th>
+                            <th>Codigo</th>
+                            <th>Pass</th>
+                            <th>Nombre</th>
+                            <th>Telefono</th>
+                            <th>Direccion</th>
+                            <th>Mail</th>
+                            <th>Edit</th>
                             <th>Remove</th>
 
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        <form method="post">
-                            <tr>
-                                <td class="align-middle"><input type="text" name="id" class="form-control input-sm" required="required" value="<?php echo $id ?>" disabled></td>
+
+                        <tr>
+                            <form method="post">
+                                <td class="align-middle"><input type="text" name="codigo" class="form-control input-sm" required="required" value="<?php echo $codigo ?>" disabled></td>
                                 </td>
                                 </td>
-                                <td class="align-middle"><input type="text" name="nombre" class="form-control input-sm" required="required" value="<?php echo $nombre ?>"></td>
-                                <td class="align-middle"><input type="text" name="precio" id="preciou" class="form-control input-sm" value="<?php echo $precio ?>"></td>
+                                <td class="align-middle"><input type="text" name="pass" class="form-control input-sm" required="required" value="<?php echo $pass ?>">
                                 </td>
-                                <td class="align-middle"><img src="<?php echo $imagen ?>" alt="" style="width: 50px;"></td>
+                                <td class="align-middle"><input type="text" name="nombre" id="preciou" class="form-control input-sm" value="<?php echo $nombre ?>"></td>
                                 </td>
-                                <td class="align-middle"><textarea type="text" name="des" id="desu" class="form-control input-sm" value=""><?php echo $des ?></textarea></td>
+                                <td class="align-middle"><input type="text" name="tel" id="telu" class="form-control input-sm" value="<?php echo $telefono ?>"></td>
+                                </td>
+                                <td class="align-middle"><input type="text" name="dir" id="diru" class="form-control input-sm" value="<?php echo $direccion ?>"></td>
+
+                                <td class="align-middle"><input type="text" name="mail" id="mailu" class="form-control input-sm" value="<?php echo $mail ?>"></td>
 
                                 <td class="align-middle"><button class="btn btn-sm btn-warning" value="Editar" name="Editar"><i class="fa fa-edit"></i></button></td>
 
-                        </form>
-                        <td class="align-middle"><button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-times"></i></button></td>
+                            </form>
+                            <td class="align-middle"><button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-times"></i></button></td>
                         </tr>
 
                     </tbody>
@@ -110,20 +115,20 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Eliminar Producto</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Eliminar Usuario</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ... Está seguro que desea eliminar esté producto ?
+                                ... Está seguro que desea eliminar esté Usuario ?
                             </div>
                             <form method="post">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary"  name="Eliminar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" name="Eliminar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
 
-                            </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -133,6 +138,9 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
         </div>
     </div>
     <!-- Cart End -->
+
+   
+
 
     <!-- JavaScript Libraries -->
     <?php

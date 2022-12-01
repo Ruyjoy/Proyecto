@@ -28,29 +28,30 @@
 <body>
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
-
-    <?php
-    include '../Controller/C_agregarMascotaPerdida.php';
-    ?>
+    <?php include '../Controller/C_agregarMascotaAdopcion.php';?>
 
     <!--Contenido-->
 
-    <!-- Topbar Start -->
-    <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
-        <div class="col-lg-4">
-            <a href="" class="text-decoration-none">
-                <span class="h1 text-uppercase text-primary bg-dark px-2">Pet</span>
-                <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Point</span>
-            </a>
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
+                    <a class="breadcrumb-item text-dark" href="A.php">Agregar Mascota</a>
+
+                </nav>
+            </div>
         </div>
     </div>
-
+    <!-- Breadcrumb End -->
 
     <!-- Checkout Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8">
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar Mascota Perdida</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar Mascotas Para Ser Adoptada</span></h5>
                 <div class="bg-light p-30 mb-5">
                     <form method="post" enctype="multipart/form-data">
                         <div class="row">

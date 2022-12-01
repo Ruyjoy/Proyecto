@@ -1,6 +1,6 @@
 <?php
 
-include("../Controller/C_detallesMascotas.php");
+include("../Controller/C_detallesConsulta.php");
 
 
 ?>
@@ -43,8 +43,9 @@ include("../Controller/C_detallesMascotas.php");
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
-                    <a class="breadcrumb-item text-dark" href="MascotasPerdidas.php">Mascotas Perdidas</a>
-                    <span class="breadcrumb-item active">Detalle Mascota</span>
+                    <span class="breadcrumb-item active">Veterinaria</span>
+                    <a class="breadcrumb-item text-dark" href="ConsultaOnline.php">Consultas Online</a>
+                    <span class="breadcrumb-item active">Detalles de Consulta</span>
                 </nav>
             </div>
         </div>
@@ -55,16 +56,33 @@ include("../Controller/C_detallesMascotas.php");
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
             <?php foreach ($resultado as $row) { ?>
-                <div class="col-lg-5 mb-30">
+                <div class="col-lg-4 mb-30">
                     <img class="img-fluid w-100" src="<?php echo $foto ?>" alt="">
                 </div>
 
                 <div class="col-lg-7 h-auto mb-30">
                     <div class="h-100 bg-light p-30">
-                        <h3>Nombre : <?php echo $nombremas; ?></h3>
-                        <h3 class="font-weight-semi-bold mb-4">Tipo : <?php echo $tipo; ?></h3>
-                        <p class="mb-4">Perdido en : <?php echo $lugar; ?></p>
-                        <p class="mb-4">Detalles: <?php echo $des; ?></p>
+                        <h3>Nombre : <?php echo $nombrecon; ?></h3>
+                        
+                        <p class="mb-4">Direccion : <?php echo $dire; ?></p>
+                        <p class="mb-4">mail: <?php echo $mail; ?></p>
+
+                        <div class="d-flex align-items-center mb-4 pt-2">
+                            <div class="input-group quantity mr-3" style="width: 130px;">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary btn-minus">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary btn-plus">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                        </div>
                         
                         <div class="d-flex pt-2">
                             <strong class="text-dark mr-2">Seguinos en:</strong>

@@ -1,6 +1,7 @@
 <?php
 
 include("../Model/Conexion.php");
+
 $db = new Conexion();
 $con = $db->conectar();
 
@@ -12,16 +13,15 @@ if ($id == '') {
     exit;
 } else {
 
-    $consulta = "SELECT nombre,tipo, lugar, descripcion, foto FROM mascotas WHERE id = $id";
+    $consulta = "SELECT nombre, direccion, mail, img FROM usuario WHERE codigo = '$id' and rol = 3";
     $resultado = mysqli_query($con, $consulta);
 
 
     $fila = mysqli_fetch_array($resultado);
-    $nombremas = $fila['nombre'];
-    $des = $fila['descripcion'];
-    $tipo = $fila['tipo'];
-    $lugar= $fila['lugar'];
-    $foto = substr($fila['foto'], 0);
+    $nombrecon = $fila['nombre'];
+    $dire = $fila['direccion'];
+    $mail = $fila['mail'];
+    $foto = substr($fila['img'], 3);
 }
 
 ?>

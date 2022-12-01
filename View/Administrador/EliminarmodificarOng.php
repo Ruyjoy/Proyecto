@@ -70,7 +70,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
     <!-- Cart Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
-            <div class="col-lg-8 table-responsive mb-5">
+            <div class="col-lg-12 table-responsive mb-5">
                 <table class="table table-light table-borderless table-hover text-center mb-0">
                     <thead class="thead-dark">
                         <tr>
@@ -115,13 +115,13 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Eliminar Producto</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Eliminar ONG</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ... Está seguro que desea eliminar esté producto ?
+                                ... Está seguro que desea eliminar esté Ong ?
                             </div>
                             <form method="post">
                                 <div class="modal-footer">
