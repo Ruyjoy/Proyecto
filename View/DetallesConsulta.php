@@ -62,10 +62,10 @@ include("../Controller/C_detallesConsulta.php");
 
                 <div class="col-lg-7 h-auto mb-30">
                     <div class="h-100 bg-light p-30">
-                        <h3>Nombre : <?php echo $nombrecon; ?></h3>
+                        <h3><?php echo $nombrecon; ?></h3>
                         
-                        <p class="mb-4">Direccion : <?php echo $dire; ?></p>
-                        <p class="mb-4">mail: <?php echo $mail; ?></p>
+                        <p class="mb-4">Descripcion : <?php echo $des; ?></p>
+                        
 
                         <div class="d-flex align-items-center mb-4 pt-2">
                             <div class="input-group quantity mr-3" style="width: 130px;">

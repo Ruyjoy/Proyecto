@@ -13,15 +13,14 @@ if ($id == '') {
     exit;
 } else {
 
-    $consulta = "SELECT nombre, direccion, mail, img FROM usuario WHERE codigo = '$id' and rol = 3";
+    $consulta = "SELECT nombre_con, des_con, foto_con FROM consulta WHERE id_con = '$id'";
     $resultado = mysqli_query($con, $consulta);
 
 
     $fila = mysqli_fetch_array($resultado);
-    $nombrecon = $fila['nombre'];
-    $dire = $fila['direccion'];
-    $mail = $fila['mail'];
-    $foto = substr($fila['img'], 3);
+    $nombrecon = $fila['nombre_con'];
+    $des = $fila['des_con'];
+    $foto = substr($fila['foto_con'], 3);
 }
 
 ?>

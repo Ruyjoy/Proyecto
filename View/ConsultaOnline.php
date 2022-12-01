@@ -1,3 +1,5 @@
+
+
 <?php
 include '../Model/Conexion.php';
 
@@ -5,7 +7,7 @@ include '../Model/Conexion.php';
 $db = new Conexion();
 $con = $db->conectar();
 
-$consulta = "SELECT * FROM usuario WHERE rol ='3'";
+$consulta = "SELECT * FROM consulta";
 $resultado = mysqli_query($con, $consulta);
 
 
@@ -45,40 +47,21 @@ $resultado = mysqli_query($con, $consulta);
 
     <!--Contenido-->
 
-     <!-- Breadcrumb Start -->
-     <div class="container-fluid">
-        <div class="row px-xl-5">
-            <div class="col-12">
-                <nav class="breadcrumb bg-light mb-30">
-                    <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
-                    <a class="breadcrumb-item text-dark" href="">Veterinaria</a>
-                    <span class="breadcrumb-item active">Consultas Online</span>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
-
-
     <!-- Categories Start -->
     <div class="container-fluid pt-5">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">ONG'S</span></h2>
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Consulta</span></h2>
         <div class="row px-xl-5 pb-3">
             <?php foreach ($resultado as $row) { ?>
                 <div class="col-lg-4 col-md-4 col-sm-6 pb-1">
-                    <a class="text-decoration-none" href="DetallesConsulta.php?id=<?php echo $row['codigo']; ?>">
+                    <a class="text-decoration-none" href="DetallesConsulta.php?id=<?php echo $row['id_con']; ?>">
                         <div class="cat-item d-flex align-items-center mb-4">
-                            <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                                <img class="img-fluid" src="<?php echo substr($row['img'], 3) ?>" alt="">
-                                
+                            <div class="overflow-hidden" style="width: 200px; height: 100px;">
+                                <img class="img-fluid" src="<?php echo substr($row['foto_con'], 3) ?>" alt="">
                             </div>
                             <div class="flex-fill pl-3">
-                                <h4><?php echo $row['nombre']; ?></h4>
-                                <div class="text-body">Dirección: <small> <?php echo $row['direccion']; ?></small></div>
-                                <div class="text-body">Telefono:  <small> <?php echo $row['telefono']; ?></small></div>
-                                <div class="text-body">Mail:  <small> <?php echo $row['mail']; ?></small></div>
+                                <h4><?php echo $row['nombre_con']; ?></h4>
+                                <div class="text-body"> <small> <?php echo $row['des_con']; ?></small></div>
                             </div>
-                            
                         </div>
                     </a>
                 </div>
