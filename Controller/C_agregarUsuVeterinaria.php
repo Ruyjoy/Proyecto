@@ -84,13 +84,13 @@ if (isset($_POST['crear'])) {
 
     } else {
 
-        //$clave = password_hash($clave_1, PASSWORD_BCRYPT, ["cost" => 10]); // encripta la contraseña
+        $clave = password_hash($clave_1, PASSWORD_BCRYPT, ["cost" => 10]); // encripta la contraseña
 
     }
 
     // Guarda los datos
 
-    $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, rol)VALUES ('$codigo', '$clave_1 ', '$nombre', $telefono , '$direccion', '$mail', $rol)";
+    $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, rol)VALUES ('$codigo', '$clave ', '$nombre', $telefono , '$direccion', '$mail', $rol)";
     $resultado = mysqli_query($con, $consulta);
 
     if ($resultado == true) {
