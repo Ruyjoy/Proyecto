@@ -12,6 +12,8 @@ if (isset($_POST['agregarOng'])) {
     $dir = $_POST['dir_ong'];
     $mail = $_POST['mail_ong'];
 
+    $clave = password_hash($pass, PASSWORD_BCRYPT, ["cost" => 10]); // encripta la contraseña
+
     if ($_FILES['foto']['error'] == UPLOAD_ERR_OK) {
 
         $nAncho = 500;
@@ -41,7 +43,7 @@ if (isset($_POST['agregarOng'])) {
 
 
     $registro = new M_agregarOng();
-    $registro->agregarOng($codigo,$pass, $nombre, $tel, $dir , $mail, $ruta);
+    $registro->agregarOng($codigo, $clave, $nombre, $tel, $dir , $mail, $ruta);
 }
 
 ?>

@@ -4,13 +4,13 @@
 
  class M_agregarOng
  {
-    function agregarOng($codigo,$pass, $nombre, $tel, $dir , $mail, $ruta)
+    function agregarOng($codigo,$clave, $nombre, $tel, $dir , $mail, $ruta)
     {
         try {
             $db = new Conexion();
             $con = $db->conectar();
 
-            $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, img, rol)VALUES ('$codigo','$pass','$nombre', $tel, '$dir', ' $mail','$ruta',3)";
+            $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, img, rol)VALUES ('$codigo','$clave','$nombre', $tel, '$dir', ' $mail','$ruta',3)";
             $resultado = mysqli_query($con, $consulta);
 
             //Si existe en base de datos -------

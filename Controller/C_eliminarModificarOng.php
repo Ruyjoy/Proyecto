@@ -16,6 +16,8 @@ $direccion = isset($_GET['dir']) ? $_GET['dir'] : '';
 $mail = isset($_GET['mail']) ? $_GET['mail'] : '';
 
 
+
+
 if ($codigo == '') {
 
     echo 'Error al procesar la informacion';
@@ -24,7 +26,7 @@ if ($codigo == '') {
     if (isset($_POST['Editar'])) {
 
         
-        $pass = $_POST['pass'];
+        //$pass = $_POST['pass'];
         $nombre = $_POST['nombre'];
         $tel = $_POST['tel'];
         $direccion = $_POST['dir'];

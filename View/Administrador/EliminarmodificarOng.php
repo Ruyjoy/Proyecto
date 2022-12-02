@@ -58,7 +58,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Administrador.php">Administrador</a>
                     <span class="breadcrumb-item active">Ong's</span>
-                    <a class="breadcrumb-item text-dark" href="listarProductos.php">Listados</a>
+                    <a class="breadcrumb-item text-dark" href="listarOng.php">Listados</a>
                     <span class="breadcrumb-item active">Ong seleccionada</span>
 
                 </nav>
@@ -75,7 +75,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
                     <thead class="thead-dark">
                         <tr>
                             <th>Codigo</th>
-                            <th>Pass</th>
+                            
                             <th>Nombre</th>
                             <th>Telefono</th>
                             <th>Direccion</th>
@@ -92,8 +92,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
                                 <td class="align-middle"><input type="text" name="codigo" class="form-control input-sm" required="required" value="<?php echo $codigo ?>" disabled></td>
                                 </td>
                                 </td>
-                                <td class="align-middle"><input type="text" name="pass" class="form-control input-sm" required="required" value="<?php echo $pass ?>">
-                                </td>
+                                
                                 <td class="align-middle"><input type="text" name="nombre" id="preciou" class="form-control input-sm" value="<?php echo $nombre ?>"></td>
                                 </td>
                                 <td class="align-middle"><input type="text" name="tel" id="telu" class="form-control input-sm" value="<?php echo $telefono ?>"></td>

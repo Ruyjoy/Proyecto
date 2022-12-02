@@ -12,27 +12,6 @@ if (isset($_SESSION['rol'])) {
     header('location: index.php');
 }
 
-/*if (isset($_POST['enviar'])) {
-
-    $nombre = $_POST['c'];
-    $pass = $_POST['p'];
-
-    $consulta = "SELECT * FROM usuario Where ci = $nombre AND pass = '$pass'";
-    $resultado = mysqli_query($con, $consulta);
-
-    //Si existe en base de datos -------
-    if ($fila = mysqli_fetch_assoc($resultado)) {
-
-        echo "Estoy";
-        $_SESSION['rol']       = $fila['rol'];
-        $_SESSION['ci']       = $fila['ci'];
-    } else {
-
-        echo "Cedula o  Password son Incorrecto";
-    }
-    mysqli_close($con);
-}*/
-
 
 if ( isset($_POST['enviar']) ) {
 
@@ -46,7 +25,7 @@ if ( isset($_POST['enviar']) ) {
     if ( $fila = mysqli_fetch_assoc($resultado) ) {
         
         if ( $fila['codigo'] == $documento &&
-             $fila['pass'] == $pass)  {
+        password_verify( $pass, $fila['pass']) )  {
 
              
 
