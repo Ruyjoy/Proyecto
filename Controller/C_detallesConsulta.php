@@ -13,13 +13,14 @@ if ($id == '') {
     exit;
 } else {
 
-    $consulta = "SELECT nombre_con, des_con, foto_con FROM consulta WHERE id_con = '$id'";
+    $consulta = "SELECT nombre_con, des_con, precio_con, foto_con FROM consulta WHERE id_con = '$id'";
     $resultado = mysqli_query($con, $consulta);
 
 
     $fila = mysqli_fetch_array($resultado);
     $nombrecon = $fila['nombre_con'];
     $des = $fila['des_con'];
+    $precio = $fila['precio_con'];
     $foto = substr($fila['foto_con'], 3);
 }
 

@@ -1,5 +1,5 @@
 <?php
-include "../../controller/C_agregarProductos.php";
+include "../../controller/C_agregarConsulta.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,8 +61,8 @@ include "../../controller/C_agregarProductos.php";
                                 <input class="form-control" name="nombre" type="text" placeholder="Nombre" required="required">
                             </div>
                             <div class="col-md-6 form-group">
-                                <label>Tipo de Consulta</label>
-                                <input class="form-control" name="precio" type="Text" placeholder="1000" dsadaspattern="[0-9]+" required="required">
+                                <label>Precio</label>
+                                <input class="form-control" name="precio" type="Text" placeholder="$ 1.000" dsadaspattern="[0-9]+" required="required">
                             </div>
                             <div class="col-md-12 form-group">
                                 <label>Descripcion</label>
@@ -72,7 +72,7 @@ include "../../controller/C_agregarProductos.php";
                                 <label>Seleccione su imagen que desea subir</label>
                                 <input class="form-control" name="foto" type="file" required="required">
                             </div>
-                            <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregar">Agregar</button>
+                            <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregarCons">Agregar</button>
                         </div>
                     </form>
                 </div>

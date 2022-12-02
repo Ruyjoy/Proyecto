@@ -61,6 +61,7 @@ $resultado = mysqli_query($con, $consulta);
                             <div class="flex-fill pl-3">
                                 <h4><?php echo $row['nombre_con']; ?></h4>
                                 <div class="text-body"> <small> <?php echo $row['des_con']; ?></small></div>
+                                <div class="text-body"> <small>Precio: $ <?php echo $row['precio_con']; ?></small></div>
                             </div>
                         </div>
                     </a>

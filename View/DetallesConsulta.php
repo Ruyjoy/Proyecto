@@ -65,6 +65,7 @@ include("../Controller/C_detallesConsulta.php");
                         <h3><?php echo $nombrecon; ?></h3>
                         
                         <p class="mb-4">Descripcion : <?php echo $des; ?></p>
+                        <p class="mb-4">Precio : $<?php echo $precio; ?></p>
                         
 
                         <div class="d-flex align-items-center mb-4 pt-2">
