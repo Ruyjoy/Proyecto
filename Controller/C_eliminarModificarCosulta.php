@@ -25,8 +25,8 @@ define("KEY_TOKEN", "ABC.975-gmj");
 
         if($token==$token_tem){
 
-            if (isset($_POST['Editar'])) {
-
+            if (isset($_POST['EditarCon'])) {
+                
                 //$id_ = $_POST['id'];
                 $des = $_POST['des'];
                 $nombre = $_POST['nombre'];
@@ -34,12 +34,12 @@ define("KEY_TOKEN", "ABC.975-gmj");
                 //$foto = $_POST['foto'];
                 
             
-                $consulta = "UPDATE productos SET nombre_producto = '$nombre', des_producto = '$des', precio_producto = $precio,id_catergoria = 1, activo = 1 Where id_producto = $id";
+                $consulta = "UPDATE consulta SET nombre_con = '$nombre', des_con = '$des', precio_con = $precio Where id_con = $id";
                 $resultado = mysqli_query($con, $consulta);
             
                 //Si existe en base de datos -------
                 if ($resultado == true) {
-                    echo "<script>alert('Se a actualizado los cambios correcatamente, acutalice la p\u00E1gina para ver los cambios'); window.location='ListarProductos.php'</script>";
+                    echo "<script>alert('Se a actualizado los cambios correcatamente, acutalice la p\u00E1gina para ver los cambios'); window.location='ListarConsultas.php'</script>";
                 } else {
             
                     $alert = "error";
@@ -62,16 +62,16 @@ define("KEY_TOKEN", "ABC.975-gmj");
 
 
 //Eliminar 
-if (isset($_POST['Eliminar'])) {
+if (isset($_POST['EliminarCon'])) {
 
 
-    $consulta = "DELETE FROM productos WHERE id_producto = $id ";
+    $consulta = "DELETE FROM consulta WHERE id_con = $id ";
     unlink($imagen);//acá le damos la direccion exacta del archivo
     $resultado = mysqli_query($con, $consulta);
 
     //Si existe en base de datos -------
     if ($resultado == true) {
-        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarProductos.php'</script>";
+        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarConsultas.php'</script>";
     } else {
 
         $alert = "error";

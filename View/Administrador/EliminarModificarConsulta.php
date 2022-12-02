@@ -1,6 +1,6 @@
 <?php
 
-include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarConsulta.php");
+include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarCosulta.php");
 
 
 
@@ -15,7 +15,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarConsulta.php");
 
 <head>
     <meta charset="utf-8">
-    <title>EliminarModificarProducto</title>
+    <title>EliminarModificarConsulta</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -57,9 +57,9 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarConsulta.php");
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Administrador.php">Administrador</a>
-                    <span class="breadcrumb-item active">Productos</span>
-                    <a class="breadcrumb-item text-dark" href="listarProductos.php">Listados</a>
-                    <span class="breadcrumb-item active">Producto seleccionado</span>
+                    <span class="breadcrumb-item active">Consulta Online</span>
+                    <a class="breadcrumb-item text-dark" href="ListarConsultas.php">Listado</a>
+                    <span class="breadcrumb-item active">Consulta seleccionada</span>
 
                 </nav>
             </div>
@@ -85,8 +85,9 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarConsulta.php");
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        <form method="post">
-                            <tr>
+
+                        <tr>
+                            <form method="post">
                                 <td class="align-middle"><input type="text" name="id" class="form-control input-sm" required="required" value="<?php echo $id ?>" disabled></td>
                                 </td>
                                 </td>
@@ -97,10 +98,10 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarConsulta.php");
                                 </td>
                                 <td class="align-middle"><textarea type="text" name="des" id="desu" class="form-control input-sm" value=""><?php echo $des ?></textarea></td>
 
-                                <td class="align-middle"><button class="btn btn-sm btn-warning" value="Editar" name="Editar"><i class="fa fa-edit"></i></button></td>
+                                <td class="align-middle"><button class="btn btn-sm btn-warning" name="EditarCon"><i class="fa fa-edit"></i></button></td>
 
-                        </form>
-                        <td class="align-middle"><button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-times"></i></button></td>
+                            </form>
+                            <td class="align-middle"><button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-times"></i></button></td>
                         </tr>
 
                     </tbody>
@@ -110,20 +111,20 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarConsulta.php");
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Eliminar Producto</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Eliminar Consulta</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ... Está seguro que desea eliminar esté producto ?
+                                ... Está seguro que desea eliminar esta Consulta ?
                             </div>
                             <form method="post">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary"  name="Eliminar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" name="EliminarCon" data-dismiss="Eliminar" data-target="#EliminarTodo">Eliminar Producto</button>
 
-                            </div>
+                                </div>
                             </form>
                         </div>
                     </div>
