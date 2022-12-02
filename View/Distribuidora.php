@@ -48,28 +48,6 @@ include '../Controller/C_distribuidora.php';
     </div>
     <!-- Breadcrumb End -->
 
-
-    <!-- Product Start
-    <div class="">
-        <div class="row px-xl-5">
-            <?php foreach ($resultado as $row) { ?>
-                <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                    <div class="product-item bg-light mb-4"style="border-radius:10px; background:#EDECEC">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="<?php echo substr($row['imagen_producto'], 3) ?>" alt="">
-                            <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href="Detalles.php?id=<?php echo $row['id_producto']; ?>"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php  } ?>
-        </div>
-    </div>-->
-    <!-- Shop Product End -->
-
     <div class="">
         <div class="row px-xl-5">
             <?php foreach ($resultado as $row) { ?>
@@ -78,7 +56,7 @@ include '../Controller/C_distribuidora.php';
                         <div class="product-img position-relative overflow-hidden">
                             <img class="img-fluid w-100"  src="<?php echo substr($row['imagen_producto'], 3) ?>" alt="">
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                                
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href="Detalles.php?id=<?php echo $row['id_producto']; ?>"><i class="fa fa-search"></i></a>
                             </div>
