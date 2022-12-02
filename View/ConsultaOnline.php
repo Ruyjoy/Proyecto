@@ -1,5 +1,3 @@
-
-
 <?php
 include '../Model/Conexion.php';
 
@@ -45,7 +43,20 @@ $resultado = mysqli_query($con, $consulta);
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
-    <!--Contenido-->
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
+                    <span class="breadcrumb-item active">Veterinaria</span>
+                    <a class="breadcrumb-item text-dark" href="ConsultaOnline.php">Consultas</a>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
 
     <!-- Categories Start -->
     <div class="container-fluid pt-5">
@@ -80,7 +91,7 @@ $resultado = mysqli_query($con, $consulta);
     ?>
     <!-- Footer End -->
 
-   
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
