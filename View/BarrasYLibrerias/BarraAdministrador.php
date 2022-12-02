@@ -24,7 +24,7 @@ if (isset($_POST['cerrar'])) {
     header('location: ../index.php');
 }
 
-$nombre = $_SESSION['nombre'];
+$name = $_SESSION['nombre'];
 
 ?>
 
@@ -69,7 +69,7 @@ $nombre = $_SESSION['nombre'];
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Consulta Online<i class="fa fa-angle-down mt-1"></i></a>
                             <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                <a href="" class="dropdown-item ">Listados</a>
+                                <a href="ListarConsultas.php" class="dropdown-item ">Listados</a>
                                 <a href="AgregarConsultas.php" class="dropdown-item">Agregar</a>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ $nombre = $_SESSION['nombre'];
                             <div class="dropdown d-inline-block user-dropdown">
                                 <form method="post">
                                     <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="d-none d-xl-inline-block ms-1"><?php echo $nombre ?></span>
+                                        <span class="d-none d-xl-inline-block ms-1"><?php echo $name  ?></span>
                                     
                                         <img class="rounded-circle header-profile-user" src="../../img/imgperfil-a.png" alt="Header Avatar" width="50" height="50">
                                         
