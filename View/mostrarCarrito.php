@@ -92,6 +92,7 @@
     <div class="container" style="flex-wrap: center;">
         
         <?php if (!empty($_SESSION['carrito'])) { ?>
+        <h4 class="text-center">Mi Pedido</h4>
         <table class="table table-light table-bordered">
             <thead class="thead-light">
                 <tr>
@@ -107,20 +108,20 @@
             <?php $total = 0; ?>
             <?php foreach($_SESSION['carrito'] as $indice => $producto) {?>
             <tr>
-                <td width="20%" class="text-center"><?php echo $producto['nombre_producto'] ?></td>
-                <td width="40%" class="text-center"><?php echo $producto['descripcion_producto'] ?></td>
-                <td width="10%" class="text-center"><?php echo $producto['cantidad_producto'] ?></td>
-                <td width="10%" class="text-center"><?php echo $producto['precio_producto'] ?></td>
-                <td width="10%" class="text-center"><?php echo number_format($producto['precio_producto']*$producto['cantidad_producto'], 2) ?></td>
+                <td width="20%" class="text-center"><?php echo $producto['nombre_producto']; ?></td>
+                <td width="20%" class="text-center"><?php echo $producto['descripcion_producto']; ?></td>
+                <td width="30%" class="text-center"><?php echo $producto['cantidad_producto']; ?></td>
+                <td width="10%" class="text-center"><?php echo $producto['precio_producto']; ?></td>
+                <td width="10%" class="text-center "><?php echo number_format($producto['precio_producto']*$producto['cantidad_producto'], 2); ?></td>
                 <td width="10%" class="text-center">
                  
                  <form action="eliminarProdCarrito.php" method="POST">
                     <input type="hidden" name="nombre_producto" value="<?php echo $producto['nombre_producto']; ?>" >
-                    <button class="btn btn-danger" type="submit" name="btnEliminar">Eliminar</button>
+                    <button class="option-btn btn-danger me-md-2" type="submit" name="btnEliminar">Eliminar</button>
                 </form>
                 </td>
             </tr>
-            <?php if($_SESSION['rol'] == 2){
+            <?php if(isset($_SESSION['rol']) == 2){
 
                 $descuento = $producto['precio_producto'] - ($producto['precio_producto'] * 0.15);
                 $total = $total + ($producto['cantidad_producto'] * $descuento);
@@ -128,13 +129,16 @@
             }else{$total= $total + ($producto['precio_producto']*$producto['cantidad_producto']);} ?>
             <?php } ?>
             <tr>
-                <td colspan="3" align="right"><h3>Total</h3></td>
-                <td align="right"><h3>$<?php echo number_format($total, 2); ?></h3></td>
+                <td colspan="3" align="right"><h4>Total</h4></td>
+                <td align="right"><h4>$<?php echo number_format($total, 2);?></h4></td>
+                <td width="20%" align="right"><?php if(isset($_SESSION['rol']) == 2) { echo "Descuento 15%"; }?></td>
             </tr>
-            
+            <tr>
+            <td colspan="6" align="center"><button class="btn btn-primary btn-lg btn-block"  type="button">Continuar pedido</button></td>
+            </tr>
         </table>
         <?php } else { ?>
-        <div class="alert alert-success">No hay productos en el carrito</div>
+        <div class="alert alert-success">Aún no tienes productos en el carrito. <a href="distribuidora.php" class="alert-link">¡Visita nuestra TIENDA!</a></div>
         <?php } ?>
         
     </div>

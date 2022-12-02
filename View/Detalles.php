@@ -72,29 +72,33 @@ include("../Controller/C_detalles.php");
                             <small class="pt-1">(99 Reviews)</small>
                         </div>
                         <h3 class="font-weight-semi-bold mb-4"><?php echo '$' . $precio; ?></h3>
-                        <p class="mb-4"><?php echo "Cliente PetPoint ".$des."% off"; ?></p>
+                        <p class="mb-4"><?php echo $des; ?></p>
                         <div class="d-flex align-items-center mb-4 pt-2">
-                            <div class="input-group quantity mr-3" style="width: 130px;">
+                            <!--<div class="input-group quantity mr-3" style="width: 130px;">
                                 <div class="input-group-btn">
                                     <button class="btn btn-primary btn-minus">
                                         <i class="fa fa-minus"></i>
                                     </button>
                                 </div>
-                                <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
+                                <input type="number" class="form-control bg-secondary border-0 text-center" value="1">
                                 <div class="input-group-btn">
                                     <button class="btn btn-primary btn-plus">
                                         <i class="fa fa-plus"></i>
                                     </button>
                                 </div>
-                            </div>
+                            </div>-->
                         
                             <form action="mostrarCarrito.php" method="POST">
                                 <input type="hidden" name="id_prod" id="id_prod" value="<?php //echo $row['id_producto']; ?>">
                                 <input type="hidden" name="descripcion_producto" id="descripcion_producto" value="<?php echo $des; ?>">
                                 <input type="hidden" name="nombre_producto" id="nombre_producto" value="<?php echo $row['nombre_producto']; ?>">
                                 <input type="hidden" name="precio_producto" id="precio_producto" value="<?php  echo $precio;  ?>">
-                                <input type="hidden" name="cantidad_producto" id="cantidad_producto" value="<?php  echo 1; ?>">
-                                <button class="btn btn-primary px-3" name="btnAgregar"   type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                                <div class="row g-2">
+                                    <div class="input-group quantity mr-3" style="width: 130px;">
+                                    <input type="number" class="form-control bg-secondary border-0 text-center" name="cantidad_producto" min="1" max="10" id="cantidad_producto" pattern="{1,10}" value="1" required>
+                                    </div>
+                                    <button class="btn btn-primary px-3" name="btnAgregar"   type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                                </div>                            
                             </form>
                         </div>
 
