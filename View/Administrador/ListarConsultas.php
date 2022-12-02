@@ -82,7 +82,7 @@ $resultado = mysqli_query($con, $consulta);
                         <?php foreach ($resultado as $row) {
 
                             $id = $row['id_con'];
-                            $nombreconsulta = $row['nombre_con'];
+                            $nombre = $row['nombre_con'];
                             $precio= $row['precio_con'];
                             $imagen= $row['foto_con'];
                             $des= $row['des_con'];
@@ -95,7 +95,7 @@ $resultado = mysqli_query($con, $consulta);
                                 <td class="align-middle"><img src="<?php echo $row['foto_con'] ?>" alt="" style="width: 50px;"></td>
                                 <td class="align-middle"><?php echo $row['des_con'] ?></td>
                                 
-                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarConsulta.php?id=<?php echo $id ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN )?>&nombre=<?php echo $nombreconsulta ?>&precio=<?php echo $precio ?>&imagen=<?php echo $imagen ?>&des=<?php echo $des ?>"><i class="fa fa-check"></i></a></td>
+                                <td class="align-middle"><a class="btn btn-sm btn-success" href="EliminarModificarConsulta.php?id=<?php echo $id ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN )?>&nombre=<?php echo $nombre ?>&precio=<?php echo $precio ?>&imagen=<?php echo $imagen ?>&des=<?php echo $des ?>"><i class="fa fa-check"></i></a></td>
 
                             </tr>
                         <?php } ?>

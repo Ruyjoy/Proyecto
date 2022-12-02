@@ -1,6 +1,6 @@
 <?php
 
-include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
+include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarConsulta.php");
 
 
 
