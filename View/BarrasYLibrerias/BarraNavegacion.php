@@ -70,7 +70,7 @@ if (!isset($_SESSION['rol'])) {
                     <div class="navbar-nav mr-auto py-0">
                         <a href="Index.php" class="nav-item nav-link"></a>
                         <div class="nav-item dropdown">
-                            <a href="../View/MascotasPerdidas.php" class="nav-item nav-link">Mascotas Perdiadas</a>
+                            <a href="../View/MascotasPerdidas.php" class="nav-item nav-link">Mascotas Perdidas</a>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ONG'S <i class="fa fa-angle-down mt-1"></i></a>
