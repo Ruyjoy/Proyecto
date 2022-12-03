@@ -77,12 +77,10 @@
                         <p class="mb-4"><?php echo $des; ?></p>
                         <form method="POST">
                             <div class="d-flex align-items-center mb-4 pt-2">
-
                                 <div class="input-group quantity mr-3" style="width: 130px;">
                                     <input type="number" class="form-control bg-secondary border-0 text-center" name="can" min="1" max="10" pattern="{1,10}" value="1" require>
                                 </div>
                                 <button class="btn btn-primary px-3" name="btnAgregar" type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
-
                             </div>
                         </form>
                         <div class="d-flex pt-2">

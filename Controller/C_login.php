@@ -49,7 +49,7 @@ if ( isset($_POST['enviar']) ) {
                     header('location: index.php');
                 break;
 
-                case 5:
+                case 4:
                     header('location: index.php');
                 break;
 

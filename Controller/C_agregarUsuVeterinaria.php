@@ -90,7 +90,7 @@ if (isset($_POST['crear'])) {
 
     // Guarda los datos
 
-    $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, rol)VALUES ('$codigo', '$clave ', '$nombre', $telefono , '$direccion', '$mail', $rol)";
+    $consulta = "INSERT INTO usuario(codigo, pass, nombre, telefono, direccion, mail, rol)VALUES ('$codigo', '$clave', '$nombre', $telefono , '$direccion', '$mail', $rol)";
     $resultado = mysqli_query($con, $consulta);
 
     if ($resultado == true) {
