@@ -130,9 +130,10 @@ if (!isset($_SESSION['rol'])) {
                     </div>
 
                     <div class="navbar-nav  ">
-                        <a href="#" class="nav-item ">
-                            <button class="btn btn-primary px-3">Ver carrito <i class="fa fa-shopping-cart mr-1"></i></button>
+                        <a href="../View/mostrarCarrito.php" class="nav-item ">
+                        <button class="btn btn-primary px-3">Ver carrito (<?php echo (empty($_SESSION['carrito']))?0:count($_SESSION['carrito']); ?>)<i class="fa fa-shopping-cart mr-1"></i></button>
                         </a>
+                        </div>
                     </div>
                 </div>
             </nav>

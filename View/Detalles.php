@@ -1,10 +1,3 @@
-<?php
-
-include("../Controller/C_detalles.php");
-
-
-?>
-
 <html lang="es">
 
 <head>
@@ -35,6 +28,14 @@ include("../Controller/C_detalles.php");
 <body>
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
+
+    <?php
+
+    include("../Controller/C_detalles.php");
+
+
+    ?>
+
 
 
     <!-- Breadcrumb Start -->
@@ -74,22 +75,16 @@ include("../Controller/C_detalles.php");
                         </div>
                         <h3 class="font-weight-semi-bold mb-4"><?php echo '$' . $precio; ?></h3>
                         <p class="mb-4"><?php echo $des; ?></p>
-                        <div class="d-flex align-items-center mb-4 pt-2">
-                            <div class="input-group quantity mr-3" style="width: 130px;">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-primary btn-minus">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
+                        <form method="POST">
+                            <div class="d-flex align-items-center mb-4 pt-2">
+
+                                <div class="input-group quantity mr-3" style="width: 130px;">
+                                    <input type="number" class="form-control bg-secondary border-0 text-center" name="can" min="1" max="10" pattern="{1,10}" value="1" require>
                                 </div>
-                                <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-primary btn-plus">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
+                                <button class="btn btn-primary px-3" name="btnAgregar" type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+
                             </div>
-                            <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
-                        </div>
+                        </form>
                         <div class="d-flex pt-2">
                             <strong class="text-dark mr-2">Seguinos en:</strong>
                             <div class="d-inline-flex">
