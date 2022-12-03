@@ -1,9 +1,3 @@
-<?php
-
-include("../Controller/C_detalles.php");
-
-?>
-
 <html lang="es">
 
 <head>
@@ -35,6 +29,14 @@ include("../Controller/C_detalles.php");
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
+    <?php
+
+    include("../Controller/C_detalles.php");
+
+
+    ?>
+
+
 
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
@@ -42,7 +44,7 @@ include("../Controller/C_detalles.php");
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
-                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distribuidora</a>
+                    <a class="breadcrumb-item text-dark" href="Distribuidora.php">Tienda</a>
                     <span class="breadcrumb-item active">Detalles</span>
                 </nav>
             </div>
@@ -51,7 +53,7 @@ include("../Controller/C_detalles.php");
     <!-- Breadcrumb End -->
 
     <!-- Shop Detail Start -->
-    
+    <div class="container-fluid pb-5">
         <div class="row px-xl-5">
             <?php foreach ($resultado as $row) { ?>
                 <div class="col-lg-5 mb-30">
@@ -60,7 +62,7 @@ include("../Controller/C_detalles.php");
 
                 <div class="col-lg-7 h-auto mb-30">
                     <div class="h-100 bg-light p-30">
-                        <h3><?php echo $row['nombre_producto']; ?></h3>
+                        <h3><?php echo $nombreproducto; ?></h3>
                         <div class="d-flex mb-3">
                             <div class="text-primary mr-2">
                                 <small class="fas fa-star"></small>
@@ -73,35 +75,14 @@ include("../Controller/C_detalles.php");
                         </div>
                         <h3 class="font-weight-semi-bold mb-4"><?php echo '$' . $precio; ?></h3>
                         <p class="mb-4"><?php echo $des; ?></p>
-                        <div class="d-flex align-items-center mb-4 pt-2">
-                            <!--<div class="input-group quantity mr-3" style="width: 130px;">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-primary btn-minus">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
+                        <form method="POST">
+                            <div class="d-flex align-items-center mb-4 pt-2">
+                                <div class="input-group quantity mr-3" style="width: 130px;">
+                                    <input type="number" class="form-control bg-secondary border-0 text-center" name="can" min="1" max="10" pattern="{1,10}" value="1" require>
                                 </div>
-                                <input type="number" class="form-control bg-secondary border-0 text-center" value="1">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-primary btn-plus">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>-->
-                        
-                            <form action="mostrarCarrito.php" method="POST">
-                                <input type="hidden" name="id_prod" id="id_prod" value="<?php //echo $row['id_producto']; ?>">
-                                <input type="hidden" name="descripcion_producto" id="descripcion_producto" value="<?php echo $des; ?>">
-                                <input type="hidden" name="nombre_producto" id="nombre_producto" value="<?php echo $row['nombre_producto']; ?>">
-                                <input type="hidden" name="precio_producto" id="precio_producto" value="<?php  echo $precio;  ?>">
-                                <div class="row g-2">
-                                    <div class="input-group quantity mr-3" style="width: 130px;">
-                                    <input type="number" class="form-control bg-secondary border-0 text-center" name="cantidad_producto" min="1" max="10" id="cantidad_producto" pattern="{1,10}" value="1" required>
-                                    </div>
-                                    <button class="btn btn-primary px-3" name="btnAgregar"   type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
-                                </div>                            
-                            </form>
-                        </div>
-
+                                <button class="btn btn-primary px-3" name="btnAgregar" type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                            </div>
+                        </form>
                         <div class="d-flex pt-2">
                             <strong class="text-dark mr-2">Seguinos en:</strong>
                             <div class="d-inline-flex">
