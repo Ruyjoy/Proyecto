@@ -45,7 +45,7 @@
                                     <input class="form-control" pattern="[a-zA-Z0-9.- ]{5,100}" required="required" type="text" name="c" placeholder="abc123" />
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="inputPassword">Contraseña</label>
+                                    <label class="form-label" for="inputPassword">Contraseñas</label>
                                     <input class="form-control" required="required" type="password" placeholder="*******" name="p" />
                                 </div>
                                 <div class="row mb-4">
