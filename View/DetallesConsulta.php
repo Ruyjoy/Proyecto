@@ -1,10 +1,3 @@
-<?php
-
-include("../Controller/C_detallesConsulta.php");
-
-
-?>
-
 <html lang="es">
 
 <head>
@@ -36,6 +29,14 @@ include("../Controller/C_detallesConsulta.php");
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
 
+    <?php
+
+    include("../Controller/C_detallesConsulta.php");
+
+
+    ?>
+
+
 
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
@@ -43,9 +44,8 @@ include("../Controller/C_detallesConsulta.php");
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
-                    <span class="breadcrumb-item active">Veterinaria</span>
-                    <a class="breadcrumb-item text-dark" href="ConsultaOnline.php">Consultas Online</a>
-                    <span class="breadcrumb-item active">Detalles de Consulta</span>
+                    <a class="breadcrumb-item text-dark" href="ConsultaOnline.php">Consultas</a>
+                    <span class="breadcrumb-item active">Detalles de Consultas</span>
                 </nav>
             </div>
         </div>
@@ -56,35 +56,33 @@ include("../Controller/C_detallesConsulta.php");
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
             <?php foreach ($resultado as $row) { ?>
-                <div class="col-lg-4 mb-30">
+                <div class="col-lg-5 mb-30">
                     <img class="img-fluid w-100" src="<?php echo $foto ?>" alt="">
                 </div>
 
                 <div class="col-lg-7 h-auto mb-30">
                     <div class="h-100 bg-light p-30">
                         <h3><?php echo $nombrecon; ?></h3>
-                        
-                        <p class="mb-4">Descripcion : <?php echo $des; ?></p>
-                        <p class="mb-4">Precio : $<?php echo $precio; ?></p>
-                        
-
-                        <div class="d-flex align-items-center mb-4 pt-2">
-                            <div class="input-group quantity mr-3" style="width: 130px;">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-primary btn-minus">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
-                                </div>
-                                <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-primary btn-plus">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
+                        <div class="d-flex mb-3">
+                            <div class="text-primary mr-2">
+                                <small class="fas fa-star"></small>
+                                <small class="fas fa-star"></small>
+                                <small class="fas fa-star"></small>
+                                <small class="fas fa-star-half-alt"></small>
+                                <small class="far fa-star"></small>
                             </div>
-                            <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                            <small class="pt-1">(99 Reviews)</small>
                         </div>
-                        
+                        <h3 class="font-weight-semi-bold mb-4"><?php echo '$' . $precio; ?></h3>
+                        <p class="mb-4"><?php echo $des; ?></p>
+                        <form method="POST">
+                            <div class="d-flex align-items-center mb-4 pt-2">
+                                <div class="input-group quantity mr-3" style="width: 130px;">
+                                    <input type="number" class="form-control bg-secondary border-0 text-center" name="can" min="1" max="10" pattern="{1,10}" value="1" require>
+                                </div>
+                                <button class="btn btn-primary px-3" name="btnAgregar" type="submit"><i class="fa fa-shopping-cart mr-1"></i>Agregar al carro</button>
+                            </div>
+                        </form>
                         <div class="d-flex pt-2">
                             <strong class="text-dark mr-2">Seguinos en:</strong>
                             <div class="d-inline-flex">
