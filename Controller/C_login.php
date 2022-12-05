@@ -58,8 +58,6 @@ if ( isset($_POST['enviar']) ) {
             
 
         } else {
-            
-
             echo "<script>alert('Usuario o Contraseña incorrectos. , favor de  actualizar'); window.location='login.php'</script>";
         }
 
