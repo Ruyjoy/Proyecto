@@ -35,6 +35,7 @@
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
                     <a class="breadcrumb-item text-dark" href="Index.php">Petpoint</a>
+                    <a class="breadcrumb-item text-dark" href="ConsultaOnline.php">Consultas</a>
                     <a class="breadcrumb-item text-dark" href="Distribuidora.php">Distribuidora</a>
                     <span class="breadcrumb-item active">Carrito</span>
                 </nav>
