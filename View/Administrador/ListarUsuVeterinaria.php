@@ -65,7 +65,7 @@ $resultado = mysqli_query($con, $consulta);
                     <thead class="thead-dark">
                         <tr>
                             <th>Codigo</th>
-                            <th>Password</th>
+                            
                             <th>Nombre</th>
                             <th>Telefono</th>
                             <th>Direccion</th>
@@ -88,7 +88,7 @@ $resultado = mysqli_query($con, $consulta);
                         ?>
                             <tr>
                                 <td class="align-middle"><?php echo $row['codigo'] ?></td>
-                                <td class="align-middle"><?php echo $row['pass'] ?></td>
+                                
                                 <td class="align-middle"><?php echo $row['nombre'] ?></td>
                                 <td class="align-middle"><?php echo $row['telefono'] ?></td>
                                 <td class="align-middle"><?php echo $row['direccion'] ?></td>
