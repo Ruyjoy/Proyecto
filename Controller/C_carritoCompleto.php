@@ -16,6 +16,13 @@
         }
         echo "<script>window.location='../View/eliminarProdCarrito.php'</script>";
 
+    } 
+    
+    if (isset($_POST['btnContinuar'])) {
+
+        
+
+        echo "<script>window.location='../View/Ticket.php'</script>";
     }
 
 
