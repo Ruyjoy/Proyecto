@@ -28,6 +28,7 @@
 <body>
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
+    <?php include "../Controller/C_carritoCompleto.php"; ?>
 
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
@@ -68,7 +69,7 @@
                         <td width="10%" class="text-center "><?php echo number_format($producto['precio_producto'] * $producto['cantidad_producto'], 2); ?></td>
                         <td width="10%" class="text-center">
 
-                            <form action="eliminarProdCarrito.php" method="POST">
+                            <form action="" method="POST">
                                 <input type="hidden" name="nombre_producto" value="<?php echo $producto['nombre_producto']; ?>">
                                 <button class="option-btn btn-danger me-md-2" type="submit" name="btnEliminar">Eliminar</button>
                             </form>

@@ -50,7 +50,7 @@ $moneda = $_POST['moneda'];
         <div class="contenedor">
             <div class="card text-center">
                 <div class="card-header">
-                    ¡Donación realizada con éxito!
+                    ¡Compra realizada con éxito!
                 </div>
                     <div class="card-body">
                         <h5 class="card-title">Haz realizado una donación a <?php for ($i = 0; $i < count($ong); $i++) {
