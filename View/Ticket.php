@@ -108,7 +108,7 @@
 
             </div>
             <div class="card-footer text-muted">
-                El equipo de PetPoint agradece tu colaboración.
+                El equipo de PetPoint agradece tu Compra.
             </div>
         </div>
     </div>
