@@ -75,11 +75,11 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarUsuVete.php");
                     <thead class="thead-dark">
                         <tr>
                             <th>Codigo</th>
-                            <th>Pass</th>
                             <th>Nombre</th>
                             <th>Telefono</th>
                             <th>Direccion</th>
                             <th>Mail</th>
+                            <th>Pass</th>
                             <th>Edit</th>
                             <th>Remove</th>
 
@@ -92,8 +92,6 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarUsuVete.php");
                                 <td class="align-middle"><input type="text" name="codigo" class="form-control input-sm" required="required" value="<?php echo $codigo ?>" disabled></td>
                                 </td>
                                 </td>
-                                <td class="align-middle"><input type="text" name="pass" class="form-control input-sm" required="required" value="<?php echo $pass ?>">
-                                </td>
                                 <td class="align-middle"><input type="text" name="nombre" id="preciou" class="form-control input-sm" value="<?php echo $nombre ?>"></td>
                                 </td>
                                 <td class="align-middle"><input type="text" name="tel" id="telu" class="form-control input-sm" value="<?php echo $telefono ?>"></td>
@@ -101,6 +99,8 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarUsuVete.php");
                                 <td class="align-middle"><input type="text" name="dir" id="diru" class="form-control input-sm" value="<?php echo $direccion ?>"></td>
 
                                 <td class="align-middle"><input type="text" name="mail" id="mailu" class="form-control input-sm" value="<?php echo $mail ?>"></td>
+
+                                <td class="align-middle"><button class="btn btn-sm btn-info" value="rest" name="reset">Reset</button></td>
 
                                 <td class="align-middle"><button class="btn btn-sm btn-warning" value="Editar" name="Editar"><i class="fa fa-edit"></i></button></td>
 
