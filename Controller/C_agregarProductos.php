@@ -10,6 +10,7 @@ if (isset($_POST['agregar'])) {
 
     if ($_FILES['foto']['error'] == UPLOAD_ERR_OK) {
 
+
         $nAncho = 500;
         $nAlto = 500;
         $imagen = $_FILES['foto']['name'];
@@ -17,7 +18,16 @@ if (isset($_POST['agregar'])) {
 
         $imagen_original = $_FILES['foto']['tmp_name'];
 
-        $img_original = imagecreatefromjpeg($imagen_original);
+        if($_FILES['foto']['type'] == "image/jpg" || $_FILES['foto']['type'] == "image/jpeg" ){
+
+            $img_original = imagecreatefromjpeg($imagen_original);//Logotipo JPG
+         
+         }
+         if($_FILES["foto"]["type"] == "image/png"){
+         
+            $img_original = imagecreatefrompng($imagen_original);//Logotipo PNG
+         }
+
         $ancho_original = imagesx($img_original);
         $alto_original = imagesy($img_original);
 
