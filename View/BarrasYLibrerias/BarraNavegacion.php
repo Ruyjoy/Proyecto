@@ -59,7 +59,7 @@ if (!isset($_SESSION['rol'])) {
 
                 <a href="../View/Index.php" class="text-decoration d-block d-lg">
                     <!-- logo -->
-                    <img src="https://huellitasperdidas.org/wp-content/themes/Idwasoft/img/logo.png" class="img-responsive" alt="">
+                    <img src="../img/petpointweb.png" class="img-responsive" alt="">
                 </a>
 
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
