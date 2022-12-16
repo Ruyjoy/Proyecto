@@ -26,8 +26,8 @@
   <link href="../../Css/style.css" rel="stylesheet">
 
   <style>
-    body1 {
-      background-image: url('../../img/gato pp1.jpg');
+    body {
+      background-image: url('../../img/Gatorobot.jpg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -46,7 +46,7 @@
   <div class="col-lg-12 col-md- col-sm-6 pb-1">
     <div class=" bg-light mb-4">
       <div class="">
-        <img src="../../img/" class="img w-100" alt="">
+        <img src="../../img/Gatorobot.jpg" class="img w-100" alt="">
       </div>
     </div>
   </div>
