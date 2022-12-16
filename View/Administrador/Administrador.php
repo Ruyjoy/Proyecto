@@ -46,7 +46,7 @@
   <div class="col-lg-12 col-md- col-sm-6 pb-1">
     <div class=" bg-light mb-4">
       <div class="">
-        <img src="../../img/gato pp1.jpg" class="img w-100" alt="">
+        <img src="../../img/" class="img w-100" alt="">
       </div>
     </div>
   </div>
