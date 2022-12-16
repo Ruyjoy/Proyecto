@@ -28,7 +28,7 @@
 <body>
     <!--Barra de navegación-->
     <?php include "BarrasYLibrerias/BarraNavegacion.php"; ?>
-    <?php include '../Controller/C_agregarMascotaAdopcion.php';?>
+    <?php include '../Controller/C_agregarMascotaAdopcion.php'; ?>
 
     <!--Contenido-->
 
@@ -92,7 +92,22 @@
 
             </div>
             <div class="col-lg-4">
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Poner algo</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Nuestro Logo</span></h5>
+                <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+                   
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img src="../img/prueba.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="../View/Mascota_Adopcion.php">Mascotas en adopción</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h9>Puedes encontar todas las mascotas en adopción por las Ong's.</h9>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
             </div>
 
 

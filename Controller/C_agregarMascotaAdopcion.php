@@ -47,7 +47,7 @@ if (isset($_POST['agregarMas'])) {
 
         }
 
-        $consulta = "INSERT INTO mascotas (nombre, tipo, lugar, descripcion, fecha, foto, codigo_usu, rolmascota)VALUES ('$nombre','$tipo','$lugar','$des', '$fecha' ,'$ruta' , $usu  , $rol)";
+        $consulta = "INSERT INTO mascotas (nombre, tipo, lugar, descripcion, fecha, foto, codigo_usu, rolmascota)VALUES ('$nombre','$tipo','$lugar','$des', '$fecha' ,'$ruta' , '$usu'  , $rol)";
         $resultado = mysqli_query($con, $consulta);
 
         //Si existe en base de datos -------
