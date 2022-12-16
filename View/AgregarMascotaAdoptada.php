@@ -96,13 +96,13 @@
                 <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
                    
                         <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img src="../img/prueba.png" class="img-fluid w-100" alt="">
+                            <div class="">
+                                <img src="../img/Diseño sin título-3.jpg" class="img-fluid w-100" alt="">
                             </div>
                             <div class="text-center py-4">
                                 <a class="h6 text-decoration-none text-truncate" href="../View/Mascota_Adopcion.php">Mascotas en adopción</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h9>Puedes encontar todas las mascotas en adopción por las Ong's.</h9>
+                                    <h9>Puedes publicar todas las mascotas en adopción que sea necesario.</h9>
                                 </div>
                             </div>
                         </div>
