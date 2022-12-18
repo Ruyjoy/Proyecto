@@ -44,7 +44,7 @@
             </div>
             <div class="form-row d-flex justify-content-center">
 
-                <h7><label for="pago">Medio de Pago</label></h7>
+                <h7><label for="pago">Medio de Pago  &nbsp </label></h7>
 
                 <select name="pago[]" id="pago" class="form-select">
                     <option selected>Mercado Pago</option>
@@ -108,7 +108,7 @@
 
             </div>
             <div class="card-footer text-muted">
-                El equipo de PetPoint agradece tu colaboración.
+                El equipo de PetPoint agradece tu Compra.
             </div>
         </div>
     </div>

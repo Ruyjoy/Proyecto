@@ -45,7 +45,11 @@ if ($codigo == '') {
 
 
 
-//Editar
+//Reset Pass
+if (isset($_POST['reset'])) {
+
+    eliminarIntentos($codigo);
+}
  
 
 
@@ -64,4 +68,14 @@ if (isset($_POST['Eliminar'])) {
 
         $alert = "error";
     }
+}
+
+function  eliminarIntentos($documento)
+{
+
+    $db = new Conexion();
+    $con = $db->conectar();
+
+    $sentencia = $con->prepare("DELETE FROM intentos_usuario WHERE id_usuario = '$documento'");
+    $sentencia->execute();
 }

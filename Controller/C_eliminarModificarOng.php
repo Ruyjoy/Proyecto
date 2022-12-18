@@ -14,6 +14,7 @@ $nombre = isset($_GET['nombre']) ? $_GET['nombre'] : '';
 $telefono = isset($_GET['telefono']) ? $_GET['telefono'] : '';
 $direccion = isset($_GET['dir']) ? $_GET['dir'] : '';
 $mail = isset($_GET['mail']) ? $_GET['mail'] : '';
+$imagen= isset($_GET['img']) ? $_GET['img']:'' ;
 
 
 
@@ -46,8 +47,12 @@ if ($codigo == '') {
     } 
 
 
+//Reset Pass
+if (isset($_POST['resetong'])) {
 
-//Editar
+    eliminarIntentos($codigo);
+}
+ 
  
 
 
@@ -56,7 +61,7 @@ if (isset($_POST['Eliminar'])) {
 
 
     $consulta = "DELETE FROM usuario WHERE  codigo = '$codigo' AND rol = 3 ";
-    //unlink($imagen); //acá le damos la direccion exacta del archivo
+    unlink($imagen); //acá le damos la direccion exacta del archivo
     $resultado = mysqli_query($con, $consulta);
 
     //Si existe en base de datos -------
@@ -67,3 +72,14 @@ if (isset($_POST['Eliminar'])) {
         $alert = "error";
     }
 }
+
+function  eliminarIntentos($documento)
+{
+
+    $db = new Conexion();
+    $con = $db->conectar();
+
+    $sentencia = $con->prepare("DELETE FROM intentos_usuario WHERE id_usuario = '$documento'");
+    $sentencia->execute();
+}
+

@@ -80,6 +80,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
                             <th>Telefono</th>
                             <th>Direccion</th>
                             <th>Mail</th>
+                            <th>Pass</th>
                             <th>Edit</th>
                             <th>Remove</th>
 
@@ -101,6 +102,7 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
 
                                 <td class="align-middle"><input type="text" name="mail" id="mailu" class="form-control input-sm" value="<?php echo $mail ?>"></td>
 
+                                <td class="align-middle"><button class="btn btn-sm btn-info" value="rest" name="resetong">Reset</button></td>
                                 <td class="align-middle"><button class="btn btn-sm btn-warning" value="Editar" name="Editar"><i class="fa fa-edit"></i></button></td>
 
                             </form>

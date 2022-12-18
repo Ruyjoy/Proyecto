@@ -26,18 +26,28 @@ if (isset($_POST['agregarMas'])) {
 
             $imagen_original = $_FILES['foto']['tmp_name'];
 
-            $img_original = imagecreatefromjpeg($imagen_original);
+            if($_FILES['foto']['type'] == "image/jpg" || $_FILES['foto']['type'] == "image/jpeg" ){
+
+                $img_original = imagecreatefromjpeg($imagen_original);//Logotipo JPG
+             
+             }
+             if($_FILES["foto"]["type"] == "image/png"){
+             
+                $img_original = imagecreatefrompng($imagen_original);//Logotipo PNG
+             }
+
+            
             $ancho_original = imagesx($img_original);
             $alto_original = imagesy($img_original);
 
             $temporal = imagecreatetruecolor($nAncho, $nAlto);
             imagecopyresized($temporal, $img_original, 0, 0, 0, 0, $nAncho, $nAlto, $ancho_original, $alto_original);
-            $ruta = '../../img' . '/' . $imagen;
+            $ruta = '../img' . '/' . $imagen;
             imagejpeg($temporal, $ruta, 100);
 
         }
 
-        $consulta = "INSERT INTO mascotas (nombre, tipo, lugar, descripcion, fecha, foto, codigo_usu, rolmascota)VALUES ('$nombre','$tipo','$lugar','$des', '$fecha' ,'$ruta' , $usu  , $rol)";
+        $consulta = "INSERT INTO mascotas (nombre, tipo, lugar, descripcion, fecha, foto, codigo_usu, rolmascota)VALUES ('$nombre','$tipo','$lugar','$des', '$fecha' ,'$ruta' , '$usu'  , $rol)";
         $resultado = mysqli_query($con, $consulta);
 
         //Si existe en base de datos -------
