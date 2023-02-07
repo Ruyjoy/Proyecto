@@ -15,11 +15,11 @@ class M_registroUsuario
             //Si existe en base de datos -------
 
             if ($resultado == true) {
-                echo "Correcto";
+                echo "Se ha agregado correctamente";
                 //echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='lisadocliente.php'</script>";
 
             } else {
-                echo "error";
+                echo "Error";
             }
         } catch (Exception $e) {
             echo $e;

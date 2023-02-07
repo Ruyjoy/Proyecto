@@ -51,7 +51,7 @@
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-lg-8">
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar Mascotas Para Ser Adoptada</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Agregar Mascota para ser adoptada</span></h5>
                 <div class="bg-light p-30 mb-5">
                     <form method="post" enctype="multipart/form-data">
                         <div class="row">
@@ -80,7 +80,7 @@
                             </div>
 
                             <div class="col-md-12 form-group">
-                                <label>Seleccione su imagen que desea subir</label>
+                                <label>Seleccione la imagen que desea subir</label>
                                 <input class="form-control" name="foto" type="file" required="required">
                             </div>
 

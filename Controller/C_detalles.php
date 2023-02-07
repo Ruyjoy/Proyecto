@@ -9,7 +9,7 @@ $con = $db->conectar();
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
 if ($id == '') {
-    echo "Error a la peticion";
+    echo "Error a la petición";
     exit;
 } else {
 

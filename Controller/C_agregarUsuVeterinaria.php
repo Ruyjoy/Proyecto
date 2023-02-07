@@ -95,11 +95,11 @@ if (isset($_POST['crear'])) {
 
     if ($resultado == true) {
         echo "Correcto";
-        echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='ListarUsuVeterinaria.php'</script>";
+        echo "<script>alert('Se ha agregado correctamente, actualice la p\u00E1gina para ver los cambios'); window.location='ListarUsuVeterinaria.php'</script>";
 
     } else {
 
-        echo "error";
+        echo "Error";
 
     }
 

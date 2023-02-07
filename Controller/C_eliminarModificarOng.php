@@ -21,7 +21,7 @@ $imagen= isset($_GET['img']) ? $_GET['img']:'' ;
 
 if ($codigo == '') {
 
-    echo 'Error al procesar la informacion';
+    echo 'Error al procesar la información';
     exit;
 } 
     if (isset($_POST['Editar'])) {
@@ -39,7 +39,7 @@ if ($codigo == '') {
 
         //Si existe en base de datos -------
         if ($resultado == true) {
-            echo "<script>alert('Se a actualizado los cambios correcatamente, acutalice la p\u00E1gina para ver los cambios'); window.location='ListarOng.php'</script>";
+            echo "<script>alert('Se han actualizado los cambios correctamente, actualice la p\u00E1gina para ver los cambios'); window.location='ListarOng.php'</script>";
         } else {
 
             echo "Error";
@@ -66,10 +66,10 @@ if (isset($_POST['Eliminar'])) {
 
     //Si existe en base de datos -------
     if ($resultado == true) {
-        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarOng.php'</script>";
+        echo "<script>alert('Se ha eliminado correctamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarOng.php'</script>";
     } else {
 
-        $alert = "error";
+        $alert = "Error";
     }
 }
 

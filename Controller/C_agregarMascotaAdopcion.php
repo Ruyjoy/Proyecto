@@ -54,10 +54,10 @@ if (isset($_POST['agregarMas'])) {
 
         //Si existe en base de datos -------
         if ($resultado == true) {
-            echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='index.php'</script>";
+            echo "<script>alert('Se ha agregado correctamente, actualice la p\u00E1gina para ver los cambios'); window.location='index.php'</script>";
         } else {
 
-            $alert = "error al ingresar datos";
+            $alert = "Error al ingresar datos";
         }
    
 }

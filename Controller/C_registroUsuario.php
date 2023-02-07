@@ -112,12 +112,12 @@ if (isset($_POST['crear'])) {
     $resultado = mysqli_query($con, $consulta);
 
     if ($resultado == true) {
-        echo "Correcto";
+        echo "Los cambios se han guardado correctamente";
         //echo "<script>alert('Se a Agregado correcatamente, actualice la p\u00E1gina para ver los cambios'); window.location='lisadocliente.php'</script>";
 
     } else {
 
-        echo "error";
+        echo "Error";
 
     }
 

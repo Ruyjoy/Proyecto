@@ -76,11 +76,11 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarCosulta.php");
                         <tr>
                             <th>Id</th>
                             <th>Nombre</th>
-                            <th>Price</th>
+                            <th>Precio</th>
                             <th>Foto</th>
-                            <th>Description</th>
+                            <th>Descripción</th>
                             <th>Modificar</th>
-                            <th>Remove</th>
+                            <th>Eliminar</th>
 
                         </tr>
                     </thead>
@@ -117,11 +117,11 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarCosulta.php");
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ... Está seguro que desea eliminar esta Consulta ?
+                                ¿Está seguro que desea eliminar esta consulta ?
                             </div>
                             <form method="post">
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                     <button type="submit" class="btn btn-primary" name="EliminarCon" data-dismiss="Eliminar" data-target="#EliminarTodo">Eliminar Producto</button>
 
                                 </div>

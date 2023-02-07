@@ -48,7 +48,7 @@
                                     <div class="p-3" style="max-width: 700px;">
                                         <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Pet Point</h1>
                                         <div class="hidden-mobile">
-                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscala en nuestro listado.</p>
+                                            <p class="lead">Estas son las mascotas que han sido rescatadas. Búscalas en nuestro listado.</p>
                                         </div>
                                     </div>
                                 </div>

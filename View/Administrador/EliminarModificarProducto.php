@@ -75,12 +75,12 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
                     <thead class="thead-dark">
                         <tr>
                             <th>Id</th>
-                            <th>Products</th>
-                            <th>Price</th>
+                            <th>Productos</th>
+                            <th>Precio</th>
                             <th>Foto</th>
-                            <th>Description</th>
+                            <th>Descripción</th>
                             <th>Modificar</th>
-                            <th>Remove</th>
+                            <th>Eliminar</th>
 
                         </tr>
                     </thead>
@@ -116,11 +116,11 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarProducto.php");
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ... Está seguro que desea eliminar esté producto ?
+                                ¿Está seguro que desea eliminar Producto ?
                             </div>
                             <form method="post">
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 <button type="submit" class="btn btn-primary"  name="Eliminar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
 
                             </div>

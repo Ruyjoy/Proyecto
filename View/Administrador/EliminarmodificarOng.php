@@ -74,15 +74,15 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
                 <table class="table table-light table-borderless table-hover text-center mb-0">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Codigo</th>
+                            <th>Código</th>
                             
                             <th>Nombre</th>
-                            <th>Telefono</th>
-                            <th>Direccion</th>
+                            <th>Teléfono</th>
+                            <th>Dirección</th>
                             <th>Mail</th>
-                            <th>Pass</th>
-                            <th>Edit</th>
-                            <th>Remove</th>
+                            <th>Contraseña</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
 
                         </tr>
                     </thead>
@@ -122,12 +122,12 @@ include("/xampp/htdocs/Proyecto/Controller/C_eliminarModificarOng.php");
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ... Está seguro que desea eliminar esté Ong ?
+                                ¿Está seguro que desea eliminar esta Ong?
                             </div>
                             <form method="post">
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary" name="Eliminar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar Producto</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="submit" class="btn btn-primary" name="Eliminar" data-dismiss="Eliminar" data-target="#EliminarTodo" onclick="EliminarTodo">Eliminar ONG</button>
 
                                 </div>
                             </form>

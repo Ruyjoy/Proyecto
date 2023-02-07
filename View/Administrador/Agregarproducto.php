@@ -70,7 +70,7 @@
                                 <textarea class="form-control" name="desc" type="text" placeholder="Descripcion"  required="required"></textarea>
                             </div>
                             <div class="col-md-12 form-group">
-                                <label>Seleccione su imagen que desea subir</label>
+                                <label>Seleccione la imagen que desea subir</label>
                                 <input class="form-control" name="foto" type="file"  required="required">
                             </div>
                             <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregar">Agregar</button>

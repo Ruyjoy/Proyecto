@@ -78,7 +78,7 @@ include("../../Controller/C_agregarUsuVeterinaria.php");
                                 <input class="form-control" type="text" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,70}" maxlength="70" placeholder="Juan Pérez" required />
                             </div>
                             <div class="col-md-6 form-group">
-                                <label for="inputLastName">Telefono</label>
+                                <label for="inputLastName">Teléfono</label>
                                 <input class="form-control" name="tel" pattern=".{6,20}" type="text" placeholder="090010101" required />
                             </div>
                             <div class="col-md-6 form-group">

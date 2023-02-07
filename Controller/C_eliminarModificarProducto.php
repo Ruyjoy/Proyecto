@@ -17,7 +17,7 @@ define("KEY_TOKEN", "ABC.975-gmj");
 
     if($id == '' || $token == ''){
 
-        echo'Error al procesar la informacion';
+        echo'Error al procesar la información';
         exit;
     }else{
 
@@ -39,16 +39,16 @@ define("KEY_TOKEN", "ABC.975-gmj");
             
                 //Si existe en base de datos -------
                 if ($resultado == true) {
-                    echo "<script>alert('Se a actualizado los cambios correcatamente, acutalice la p\u00E1gina para ver los cambios'); window.location='ListarProductos.php'</script>";
+                    echo "<script>alert('Se han actualizado los cambios correctamente, actualice la p\u00E1gina para ver los cambios'); window.location='ListarProductos.php'</script>";
                 } else {
             
-                    $alert = "error";
+                    $alert = "Error";
                 }
             }
 
             
         }else{
-            echo'Error al procesar la informacion';
+            echo'Error al procesar la información';
             exit;
         }
 
@@ -71,10 +71,10 @@ if (isset($_POST['Eliminar'])) {
 
     //Si existe en base de datos -------
     if ($resultado == true) {
-        echo "<script>alert('Se a Eliminado correcatamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarProductos.php'</script>";
+        echo "<script>alert('Se ha eliminado correctamente, favor de  actualizar la p\u00E1gina para ver los cambios'); window.location='ListarProductos.php'</script>";
     } else {
 
-        $alert = "error";
+        $alert = "Error";
     }
 }
 

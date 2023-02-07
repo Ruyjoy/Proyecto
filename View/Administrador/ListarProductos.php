@@ -69,10 +69,10 @@ $resultado = mysqli_query($con, $consulta);
                     <thead class="thead-dark">
                         <tr>
                             <th>Id</th>
-                            <th>Products</th>
-                            <th>Price</th>
+                            <th>Productos</th>
+                            <th>Precio</th>
                             <th>Foto</th>
-                            <th>Description</th>
+                            <th>Descripción</th>
                             <th>Seleccionar</th>
 
 

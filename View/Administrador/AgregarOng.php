@@ -86,7 +86,7 @@ include "../../Controller/C_agregarOng.php";
                                 <input class="form-control" type="text" name="mail_ong" placeholder="example@email.com" required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <label>Seleccione su imagen que desea subir</label>
+                                <label>Seleccione la imagen que desea subir</label>
                                 <input class="form-control" name="foto" type="file"  required="required">
                             </div>
                             <button class="btn btn-block btn-primary font-weight-bold py-3" name="agregarOng">Agregar</button>

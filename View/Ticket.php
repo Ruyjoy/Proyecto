@@ -40,7 +40,7 @@
     <div class="d-flex justify-content-center">
         <div class="card text-center ">
             <div class="card-header">
-                ¡Elegir la forma de Pago!
+                Elige la forma de pago
             </div>
             <div class="form-row d-flex justify-content-center">
 
@@ -108,7 +108,7 @@
 
             </div>
             <div class="card-footer text-muted">
-                El equipo de PetPoint agradece tu Compra.
+                El equipo de PetPoint agradece tu compra.
             </div>
         </div>
     </div>

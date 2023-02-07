@@ -67,8 +67,8 @@ $resultado = mysqli_query($con, $consulta);
                             <th>Codigo</th>
                             
                             <th>Nombre</th>
-                            <th>Telefono</th>
-                            <th>Direccion</th>
+                            <th>Teléfono</th>
+                            <th>Dirección</th>
                             <th>Mail</th>
                             <th>Seleccionar</th>
 

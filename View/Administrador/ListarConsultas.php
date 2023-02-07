@@ -70,9 +70,9 @@ $resultado = mysqli_query($con, $consulta);
                         <tr>
                             <th>Id</th>
                             <th>Nombre</th>
-                            <th>Price</th>
+                            <th>Precio</th>
                             <th>Foto</th>
-                            <th>Description</th>
+                            <th>Descripción</th>
                             <th>Seleccionar</th>
 
 

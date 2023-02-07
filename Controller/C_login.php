@@ -25,7 +25,7 @@ if (isset($_POST['enviar'])) {
         # Correo o contraseña incorrectos
         echo "<script>alert('Usuario o Contraseña incorrectos. , favor de  actualizar'); window.location='login.php'</script>";
     } else if ($valor == 2) {
-        echo "<script>alert('Contactar a administrador para reiniciar , favor de  actualizar'); window.location='login.php'</script>";
+        echo "<script>alert('Contactar a administrador para reiniciar , favor de actualizar'); window.location='login.php'</script>";
     } else {
         #Todo bien. Iniciar sesión y redireccionar a la página
        
